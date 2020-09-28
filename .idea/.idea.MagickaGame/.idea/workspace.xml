@@ -9,7 +9,6 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Projectile.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Magicka/Scripts/Attack.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -22,6 +21,8 @@
         <option value="$PROJECT_DIR$/Assets/Magicka/Scripts/Elements.cs" />
         <option value="$PROJECT_DIR$/Assets/Magicka/Scripts/Skills.cs" />
         <option value="$PROJECT_DIR$/Assets/Magicka/Scripts/Shooting.cs" />
+        <option value="$PROJECT_DIR$/Assets/Resources/Scripts/Shooting.cs" />
+        <option value="$PROJECT_DIR$/Assets/Resources/Scripts/Elements.cs" />
       </list>
     </option>
   </component>
@@ -69,6 +70,10 @@
       <workItem from="1601056766992" duration="11874000" />
       <workItem from="1601099425837" duration="8387000" />
       <workItem from="1601190648057" duration="24335000" />
+      <workItem from="1601292388196" duration="64000" />
+      <workItem from="1601292548491" duration="2937000" />
+      <workItem from="1601298522513" duration="2294000" />
+      <workItem from="1601301859451" duration="1521000" />
     </task>
     <servers />
   </component>
