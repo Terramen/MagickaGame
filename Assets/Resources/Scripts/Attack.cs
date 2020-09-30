@@ -23,7 +23,7 @@ public class Attack : MonoBehaviour
     }
     
     private void OnTriggerEnter2D(Collider2D collider)
-{
-    Destroy(gameObject);
-}
+    {
+        Destroy(gameObject);
+    }
 }

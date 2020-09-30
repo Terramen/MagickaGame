@@ -33,84 +33,128 @@ public class Elements : MonoBehaviour
         _spriteRenderers.AddRange(GetComponentsInChildren<SpriteRenderer>());
         _spriteRenderers.Remove(GetComponent<SpriteRenderer>());
     }
-
-    // Start is called before the first frame update
+    
     void Start()
     {
       
     }
-
-    // Update is called once per frame
+    
+    // _spriteArray 0 - вода, 1 - огонь, 2 - земля, 3 - пустой, 4 - молния, 5 - лава, 6 - холод
     void Update()
     {
+        // ВОЗМОЖНО ОПТИМИЗИРОВАТЬ КОД
         if (CrossPlatformInputManager.GetButtonDown("ButtonFire"))
         {
-        //    Debug.Log(_spriteRenderers[i].sprite == spriteArray[3]);
-            
-            if (_spriteRenderers[_counter].sprite == _spriteArray[3])
+            if (_spriteRenderers[_counter].sprite == _spriteArray[3]) // + огонь из пустого
             {
                 _spriteRenderers[_counter].sprite = _spriteArray[1];
+                _spriteRenderers[_counter].enabled = true;
             }
-
-            _spriteRenderers[_counter].enabled = true;
-            if (_counter < _spriteRenderers.Count - 1)
+            
+            else if (_spriteRenderers[_counter].sprite == _spriteArray[1] && _counter < _spriteRenderers.Count) // + огонь (если пред огонь)
             {
-                ++_counter;
+                if (_counter < _spriteRenderers.Count - 1)
+                {
+                    ++_counter; 
+                }
+                _spriteRenderers[_counter].sprite = _spriteArray[1];
+                _spriteRenderers[_counter].enabled = true;
+            }
+            
+            else if (_spriteRenderers[_counter].sprite == _spriteArray[0] && _counter <= _spriteRenderers.Count - 1)   // вода + огонь
+            {
+                _spriteRenderers[_counter].sprite = _spriteArray[4];
+                if (_counter < _spriteRenderers.Count - 1)
+                {
+                    ++_counter; 
+                }
+            }
+            
+            else if (_spriteRenderers[_counter].sprite == _spriteArray[2] && _counter <= _spriteRenderers.Count - 1) // земля + огонь
+            {
+                _spriteRenderers[_counter].sprite = _spriteArray[5];
+                if (_counter < _spriteRenderers.Count - 1)
+                {
+                    ++_counter; 
+                }
             }
         };
 
         if (CrossPlatformInputManager.GetButtonDown("ButtonEarth"))
         {
-            if (_spriteRenderers[_counter].sprite == _spriteArray[1])
+
+
+
+            if (_spriteRenderers[_counter].sprite == _spriteArray[3]) // + земля из пустого
             {
                 _spriteRenderers[_counter].sprite = _spriteArray[2];
+                _spriteRenderers[_counter].enabled = true;
             }
-   //         Debug.Log(_spriteRenderers[i].color == Color.white);
-
-            if (_spriteRenderers[_counter].sprite == _spriteArray[3])
+            
+            else if (_spriteRenderers[_counter].sprite == _spriteArray[2] && _counter <= _spriteRenderers.Count - 1) // + земля (если пред земля)
             {
+                if (_counter < _spriteRenderers.Count - 1)
+                {
+                    ++_counter; 
+                }
                 _spriteRenderers[_counter].sprite = _spriteArray[2];
+                _spriteRenderers[_counter].enabled = true;
             }
 
-            _spriteRenderers[_counter].enabled = true;
-            if (_counter < _spriteRenderers.Count - 1)
+            else if (_spriteRenderers[_counter].sprite == _spriteArray[0] && _counter <= _spriteRenderers.Count - 1)   // вода + земля
             {
-                ++_counter;
+                _spriteRenderers[_counter].sprite = _spriteArray[6];
+                if (_counter < _spriteRenderers.Count - 1)
+                {
+                    ++_counter; 
+                }
+            }
+            
+            else if (_spriteRenderers[_counter].sprite == _spriteArray[1] && _counter <= _spriteRenderers.Count - 1) // огонь + земля
+            {
+                _spriteRenderers[_counter].sprite = _spriteArray[5];
+                if (_counter < _spriteRenderers.Count - 1)
+                {
+                    ++_counter; 
+                }
             }
         };
 
         if (CrossPlatformInputManager.GetButtonDown("ButtonWater"))
         {
-  //          Debug.Log(_spriteRenderers[i].color == Color.white);
-
-            if (_spriteRenderers[_counter].sprite == _spriteArray[3])
+            if (_spriteRenderers[_counter].sprite == _spriteArray[3]) // + вода из пустого
             {
                 _spriteRenderers[_counter].sprite = _spriteArray[0];
+                _spriteRenderers[_counter].enabled = true;
             }
-
-            _spriteRenderers[_counter].enabled = true;
-            if (_counter < _spriteRenderers.Count - 1)
+            
+            else if (_spriteRenderers[_counter].sprite == _spriteArray[0] && _counter <= _spriteRenderers.Count - 1) // + вода (если пред вода)
             {
-                ++_counter;
+                if (_counter < _spriteRenderers.Count - 1)
+                {
+                    ++_counter; 
+                };
+                _spriteRenderers[_counter].sprite = _spriteArray[0];
+                _spriteRenderers[_counter].enabled = true;
+            }
+            
+            else if (_spriteRenderers[_counter].sprite == _spriteArray[1] && _counter <= _spriteRenderers.Count - 1)   // огонь + вода
+            {
+                _spriteRenderers[_counter].sprite = _spriteArray[4];
+                if (_counter < _spriteRenderers.Count - 1)
+                {
+                    ++_counter; 
+                }
+            }
+            
+            else if (_spriteRenderers[_counter].sprite == _spriteArray[2] && _counter <= _spriteRenderers.Count - 1) // земля + вода
+            {
+                _spriteRenderers[_counter].sprite = _spriteArray[6];
+                if (_counter < _spriteRenderers.Count - 1)
+                {
+                    ++_counter; 
+                }
             }
         };
-
-
-        /*if (CrossPlatformInputManager.GetButtonDown("ButtonAttack"))
-        {
-            Debug.Log("Кнопка нажата");
-            foreach (var r in _spriteRenderers)
-            {
-                r.enabled = false;
-                r.sprite = spriteArray[3];
-            }
-            i = 0;
-        };*/
-
     }
-
- //   void CheckColor()
-//    {
-//        Debug.Log(renderer[i].material.GetColor());
-//    }
 }

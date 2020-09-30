@@ -38,12 +38,12 @@ public class Shooting : MonoBehaviour
             
             /*Debug.Log("Counter" + _elements.Counter + "Sprite" + _elements.SpriteRenderers[_elements.Counter - 1].sprite + "Sprite1" + _elements.SpriteArray[1]);
             Debug.Log("Check" + (_elements.SpriteRenderers[_elements.Counter - 1].sprite == _elements.SpriteArray[1]));*/
-            if (_elements.Counter > 0 && _elements.SpriteRenderers[0].sprite == _elements.SpriteArray[1])
+            if (_elements.SpriteRenderers[0].sprite == _elements.SpriteArray[1])
             {
                 skill = prefabPool[1];
                 Shoot();
             }
-            if (_elements.Counter > 0 && _elements.SpriteRenderers[0].sprite == _elements.SpriteArray[2])
+            if (_elements.SpriteRenderers[0].sprite == _elements.SpriteArray[2])
             {
                 skill = prefabPool[0];
                 Shoot();
