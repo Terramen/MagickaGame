@@ -13,6 +13,7 @@ public class Player_transform : MonoBehaviour
     public Transform projectilePoint;
     public GameObject circleSprite;
     public GameObject circle;
+   // public GameObject hpbar;
     private float _аngle;
 
     private float _currentSpeed;

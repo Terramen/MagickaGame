@@ -149,4 +149,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
+  damage: 20
   rb: {fileID: 6510261285638336337}
+  shooting: {fileID: 0}
+  lineRenderer: {fileID: 0}
+  hpBar: {fileID: 0}
