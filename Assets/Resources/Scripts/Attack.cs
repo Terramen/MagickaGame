@@ -7,10 +7,11 @@ public class Attack : MonoBehaviour
     private Player_transform _playerTransform;
     
     public float speed;
-    public int damage;
+    [SerializeField] private int damage;
     public Rigidbody2D rb;
     public Shooting shooting;
     private HpBar _hpBar;
+    
     
     // Start is called before the first frame update
     void Start()
@@ -28,21 +29,33 @@ public class Attack : MonoBehaviour
         {
             rb.velocity = transform.up *  speed;
         }
-       // transform.Translate(transform.right * speed * Time.deltaTime);
+        // transform.Translate(transform.right * speed * Time.deltaTime);
     }
     
     private void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collider.gameObject.tag == "Enemy")
+        if (collider.GetComponent<StatusEffect>() != null && shooting.PrefabPool[2] == shooting.Skill)    // Ледяное копье попадает по противнику и замораживает
         {
-            _hpBar = collider.gameObject.GetComponent<HpBar>();
-            _hpBar.TakeDamage(damage);
-                Debug.Log(_hpBar.Hp);
-            Destroy(gameObject);
+            for (int i = 0; i < shooting.PrefabPool.Length; i++)
+            {
+                Debug.Log(shooting.PrefabPool[i]);
+            }
+            collider.GetComponent<StatusEffect>().ApplyFreeze();
         }
-        if (collider.gameObject.tag != "Player")
+        if (collider.GetComponent<StatusEffect>() != null && shooting.PrefabPool[1] == shooting.Skill)    // Фаербол попадает по противнику и поджигает
+        {
+            collider.GetComponent<StatusEffect>().ApplyBurn(4);
+        }
+        if (collider.GetComponent<HpBar>() != null && collider.gameObject.tag != "Player")
+        {
+            collider.GetComponent<HpBar>().TakeDamage(damage);
+            /*Debug.Log(_hpBar.Hp);*/
+            //Destroy(gameObject);
+        }
+        if (collider.gameObject.tag == "Enemy")
         {
             Destroy(gameObject);
         }
     }
+    
 }

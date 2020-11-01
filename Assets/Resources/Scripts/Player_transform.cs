@@ -2,10 +2,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
 
-public class Player_transform : MonoBehaviour
+public class Player_transform : MonoBehaviourPun
 {
 
+
+    public Animator animator;
     public FloatingJoystick floatingJoystick;
     public float moveSpeed;
     public Rigidbody2D rb;
@@ -17,6 +20,8 @@ public class Player_transform : MonoBehaviour
     private float _аngle;
 
     private float _currentSpeed;
+
+    [SerializeField] private SpriteRenderer spriteRenderer;
 
     public float CurrentSpeed => _currentSpeed;
 
@@ -39,6 +44,13 @@ public class Player_transform : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        if (photonView.IsMine)
+        {
+            movement = new Vector2(floatingJoystick.Horizontal, floatingJoystick.Vertical);
+            moveCharacter(movement);
+        }
+        
         _currentSpeed = Mathf.Pow(rb.velocity.x, 2);
         movement = new Vector2(floatingJoystick.Horizontal, floatingJoystick.Vertical);
         moveCharacter(movement);
@@ -53,6 +65,13 @@ public class Player_transform : MonoBehaviour
          }
          circle.transform.rotation = Quaternion.Euler(0, 0, _аngle);
          circleSprite.transform.rotation = Quaternion.Euler(45f, 0, circle.transform.eulerAngles.z);
+         animator.SetFloat("moveX", Math.Abs(rb.velocity.x));
+         animator.SetFloat("moveY", rb.velocity.y);
+         if (rb.velocity.x < 0)
+         {
+             spriteRenderer.flipX = true;
+         }
+         else spriteRenderer.flipX = false;
     }
 
     void moveCharacter(Vector2 direction)

@@ -8,20 +8,27 @@ using UnityStandardAssets.CrossPlatformInput;
 public class Shooting : MonoBehaviour
 {
     public Rigidbody2D rb;
-    public GameObject skill;
-   // [SerializeField] private UnityEngine.Object skill;
+
+    [SerializeField] private GameObject skill;
+    // [SerializeField] private UnityEngine.Object skill;
     public Transform firePoint;
     public Transform circle;
     //[SerializeField] private float speed = 5f;
     private Elements _elements;
     private GameObject[] _prefabPool;
 
+    public GameObject Skill
+    {
+        get => skill;
+        set => skill = value;
+    }
+
     public GameObject[] PrefabPool => _prefabPool;
     
     
     public Transform endPoint;
     public LineRenderer lineRenderer;
-    public GameObject waterflow;
+    private GameObject waterflow;
 
     public LayerMask wallLayer;
 
@@ -65,14 +72,29 @@ public class Shooting : MonoBehaviour
 
             if (_elements.SpriteRenderers[0].sprite == _elements.SpriteArray[0])
             {
-                skill = _prefabPool[2];
-                GameObject waterflow = Instantiate(skill, firePoint.position, firePoint.rotation);
+                skill = _prefabPool[3];
+                if (waterflow == null)
+                {
+                    waterflow = Instantiate(skill, firePoint.position, firePoint.rotation);
+                    lineRenderer = waterflow.GetComponent<LineRenderer>();
+                    StartCoroutine(ShootLong(4f));
+                }
+                else
+                {
+                    waterflow.SetActive(true);
+                    StartCoroutine(ShootLong(4f));
+                }
+                    
+                  /*GameObject waterflow = Instantiate(skill, firePoint.position, firePoint.rotation);
                 lineRenderer = waterflow.GetComponent<LineRenderer>();
-                // waterflow.SetActive(true);
                 StartCoroutine(ShootLong(4f));
-                Destroy(waterflow, 4f);
-                // skill = 
-                 
+                Destroy(waterflow, 4f);*/
+
+            }
+            if (_elements.SpriteRenderers[0].sprite == _elements.SpriteArray[6])
+            {
+                skill = _prefabPool[2];
+                Shoot();
             }
             foreach (var r in _elements.SpriteRenderers)
             {
@@ -95,7 +117,7 @@ public class Shooting : MonoBehaviour
     void ShootWaterflow()
     {
         
-        RaycastHit2D hit = Physics2D.Raycast(firePoint.position, circle.transform.up, 2, wallLayer);
+        RaycastHit2D hit = Physics2D.Raycast(firePoint.position, circle.transform.up, 1, wallLayer);
         //_hpBar = hit.collider.gameObject.GetComponent<HpBar>();
 
         if (hit)
@@ -103,7 +125,7 @@ public class Shooting : MonoBehaviour
                 HpBar hpBar = hit.collider.GetComponent<HpBar>();
                 if (hpBar != null)
                 {
-                    hpBar.TakeDamage(0.05f);
+                    hpBar.TakeDamage(0.1f);
                 }
         }
         
@@ -139,23 +161,16 @@ public class Shooting : MonoBehaviour
     {
         while (time > 0)
         {
-            //Debug.Log("Ку" + time);
             ShootWaterflow();
             time -= Time.deltaTime;
             yield return null;
         }
-        // lineRenderer = skill.GetComponent<LineRenderer>();
-        //waterflow.SetActive(true);
-        // Instantiate(skill, firePoint.position, firePoint.rotation);
-        // yield return new WaitForSeconds(time);
-        // waterflow.SetActive(false);
+        waterflow.SetActive(false);
     }
 
     void PrefabCreation()
     {
- 
         _prefabPool = Resources.LoadAll<GameObject>("Skills");
-        Debug.Log(_prefabPool.Length);
-
+       // Debug.Log(_prefabPool.Length);
     }
 }
