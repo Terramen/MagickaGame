@@ -1,9 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Photon.Pun;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class Joystick : MonoBehaviour, IPointerDownHandler, IDragHandler, IPointerUpHandler
+public class Joystick : MonoBehaviourPun, IPointerDownHandler, IDragHandler, IPointerUpHandler
 {
     public float Horizontal { get { return (snapX) ? SnapFloat(input.x, AxisOptions.Horizontal) : input.x; } }
     public float Vertical { get { return (snapY) ? SnapFloat(input.y, AxisOptions.Vertical) : input.y; } }
@@ -38,8 +39,17 @@ public class Joystick : MonoBehaviour, IPointerDownHandler, IDragHandler, IPoint
     private Canvas canvas;
     private Camera cam;
     private Player_transform _playerTransform;
-    
+
+
     private Vector2 input = Vector2.zero;
+
+    private bool _isPressed = false;
+
+    public bool IsPressed
+    {
+        get => _isPressed;
+        set => _isPressed = value;
+    }
 
     protected virtual void Start()
     {
@@ -57,11 +67,11 @@ public class Joystick : MonoBehaviour, IPointerDownHandler, IDragHandler, IPoint
         handle.anchorMax = center;
         handle.pivot = center;
         handle.anchoredPosition = Vector2.zero;
+        
     }
-
     public virtual void OnPointerDown(PointerEventData eventData)
     {
-        _playerTransform.IsPressed = true;
+        _isPressed = true;
         OnDrag(eventData);
     }
 
@@ -136,7 +146,8 @@ public class Joystick : MonoBehaviour, IPointerDownHandler, IDragHandler, IPoint
     {
         input = Vector2.zero;
         handle.anchoredPosition = Vector2.zero;
-        _playerTransform.IsPressed = false;
+        _isPressed = false;
+      //  _playerTransform.IsPressed = false;
     }
 
     protected Vector2 ScreenPointToAnchoredPosition(Vector2 screenPosition)

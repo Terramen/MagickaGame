@@ -17,9 +17,9 @@ TagManager:
   - 
   - Wall
   - Enemy
-  - 
-  - 
-  - 
+  - Player
+  - EnemySkill
+  - PlayerSkill
   - 
   - 
   - 
