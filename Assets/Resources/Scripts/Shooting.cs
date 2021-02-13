@@ -4,28 +4,26 @@ using System.Collections.Generic;
 using Photon.Pun;
 using Unity.Mathematics;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityStandardAssets.CrossPlatformInput;
 
 public class Shooting : MonoBehaviourPun, IPunObservable
 {
     public Rigidbody2D rb;
-
-    // [SerializeField] private GameObject skill;     // для одичночки
-    // [SerializeField] private UnityEngine.Object skill;
     public Transform firePoint;
     public Transform circle;
-    //[SerializeField] private float speed = 5f;
-    [SerializeField] private Elements elements;
+    [SerializeField] private Elements2 elements;
     private GameObject[] _prefabPool;
     [SerializeField] private int raycastCount;
     private float raycastArc = 0;
+    private float particleDamage = 0.05f;
 
-
-    /*public GameObject Skill
+    public float ParticleDamage
     {
-        get => skill;
-        set => skill = value;
-    }*/
+        get => particleDamage;
+        set => particleDamage = value;
+    }
+    
 
     private String skillName;
 
@@ -38,125 +36,192 @@ public class Shooting : MonoBehaviourPun, IPunObservable
     public GameObject[] PrefabPool => _prefabPool;
     
     [SerializeField] private GameObject waterflow;
+    [SerializeField] private GameObject lava;
 
-    private bool _waterflowIsActive = false;
+    private bool _waterflowIsActive;
+    private bool _lavaIsActive;
 
+    public bool WaterflowIsActive
+    {
+        get => _waterflowIsActive;
+        set => _waterflowIsActive = value;
+    }
+
+    public bool LavaIsActive
+    {
+        get => _lavaIsActive;
+        set => _lavaIsActive = value;
+    }
 
     // [SerializeField] private PhotonView _photonView;
    // private HpBar _hpBar;
-  // [SerializeField] private PhotonView photonView;
+   [SerializeField] private PhotonView photonView;
    [SerializeField] private ParticleSystem waterflow2;
 
+   private Player3 _player3;
 
-   // Start is called before the first frame update
+   private JoystickScr _joystickScr;
    
-   void Start()
+   private int currentSpellID;
+
+   private Coroutine _coroutine;
+
+   private int id = 0;
+
+   public int ID
    {
-       waterflow2 = waterflow.GetComponent<ParticleSystem>();
-        /*if (!photonView.IsMine)
-        {
-            gameObject.SetActive(false);
-        }*/
-        PrefabCreation();
-        // skill = Resources.Load("Assets/Magicka/Prefab/Boulder");
-        elements = FindObjectOfType<Elements>();
-    }
-    // Update is called once per frame
-    void Update()
-    {
-        if (_waterflowIsActive)
-        {
-            waterflow.SetActive(true);
-        }
-        else waterflow.SetActive(false);
-        if (photonView.IsMine)
-        {
-            if (CrossPlatformInputManager.GetButtonDown("ButtonAttack"))
-                    {
-                        if (elements.SpriteRenderers[0].sprite == elements.SpriteArray[1]) // Fireball
-                        {
-                            skillName = "Skills/Fireball";
-                            // skill = _prefabPool[1];
-                            PhotonNetwork.Instantiate(skillName, firePoint.position, firePoint.rotation);
-                        }
-                        if (elements.SpriteRenderers[0].sprite == elements.SpriteArray[2])
-                        {
-                            skillName = "Skills/Boulder";
-                            //skill = _prefabPool[0];
-                            PhotonNetwork.Instantiate(skillName, firePoint.position, firePoint.rotation);
-                        }
+       get => id;
+       set => id = value;
+   }
 
-                        if (elements.SpriteRenderers[0].sprite == elements.SpriteArray[0])
-                        {
-                            skillName = "Skills/Waterflow2";
-                            StartCoroutine(ShootLong(4f));
-                        }
-
-
-                        if (elements.SpriteRenderers[0].sprite == elements.SpriteArray[6]) // Ice Lance
-                        {
-                            skillName = "Skills/IceLance";
-                           // skill = _prefabPool[2];
-                           PhotonNetwork.Instantiate(skillName, firePoint.position, firePoint.rotation);
-                        }
-                        foreach (var r in elements.SpriteRenderers)
-                        {
-                            r.enabled = false;
-                            r.sprite = elements.SpriteArray[3];
-                        }
-                        elements.Counter = 0;
-                    }
-        }
-    }
-
-    private IEnumerator ShootLong(float time)
-    {
-        _waterflowIsActive = true;
-        while (time > 0)
-        {
-            time -= Time.deltaTime; // Time.deltaTime нужно поменять
-            yield return null;
-        }
-        _waterflowIsActive = false;
-      //  waterflow2.shape.arc = 10 - 
-    }
-
-    /*private void WaterflowRaycast2D()
-    {
-       // raycastArc = waterflow2.shape.arc;
-
-       while (raycastArc <= waterflow2.shape.arc)
-        {
-            --raycastCount;
-            if (raycastCount > 0)
-            {
-                raycastArc = raycastArc + waterflow2.shape.arc / raycastCount;
-            }
-            RaycastHit2D hit = Physics2D.Raycast(firePoint.position, new Vector3(0,0, circle.transform.rotation.z - raycastArc), waterflow2.shape.radius);
-            Debug.DrawRay(firePoint.position, new Vector3(0, 0 , circle.transform.rotation.z - raycastArc), Color.green);
-
-            //
-            HpBar hpBar = hit.collider.GetComponent<HpBar>();
-            if (hpBar != null)
-            {
-                hpBar.TakeDamage(0.1f);
-            }
-        }
-
-       raycastArc = 0;
-       /*for (int i = 0; i < raycastCount; i++)
+   public Coroutine Coroutine
+   {
+       get => _coroutine;
+       set => _coroutine = value;
+   }
+   
+   public IEnumerator ShootWaterflow(float time)
+   {
+       _waterflowIsActive = true;
+       while (time > 0)
        {
-           circle.transform.up.
-           var raycastDir = circle.transform.rotation.z - waterflow2.shape.arc;
-           RaycastHit2D hit = Physics2D.Raycast(firePoint.position, circle.transform.rotation.z - waterflow2.shape.arc, waterflow2.shape.radius, wallLayer);
-           raycastArc = raycastArc - (raycastArc / raycastCount - 1);
-       }#1#
-    }*/
+           time -= Time.deltaTime;
+           yield return new WaitForFixedUpdate();
+       }
+       _waterflowIsActive = false;
+   }
+   
+   
+   public IEnumerator ShootLava(float time)
+   {
+       _lavaIsActive = true;
+       while (time > 0)
+       {
+           time -= Time.deltaTime;
+           yield return new WaitForFixedUpdate();
+       }
+       _lavaIsActive = false;
+   }
 
-    void PrefabCreation()
+   public void Update()
+   {
+       if (_lavaIsActive)
+       {
+           lava.SetActive(true);
+       }
+       else
+       {
+           lava.SetActive(false);
+       }
+       if (_waterflowIsActive)
+       {
+           waterflow.SetActive(true);
+       }
+       else
+       {
+           waterflow.SetActive(false);
+       }
+   }
+
+
+   public void StartAttack(Spell spell)
     {
-        _prefabPool = Resources.LoadAll<GameObject>("Skills");
-       // Debug.Log(_prefabPool.Length);
+        switch (spell.ID)
+                        {
+                            case 1:
+                                spell.PutOnCooldown();
+                                id = spell.ID;
+                                PhotonNetwork.Instantiate(spell.spellName, firePoint.position, circle.rotation); //Fireball
+                                break;
+                            case 2:
+                                spell.PutOnCooldown();
+                                id = spell.ID;
+                                PhotonNetwork.Instantiate(spell.spellName, firePoint.position, circle.rotation);
+                                break;
+                            case 3:
+                                spell.PutOnCooldown();
+                                id = spell.ID;
+                                PhotonNetwork.Instantiate(spell.spellName, firePoint.position, circle.rotation);
+                                break;
+                            
+                            case 7:
+                                spell.PutOnCooldown();
+                                id = spell.ID;
+                                PhotonNetwork.Instantiate(spell.spellName, firePoint.position, circle.rotation);   //Boulder
+                                break;
+                            case 8:
+                                spell.PutOnCooldown();
+                                id = spell.ID;
+                                PhotonNetwork.Instantiate(spell.spellName, firePoint.position, circle.rotation);
+                                break;
+                            case 9:
+                                spell.PutOnCooldown();
+                                id = spell.ID;
+                                PhotonNetwork.Instantiate(spell.spellName, firePoint.position, circle.rotation);
+                                break;
+                            
+                            case 4:
+                                spell.PutOnCooldown();
+                                id = spell.ID;
+                                PhotonNetwork.Instantiate(spell.spellName, firePoint.position, circle.rotation);   //IceLance
+                                break;
+                            case 5:
+                                spell.PutOnCooldown();
+                                id = spell.ID;
+                                PhotonNetwork.Instantiate(spell.spellName, firePoint.position, circle.rotation);
+                                break;
+                            case 6:
+                                spell.PutOnCooldown();
+                                id = spell.ID;
+                                PhotonNetwork.Instantiate(spell.spellName, firePoint.position, circle.rotation);
+                                break;
+                            
+                            case 10:
+                                particleDamage = 0.05f;
+                                _coroutine = StartCoroutine(ShootWaterflow(4f));    //Waterflow
+                                break;
+                            case 11:
+                                particleDamage = 0.07f;
+                                _coroutine = StartCoroutine(ShootWaterflow(4f)); 
+                                break;
+                            case 12: 
+                                particleDamage = 0.09f;
+                                _coroutine = StartCoroutine(ShootWaterflow(4f)); 
+                                break;
+                            
+                            case 16:
+                                particleDamage = 0.07f;
+                                _coroutine = StartCoroutine(ShootLava(4f));    //Lava
+                                break;
+                            case 17:
+                                particleDamage = 0.09f;
+                                _coroutine = StartCoroutine(ShootLava(4f)); 
+                                break;
+                            case 18: 
+                                particleDamage = 0.11f;
+                                _coroutine = StartCoroutine(ShootLava(4f)); 
+                                break;
+                        }
+    }
+
+    public void StartTargetAttack(Spell spell, Vector3 point)
+    {
+        switch (spell.ID)
+        {
+            
+            case 13: 
+                spell.PutOnCooldown();
+                PhotonNetwork.Instantiate(spell.spellName, point, Quaternion.identity);
+                break;
+            case 14:
+                spell.PutOnCooldown();
+                PhotonNetwork.Instantiate(spell.spellName, point, Quaternion.identity);
+                break;
+            case 15: 
+                spell.PutOnCooldown();
+                PhotonNetwork.Instantiate(spell.spellName, point, Quaternion.identity);
+                break;
+        }
     }
 
     public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
@@ -164,12 +229,21 @@ public class Shooting : MonoBehaviourPun, IPunObservable
         if (stream.IsWriting)
         {
             stream.SendNext(_waterflowIsActive);
+            stream.SendNext(_lavaIsActive);
         }
         else
         {
+            /*if (stream.ReceiveNext() is GameObject obj)
+            {
+                gameObject.GetComponent<HpBar>() = obj;
+            }*/
             if (stream.ReceiveNext() is bool b)
             {
                 _waterflowIsActive = b;
+            }
+            if (stream.ReceiveNext() is bool b1)
+            {
+                _lavaIsActive = b1;
             }
         }
     }

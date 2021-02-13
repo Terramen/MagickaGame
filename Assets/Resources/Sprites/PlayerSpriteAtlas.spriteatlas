@@ -1,0 +1,122 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: PlayerSpriteAtlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 2d7b7bc901461324586ea8d21fcab2f4, type: 3}
+    - {fileID: 102900000, guid: a7ca5a5030fc56b4aa8a839f006b55fc, type: 3}
+    - {fileID: 102900000, guid: 62e82ef2e2125b843ab310978e8c7cac, type: 3}
+    totalSpriteSurfaceArea: 3170304
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: cbaae300f2fa0ef4e860e8de6693ac0e, type: 3}
+  - {fileID: 21300000, guid: f66ad430e4a3eb84c8adcbe41d097311, type: 3}
+  - {fileID: 21300000, guid: c4e8f250c4056704d82f6131ac24791b, type: 3}
+  - {fileID: 21300000, guid: bc3630b0a244bd349894514c0b9de571, type: 3}
+  - {fileID: 21300000, guid: f00ff2725ad61ab4fa6cbace22fbfcb0, type: 3}
+  - {fileID: 21300000, guid: cad7c282284a9bf41820d571d8b6c33a, type: 3}
+  - {fileID: 21300000, guid: ddaefdd202150484e814bf7784736c36, type: 3}
+  - {fileID: 21300000, guid: cb5784430ae1cb9408f05fcedad1b536, type: 3}
+  - {fileID: 21300000, guid: 4a352543282e4714382c90b33267490f, type: 3}
+  - {fileID: 21300000, guid: f2b17643affe9aa47b802007c0c7a8be, type: 3}
+  - {fileID: 21300000, guid: fd167883f5d373d42911021379dec81a, type: 3}
+  - {fileID: 21300000, guid: 3ef7f9b3c2e276a4b9e78f07dfba04c1, type: 3}
+  - {fileID: 21300000, guid: 8c483024c2b3926428c9005b31dfcbdf, type: 3}
+  - {fileID: 21300000, guid: 5021cde4c36123d449a2fffa675cdb38, type: 3}
+  - {fileID: 21300000, guid: 4829c3352180a384ab6b85ae9216880d, type: 3}
+  - {fileID: 21300000, guid: c10377954a5245b419ac4e8459af7bbd, type: 3}
+  - {fileID: 21300000, guid: 4e47d6d591ee25c419507b4e2354a809, type: 3}
+  - {fileID: 21300000, guid: b4332e16eeeaba64ca60f1a58611f168, type: 3}
+  - {fileID: 21300000, guid: c5e73426dfff911458dac86c99f3bf0f, type: 3}
+  - {fileID: 21300000, guid: e122149604548a246a01277549fefb40, type: 3}
+  - {fileID: 21300000, guid: 0472acc763566bf46ad849269ad90c10, type: 3}
+  - {fileID: 21300000, guid: b65788d7c10086042b0113c9cbe3503a, type: 3}
+  - {fileID: 21300000, guid: f7e2f9480133d654f8cc372aa0494c2b, type: 3}
+  - {fileID: 21300000, guid: c431a5799488948489a28f640ed77c6e, type: 3}
+  - {fileID: 21300000, guid: aa11b679b834cc74596ddff868be91fc, type: 3}
+  - {fileID: 21300000, guid: 3e0a45b917ab65b40a793364a33623e1, type: 3}
+  - {fileID: 21300000, guid: 034442aa28fda374fbf4c65c83a66c6a, type: 3}
+  - {fileID: 21300000, guid: eed8d5caae871b5429816633c9a02bea, type: 3}
+  - {fileID: 21300000, guid: c1e2511b96437384a8655e7598db540d, type: 3}
+  - {fileID: 21300000, guid: 4f87144bab5b84f49a41ee8f5c80c74a, type: 3}
+  - {fileID: 21300000, guid: 9ea8518b6aacf8642b8707f20c202a57, type: 3}
+  - {fileID: 21300000, guid: 1ac11c9be35b9e54d8ee89dade806454, type: 3}
+  - {fileID: 21300000, guid: 55f71e9b08a2fde40a010d957bce7f4d, type: 3}
+  - {fileID: 21300000, guid: d383ecdcfc5d6f34e83c2a8cefe1aad2, type: 3}
+  - {fileID: 21300000, guid: e448877daf6cd744c9a2b63b300e0773, type: 3}
+  - {fileID: 21300000, guid: dc4abcedeb62bce42a78e78feb3d04a2, type: 3}
+  - {fileID: 21300000, guid: 9ad6080ee89855144a496dced38ebe69, type: 3}
+  - {fileID: 21300000, guid: 346e698f95828f6499d27cb2970a0ad4, type: 3}
+  - {fileID: 21300000, guid: 421ce1af58b49394e9430e34c2883e71, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Sprite-0021
+  - Sprite-0015
+  - Sprite-0012
+  - Sprite-0009
+  - Sprite-0007
+  - Sprite-0011
+  - Sprite-0020
+  - Sprite-0018
+  - Sprite-0014
+  - Sprite-0010
+  - Sprite-0014
+  - Sprite-0006
+  - Sprite-0015
+  - Sprite-0019
+  - Sprite-0017
+  - Sprite-0019
+  - Sprite-0013
+  - Sprite-0010
+  - Sprite-0008
+  - Sprite-0004
+  - Sprite-0024
+  - Sprite-0017
+  - Sprite-0006
+  - Sprite-0018
+  - Sprite-0008
+  - Sprite-0025
+  - Sprite-0013
+  - Sprite-0007
+  - Sprite-0005
+  - Sprite-0005
+  - Sprite-0004
+  - Sprite-0016
+  - Sprite-0016
+  - Sprite-0023
+  - Sprite-0022
+  - Sprite-0010
+  - Sprite-0012
+  - Sprite-0011
+  - Sprite-0009
+  m_Tag: PlayerSpriteAtlas
+  m_IsVariant: 0

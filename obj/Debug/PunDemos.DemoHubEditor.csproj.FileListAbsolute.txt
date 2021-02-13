@@ -1,0 +1,2 @@
+D:\GameCreator\MagickaGame\obj\Debug\PunDemos.DemoHubEditor.csprojAssemblyReference.cache
+D:\GameCreator\MagickaGame\obj\Debug\PunDemos.DemoHubEditor.csproj.CoreCompileInputs.cache

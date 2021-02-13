@@ -1,0 +1,2 @@
+D:\GameCreator\MagickaGame\obj\Debug\Unity.ShaderGraph.Utilities.csprojAssemblyReference.cache
+D:\GameCreator\MagickaGame\obj\Debug\Unity.ShaderGraph.Utilities.csproj.CoreCompileInputs.cache

@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using Photon.Pun;
 using Photon.Realtime;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class MainMenu : MonoBehaviourPunCallbacks
@@ -98,5 +99,10 @@ public class MainMenu : MonoBehaviourPunCallbacks
             
             PhotonNetwork.LoadLevel("MainScene");
         }
+    }
+
+    public void Exit()
+    {
+        Application.Quit();
     }
 }

@@ -1,0 +1,2 @@
+D:\GameCreator\MagickaGame\obj\Debug\UnityEditor.CacheServer.csprojAssemblyReference.cache
+D:\GameCreator\MagickaGame\obj\Debug\UnityEditor.CacheServer.csproj.CoreCompileInputs.cache

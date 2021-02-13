@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Joystick" Collapsed="true">
+    <Position X="2.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACABACIAGRICAAEASBAASICAAEAADAKAQQCCAEAIAg=</HashCode>
+      <FileName>Assets\Joystick Pack\Scripts\Base\Joystick.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="JoystickScr" BaseTypeListCollapsed="true">
+    <Position X="16.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AASAACAABQDoAAAACAJAAwIIAEAAAEIAAAiAIAQaKcA=</HashCode>
+      <FileName>Assets\Joystick Pack\Scripts\Base\JoystickScr.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CustomJoystick" Collapsed="true">
+    <Position X="2.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAKAACCIAgAAAAAAAAAAAAAAAgAAAKIAAAQAAAA=</HashCode>
+      <FileName>Assets\Joystick Pack\Scripts\Joysticks\CustomJoystick.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DynamicJoystick" Collapsed="true">
+    <Position X="4.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAACAACAIAAAAAAAAAAAAAAAAAgAAAAIAAAAAAAA=</HashCode>
+      <FileName>Assets\Joystick Pack\Scripts\Joysticks\DynamicJoystick.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FloatingJoystick" Collapsed="true">
+    <Position X="0.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAACAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Joystick Pack\Scripts\Joysticks\FloatingJoystick.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Attack" BaseTypeListCollapsed="true">
+    <Position X="6" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQBAACAECAAgAAEAQAAQAAAAEAAEQAAAAAAAAAAAgA=</HashCode>
+      <FileName>Assets\Resources\Scripts\Attack.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AttackParticle">
+    <Position X="9.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAESAECAAgAAAAAAAAAAAAAAAEAAIAAAAQAAACgA=</HashCode>
+      <FileName>Assets\Resources\Scripts\AttackParticle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Elements2">
+    <Position X="2.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AASAAAAAACAAABAAQIAAAAAAAUAAAAAAAAAAAAAAMEA=</HashCode>
+      <FileName>Assets\Resources\Scripts\Elements2.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Explosion">
+    <Position X="9.5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAAAAAAAAAAAAAAIAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Resources\Scripts\Explosion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HpBar" BaseTypeListCollapsed="true">
+    <Position X="11.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AASAAAAAAiAAAQBAAAACQASABAAAEACCAABAAAAAQAA=</HashCode>
+      <FileName>Assets\Resources\Scripts\HpBar.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="MainMenu">
+    <Position X="13" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIgIAAEAAAAAAAEEAAAAAAAAQAAAAMAAACABAAME=</HashCode>
+      <FileName>Assets\Resources\Scripts\MainMenu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Player_transform" BaseTypeListCollapsed="true">
+    <Position X="7.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BASAAAAAGCEEACAEAQAATAAAEAAAAAAAAAAIAAAAIAA=</HashCode>
+      <FileName>Assets\Resources\Scripts\Player_transform.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Shooting" BaseTypeListCollapsed="true">
+    <Position X="14.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QASAAACIAACAkBAEAAkASEAIIABAQgAISAAAMAhCBiE=</HashCode>
+      <FileName>Assets\Resources\Scripts\Shooting.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="StatusEffect" BaseTypeListCollapsed="true">
+    <Position X="13" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AASAAAAAMCCEAACAIAAAQAAMAAAAAQAAAEAgAAAABgI=</HashCode>
+      <FileName>Assets\Resources\Scripts\StatusEffect.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TargetAttack">
+    <Position X="0.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAgAAAAAAAAAAAAEAIAAAAIAAAIAAAAAA=</HashCode>
+      <FileName>Assets\Resources\Scripts\TargetAttack.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CooldownManager">
+    <Position X="7.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAABAAAAAAAAAAAAAAAAAABICAAACIAAAAAAAEQ=</HashCode>
+      <FileName>Assets\Resources\Scripts\toEdit\CooldownManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ElementController">
+    <Position X="9.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAABAAAAAIAAAAAQIAAQAAAAAAAABAAAAAAA=</HashCode>
+      <FileName>Assets\Resources\Scripts\toEdit\ElementController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gamemanager">
+    <Position X="2.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Resources\Scripts\toEdit\Gamemanager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Player3">
+    <Position X="11.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAECCACAAAAACAAAAAAAAAAAAAAAgAABAAAAAA=</HashCode>
+      <FileName>Assets\Resources\Scripts\toEdit\Player3.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpellBase">
+    <Position X="6" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAACAAAAAAAACAAAAAIQAAAgAAAAgAQA=</HashCode>
+      <FileName>Assets\Resources\Scripts\toEdit\SpellBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Spell">
+    <Position X="4.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABgAAAAAAAgAAAkgkAgAAAEIAAAAIAAAEABAAIAAQ=</HashCode>
+      <FileName>Assets\Resources\Scripts\toEdit\SpellBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpellUIController">
+    <Position X="6" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAgAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Resources\Scripts\toEdit\SpellUIController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UIManager">
+    <Position X="0.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAEAAAAAAAAAAFAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Assets\Resources\Scripts\UIManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="CastType" Collapsed="true">
+    <Position X="0.75" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAAAAAAAAAAAAAAAAAgCAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Joystick Pack\Scripts\Base\JoystickScr.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="EffectType" Collapsed="true">
+    <Position X="4.25" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAIAAAACAAAAAAAAAAAAAAAAAAAAAAgAAAA=</HashCode>
+      <FileName>Assets\Resources\Scripts\StatusEffect.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Elements" Collapsed="true">
+    <Position X="2.5" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAAAAAAAAAAAAAAAACAEAAAQAAAASA=</HashCode>
+      <FileName>Assets\Resources\Scripts\toEdit\ElementController.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

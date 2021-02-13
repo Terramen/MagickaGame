@@ -10,8 +10,12 @@ public class HpBar : MonoBehaviourPun, IPunObservable
     [SerializeField] private float hp;
     public Transform hpbar;
     public PlayerSpawner playerSpawner;
+    [SerializeField] private SpriteRenderer playerSprite;
 
     [SerializeField] private StatusEffect statusEffect;
+
+    private ScoreAddManager _scoreAddManager;
+    private Color c = new Color(255f, 255f,255f, 1f);
 
     public float Hp
     {
@@ -22,6 +26,7 @@ public class HpBar : MonoBehaviourPun, IPunObservable
     void Start()
     {
         playerSpawner = FindObjectOfType<PlayerSpawner>();
+        _scoreAddManager = playerSpawner.GetComponent<ScoreAddManager>();
         hp = 100;
     }
 
@@ -31,6 +36,7 @@ public class HpBar : MonoBehaviourPun, IPunObservable
         if (hp <= 0)
         {
             StartCoroutine(Respawn());
+            StartCoroutine(GetInvulnerability(3f));
         }
     }
     
@@ -60,22 +66,35 @@ public class HpBar : MonoBehaviourPun, IPunObservable
                 Vector3 hpLocalScale = new Vector3(hpbar.localScale.x - damage/100, hpbar.localScale.y, hpbar.localScale.z);
                 hpbar.localScale = hpLocalScale;
             }
-
+    
 
         }
-
+       // Debug.Log(PhotonNetwork.LocalPlayer.ActorNumber);
     }
     
     
     [PunRPC]
     IEnumerator Respawn()
     {
+        ScoreExtensions.AddScore(PhotonNetwork.LocalPlayer, 1);
         hp = 100;
         hpbar.localScale = new Vector3(1,1,1);
         transform.position = playerSpawner.SpawnPoints[Random.Range(0, playerSpawner.SpawnPoints.Length)].position;
         // GetComponent<FloatingJoystick>().enabled = false;
         yield return new WaitForSeconds(1f);
        // GetComponent<FloatingJoystick>().enabled = true;
+    }
+
+    [PunRPC]
+    IEnumerator GetInvulnerability(float time)
+    {
+        Physics2D.IgnoreLayerCollision(10, 11, true);
+        c.a = 0.5f;
+        playerSprite.color = c;
+        yield return new WaitForSeconds(time);
+        Physics2D.IgnoreLayerCollision(10, 11, false);
+        c.a = 1f;
+        playerSprite.color = c;
     }
     
 

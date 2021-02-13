@@ -1,0 +1,2 @@
+D:\GameCreator\MagickaGame\obj\Debug\Unity.InternalAPIEditorBridge.001.csprojAssemblyReference.cache
+D:\GameCreator\MagickaGame\obj\Debug\Unity.InternalAPIEditorBridge.001.csproj.CoreCompileInputs.cache

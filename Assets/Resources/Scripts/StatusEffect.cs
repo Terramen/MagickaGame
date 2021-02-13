@@ -28,18 +28,13 @@ public class StatusEffect : MonoBehaviourPun, IPunObservable
     }
 
     [SerializeField] private PhotonView photonView;
+    
     // Start is called before the first frame update
     void Start()
     {
         _hpBar = GetComponent<HpBar>();
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
+    
     public void ChangeEffectStatus(EffectType effectType, int ticks, float damage)
     {
         switch (effectType)
@@ -48,9 +43,9 @@ public class StatusEffect : MonoBehaviourPun, IPunObservable
                 break;
             case EffectType.FREEZE: photonView.RPC("ApplyFreezeRPC", RpcTarget.All, damage);
                 break;
-            case EffectType.NOTHING:
-                break;
             case EffectType.DOUSED:
+                break;
+            case EffectType.NOTHING:
                 break;
         }
     }
@@ -58,17 +53,21 @@ public class StatusEffect : MonoBehaviourPun, IPunObservable
     [PunRPC]
     public void ApplyBurnRPC(int ticks, float damage)
     {
-        _isBurning = true;
-        burning = Instantiate (effects[0], transform.position, Quaternion.identity);
-        burning.transform.parent = gameObject.transform;
-        if (burnTimeTicks.Count <= 0)
+
+        if (!_isBurning)
         {
-            burnTimeTicks.Add(ticks);
-            StartCoroutine(Burn(damage));
-        }
-        else
-        {
-            burnTimeTicks.Add(ticks);
+            _isBurning = true;
+            burning = Instantiate(effects[0], transform.position, Quaternion.identity);
+            burning.transform.parent = gameObject.transform;
+            if (burnTimeTicks.Count <= 0)
+            {
+                burnTimeTicks.Add(ticks); 
+                StartCoroutine(Burn(damage));
+            }
+            else
+            {
+                burnTimeTicks.Add(ticks);
+            }
         }
     }
 

@@ -1,0 +1,187 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63a8733bc6ba70443a7632d76415b8cd, type: 3}
+  m_Name: Element Base
+  m_EditorClassIdentifier: 
+  Spells:
+  - spellName: Fireball
+    SpellIcon: {fileID: 21300000, guid: 4f8172135f9841840add56b9925725ff, type: 3}
+    spellPrefab: {fileID: 0}
+    ID: 1
+    castType: 0
+    spellCooldown: 10
+    currentSpellCooldown: 0
+    fillAmount: 0
+    spellElements: 00000000
+  - spellName: Fireball2x
+    SpellIcon: {fileID: 21300000, guid: 2f174205ec62eb7448e6cbf613218629, type: 3}
+    spellPrefab: {fileID: 0}
+    ID: 2
+    castType: 0
+    spellCooldown: 15
+    currentSpellCooldown: 0
+    fillAmount: 0
+    spellElements: 0000000000000000
+  - spellName: Fireball3x
+    SpellIcon: {fileID: 21300000, guid: 03a6f2ef50ecb90459a809b9454d262a, type: 3}
+    spellPrefab: {fileID: 0}
+    ID: 3
+    castType: 0
+    spellCooldown: 6
+    currentSpellCooldown: 0
+    fillAmount: 0
+    spellElements: 000000000000000000000000
+  - spellName: IceLance
+    SpellIcon: {fileID: 21300000, guid: c72d6df4b65b215498fdb1b8b0ac7870, type: 3}
+    spellPrefab: {fileID: 0}
+    ID: 4
+    castType: 0
+    spellCooldown: 0
+    currentSpellCooldown: 0
+    fillAmount: 0
+    spellElements: 05000000
+  - spellName: IceLance2x
+    SpellIcon: {fileID: 21300000, guid: ee4f6e8a758fe5442b5abc4eb027ec61, type: 3}
+    spellPrefab: {fileID: 0}
+    ID: 5
+    castType: 0
+    spellCooldown: 0
+    currentSpellCooldown: 0
+    fillAmount: 0
+    spellElements: 0500000005000000
+  - spellName: IceLance3x
+    SpellIcon: {fileID: 21300000, guid: b40f22bc5f6ccb041a1516d19d96d081, type: 3}
+    spellPrefab: {fileID: 0}
+    ID: 6
+    castType: 0
+    spellCooldown: 0
+    currentSpellCooldown: 0
+    fillAmount: 0
+    spellElements: 050000000500000005000000
+  - spellName: Boulder
+    SpellIcon: {fileID: 21300000, guid: f1e1c0d22e6bbca4c9a0f5f69541d261, type: 3}
+    spellPrefab: {fileID: 0}
+    ID: 7
+    castType: 0
+    spellCooldown: 7
+    currentSpellCooldown: 0
+    fillAmount: 0
+    spellElements: 01000000
+  - spellName: Boulder2x
+    SpellIcon: {fileID: 21300000, guid: 3019656d6e1ad00439d891bc66f5ba8d, type: 3}
+    spellPrefab: {fileID: 0}
+    ID: 8
+    castType: 0
+    spellCooldown: 14
+    currentSpellCooldown: 0
+    fillAmount: 0
+    spellElements: 0100000001000000
+  - spellName: Boulder3x
+    SpellIcon: {fileID: 21300000, guid: b7f793ff7e0993c4ebd531465c2a1f1d, type: 3}
+    spellPrefab: {fileID: 0}
+    ID: 9
+    castType: 0
+    spellCooldown: 21
+    currentSpellCooldown: 0
+    fillAmount: 0
+    spellElements: 010000000100000001000000
+  - spellName: Waterflow2
+    SpellIcon: {fileID: 21300000, guid: 90bc304492c55b44783e38aab6cc600d, type: 3}
+    spellPrefab: {fileID: 0}
+    ID: 10
+    castType: 1
+    spellCooldown: 0
+    currentSpellCooldown: 0
+    fillAmount: 0
+    spellElements: 02000000
+  - spellName: Waterflow2
+    SpellIcon: {fileID: 21300000, guid: d6fad9e694236d9439fd99fcb422b5d3, type: 3}
+    spellPrefab: {fileID: 0}
+    ID: 11
+    castType: 1
+    spellCooldown: 0
+    currentSpellCooldown: 0
+    fillAmount: 0
+    spellElements: 0200000002000000
+  - spellName: Waterflow2
+    SpellIcon: {fileID: 21300000, guid: 8972169da34b1324ca50407b536f5d86, type: 3}
+    spellPrefab: {fileID: 0}
+    ID: 12
+    castType: 1
+    spellCooldown: 0
+    currentSpellCooldown: 0
+    fillAmount: 0
+    spellElements: 020000000200000002000000
+  - spellName: LightningStrike
+    SpellIcon: {fileID: 21300000, guid: 3bfb5b0786e32b944bfe3f8f3a8a0562, type: 3}
+    spellPrefab: {fileID: 0}
+    ID: 13
+    castType: 2
+    spellCooldown: 5
+    currentSpellCooldown: 0
+    fillAmount: 0
+    spellElements: 03000000
+  - spellName: LightningStrike
+    SpellIcon: {fileID: 21300000, guid: 2aea84e84bff5154e89aa72f2ea3c4cb, type: 3}
+    spellPrefab: {fileID: 0}
+    ID: 14
+    castType: 2
+    spellCooldown: 7
+    currentSpellCooldown: 0
+    fillAmount: 0
+    spellElements: 0300000003000000
+  - spellName: LightningStrike
+    SpellIcon: {fileID: 21300000, guid: b7daa6b75bb1e074ca313b61039b6b03, type: 3}
+    spellPrefab: {fileID: 0}
+    ID: 15
+    castType: 2
+    spellCooldown: 9
+    currentSpellCooldown: 0
+    fillAmount: 0
+    spellElements: 030000000300000003000000
+  - spellName: Lava
+    SpellIcon: {fileID: 21300000, guid: c8c47b62fdfd514488d825067c963bb7, type: 3}
+    spellPrefab: {fileID: 0}
+    ID: 16
+    castType: 1
+    spellCooldown: 0
+    currentSpellCooldown: 0
+    fillAmount: 0
+    spellElements: 04000000
+  - spellName: Lava
+    SpellIcon: {fileID: 21300000, guid: c8c47b62fdfd514488d825067c963bb7, type: 3}
+    spellPrefab: {fileID: 0}
+    ID: 17
+    castType: 1
+    spellCooldown: 0
+    currentSpellCooldown: 0
+    fillAmount: 0
+    spellElements: 0400000004000000
+  - spellName: Lava
+    SpellIcon: {fileID: 21300000, guid: c8c47b62fdfd514488d825067c963bb7, type: 3}
+    spellPrefab: {fileID: 0}
+    ID: 18
+    castType: 1
+    spellCooldown: 0
+    currentSpellCooldown: 0
+    fillAmount: 0
+    spellElements: 040000000400000004000000
+  currentSpell:
+    spellName: LightningStrike
+    SpellIcon: {fileID: 21300000, guid: b7daa6b75bb1e074ca313b61039b6b03, type: 3}
+    spellPrefab: {fileID: 0}
+    ID: 15
+    castType: 2
+    spellCooldown: 9
+    currentSpellCooldown: 0
+    fillAmount: 0
+    spellElements: 030000000300000003000000

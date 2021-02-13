@@ -1,0 +1,2 @@
+D:\GameCreator\MagickaGame\obj\Debug\Assembly-CSharp-firstpass.csprojAssemblyReference.cache
+D:\GameCreator\MagickaGame\obj\Debug\Assembly-CSharp-firstpass.csproj.CoreCompileInputs.cache

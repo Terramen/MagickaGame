@@ -14,7 +14,7 @@ public class ShootingOffline : MonoBehaviour
     public Transform firePoint;
     public Transform circle;
     //[SerializeField] private float speed = 5f;
-    private Elements _elements;
+    private Elements2 _elements;
     private GameObject[] _prefabPool;
 
     public GameObject Skill
@@ -44,7 +44,7 @@ public class ShootingOffline : MonoBehaviour
     {
         PrefabCreation();
         // skill = Resources.Load("Assets/Magicka/Prefab/Boulder");
-        _elements = FindObjectOfType<Elements>();
+        _elements = FindObjectOfType<Elements2>();
     }
 
     // Update is called once per frame

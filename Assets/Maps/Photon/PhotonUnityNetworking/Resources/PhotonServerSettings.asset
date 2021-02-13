@@ -47,6 +47,12 @@ MonoBehaviour:
   - Respawn
   - Delay
   - TakeStatusDamageRPC
+  - AddScore
+  - InitPlayer
+  - DestroySpaceship
+  - Fire
+  - RespawnSpaceship
+  - GetInvulnerability
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1

@@ -2,31 +2,33 @@
 using System.Collections;
 using System.Collections.Generic;
 using Photon.Pun;
+using Photon.Pun.UtilityScripts;
 using UnityEngine;
 
 public class Attack : MonoBehaviourPun, IPunObservable
 {
     private Player_transform _playerTransform;
     
-    public float speed;
+    [SerializeField] private float speed;
     [SerializeField] private float damage;
     [SerializeField] private float statusDamage;
     public Rigidbody2D rb;
-    public Shooting shooting;
+    private PlayerSpawner playerSpawner;
     private HpBar _hpBar;
 
     [SerializeField] private EffectType effectType;
 
+
     // Start is called before the first frame update
     void Start()
     {
+        playerSpawner = FindObjectOfType<PlayerSpawner>();
         if (!photonView.IsMine) // даем скиллу 11
         {
             gameObject.layer = 11;
         }
         // hpBar = g
-       shooting = FindObjectOfType<Shooting>();
-       // Destroy(gameObject, 4f);
+        // Destroy(gameObject, 4f);
     }
 
     // Update is called once per frame
@@ -49,15 +51,10 @@ public class Attack : MonoBehaviourPun, IPunObservable
            // photonView.RPC("DestroyRPC", RpcTarget.All); // Поменять потом на Pulling
         }*/
 
-            /*if (collider.gameObject.layer == 8)
+            if (collider.gameObject.layer == 8 && collider.gameObject.layer != 13)
             {
-                if (shooting.SkillName == "Skills/Fireball")
-                {
-                    PhotonNetwork.Instantiate("Prefabs/Explosion", transform.position, transform.rotation);
-                }
-                photonView.RPC("DestroyRPC", RpcTarget.All);
-            }*/
- 
+                PhotonNetwork.Destroy(gameObject);
+            }
             if (collider.gameObject.layer == 9 && collider.TryGetComponent(out HpBar hpBar)) // player hit enemy
             {
                 /*if (collider.GetComponent<StatusEffect>() != null && shooting.SkillName == "Skills/IceLance")    // Ледяное копье попадает по противнику и замораживает (было shooting.PrefabPool[2] == shooting.Skill)
@@ -76,6 +73,7 @@ public class Attack : MonoBehaviourPun, IPunObservable
                 }*/
                 if (photonView.IsMine)
                 {
+                    
                     hpBar.photonView.RPC("TakeDamageRPC", RpcTarget.All, damage);
                     hpBar.photonView.RPC("TakeStatusDamageRPC", RpcTarget.All, statusDamage, effectType);
                     PhotonNetwork.Destroy(gameObject);
@@ -92,6 +90,18 @@ public class Attack : MonoBehaviourPun, IPunObservable
                 {
                     Destroy(gameObject);
                 }*/
+    }
+
+    private void OnDestroy()
+    {
+        if (playerSpawner.Shooting.ID == 1 || playerSpawner.Shooting.ID == 2 || playerSpawner.Shooting.ID == 3)
+        {
+            PhotonNetwork.Instantiate("Prefabs/Explosion", transform.position, transform.rotation);
+        }
+        if (playerSpawner.Shooting.ID == 7 || playerSpawner.Shooting.ID == 8 || playerSpawner.Shooting.ID == 9)
+        {
+            PhotonNetwork.Instantiate("Prefabs/BoulderCrush", transform.position, transform.rotation);
+        }
     }
 
 

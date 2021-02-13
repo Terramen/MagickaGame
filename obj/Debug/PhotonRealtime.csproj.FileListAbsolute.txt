@@ -1,0 +1,2 @@
+D:\GameCreator\MagickaGame\obj\Debug\PhotonRealtime.csprojAssemblyReference.cache
+D:\GameCreator\MagickaGame\obj\Debug\PhotonRealtime.csproj.CoreCompileInputs.cache

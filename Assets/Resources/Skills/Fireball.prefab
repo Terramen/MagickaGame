@@ -72,7 +72,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 15
   m_Sprite: {fileID: 21300000, guid: 931f9c09e3611934cb9a3f12db88b15d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -262,7 +262,6 @@ MonoBehaviour:
   damage: 15
   statusDamage: 2
   rb: {fileID: 6510261285638336337}
-  shooting: {fileID: 0}
   effectType: 1
 --- !u!114 &6152257736518087520
 MonoBehaviour:

@@ -12,6 +12,7 @@ public class Player_transform : MonoBehaviourPun, IPunObservable
 public Animator animator;
    // public FloatingJoystick floatingJoystick;
     public Joystick joystick;
+    public JoystickScr customJoystick;
     public float moveSpeed;
     public Rigidbody2D rb;
     public Vector2 movement;
@@ -34,6 +35,7 @@ public Animator animator;
     {
         photonView = GetComponent<PhotonView>();
         joystick = FindObjectOfType<FloatingJoystick>();
+        customJoystick = FindObjectOfType<JoystickScr>();
         if (!photonView.IsMine)
         {
             gameObject.layer = 9;
@@ -52,10 +54,12 @@ public Animator animator;
                moveCharacter(movement);
                
                
-               if (joystick.IsPressed)
+               /*if (joystick.IsPressed)
                {
                    _аngle = Mathf.Atan2(joystick.Vertical, joystick.Horizontal) * Mathf.Rad2Deg - 90f;
-               }
+               }*/
+               _аngle = Mathf.Atan2(customJoystick.Vertical(), customJoystick.Horizontal()) * Mathf.Rad2Deg - 90f;
+
                circle.transform.rotation = Quaternion.Euler(0, 0, _аngle);
                circleSprite.transform.rotation = Quaternion.Euler(45f, 0, circle.transform.eulerAngles.z);
                animator.SetFloat("moveX", Math.Abs(rb.velocity.x));

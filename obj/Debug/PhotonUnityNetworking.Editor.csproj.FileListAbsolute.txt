@@ -1,0 +1,2 @@
+D:\GameCreator\MagickaGame\obj\Debug\PhotonUnityNetworking.Editor.csprojAssemblyReference.cache
+D:\GameCreator\MagickaGame\obj\Debug\PhotonUnityNetworking.Editor.csproj.CoreCompileInputs.cache

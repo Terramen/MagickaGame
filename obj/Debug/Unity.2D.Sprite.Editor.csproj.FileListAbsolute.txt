@@ -1,0 +1,2 @@
+D:\GameCreator\MagickaGame\obj\Debug\Unity.2D.Sprite.Editor.csprojAssemblyReference.cache
+D:\GameCreator\MagickaGame\obj\Debug\Unity.2D.Sprite.Editor.csproj.CoreCompileInputs.cache
