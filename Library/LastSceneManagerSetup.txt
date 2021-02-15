@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Resources/Scenes/MainScene.unity
+- path: Assets/Maps/Photon/PhotonUnityNetworking/Demos/DemoAsteroids/Scenes/DemoAsteroids-LobbyScene.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

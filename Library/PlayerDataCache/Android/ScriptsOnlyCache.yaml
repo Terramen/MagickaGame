@@ -20,14 +20,17 @@ ScriptsOnlyBuild:
     - JoystickScr
     - MainMenu
     - Player3
+    - PlayerListEntry
     - PlayerNameInput
     - PlayerSpawner
     - Player_transform
+    - RoomListEntry
     - ScoreAddManager
     - Shooting
     - SpellBase
     - StatusEffect
     - TargetAttack
+    - TopMenu
     PhotonUnityNetworking.Demos.dll:
     - Photon.Pun.Demo.Asteroids.Asteroid
     - Photon.Pun.Demo.Asteroids.Bullet
@@ -40,6 +43,9 @@ ScriptsOnlyBuild:
     - Photon.Pun.Demo.SlotRacer.Utils.SplineWalker
     PhotonUnityNetworking.Editor.dll:
     - Photon.Pun.PunSceneSettings
+    PhotonUnityNetworking.Utilities.dll:
+    - Photon.Pun.UtilityScripts.PlayerNumbering
+    - Photon.Pun.UtilityScripts.TextButtonTransition
     PhotonUnityNetworking.dll:
     - Photon.Pun.PhotonAnimatorView
     - Photon.Pun.PhotonRigidbodyView
@@ -208,25 +214,25 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 15810}
     - Class: 114
-      Script: {instanceID: 16774}
+      Script: {instanceID: 16776}
     - Class: 114
-      Script: {instanceID: 17270}
+      Script: {instanceID: 17272}
     - Class: 114
-      Script: {instanceID: 17692}
+      Script: {instanceID: 17696}
     - Class: 114
-      Script: {instanceID: 17748}
+      Script: {instanceID: 17752}
     - Class: 114
-      Script: {instanceID: 17904}
+      Script: {instanceID: 17910}
     - Class: 114
-      Script: {instanceID: 18208}
+      Script: {instanceID: 18214}
     - Class: 114
-      Script: {instanceID: 18360}
+      Script: {instanceID: 18366}
     - Class: 114
-      Script: {instanceID: 18576}
+      Script: {instanceID: 18582}
     - Class: 114
-      Script: {instanceID: 18598}
+      Script: {instanceID: 18604}
     - Class: 114
-      Script: {instanceID: 18718}
+      Script: {instanceID: 18726}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -405,6 +411,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 15840}
     - Class: 114
+      Script: {instanceID: 15932}
+    - Class: 114
       Script: {instanceID: 16014}
     - Class: 114
       Script: {instanceID: 16218}
@@ -417,53 +425,61 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 16414}
     - Class: 114
-      Script: {instanceID: 16618}
+      Script: {instanceID: 16446}
     - Class: 114
-      Script: {instanceID: 16690}
+      Script: {instanceID: 16620}
     - Class: 114
-      Script: {instanceID: 16706}
+      Script: {instanceID: 16692}
     - Class: 114
-      Script: {instanceID: 16774}
+      Script: {instanceID: 16708}
     - Class: 114
-      Script: {instanceID: 16832}
+      Script: {instanceID: 16776}
     - Class: 114
-      Script: {instanceID: 16878}
+      Script: {instanceID: 16834}
     - Class: 114
-      Script: {instanceID: 16910}
+      Script: {instanceID: 16880}
     - Class: 114
-      Script: {instanceID: 17208}
+      Script: {instanceID: 16912}
     - Class: 114
-      Script: {instanceID: 17322}
+      Script: {instanceID: 17210}
     - Class: 114
-      Script: {instanceID: 17748}
+      Script: {instanceID: 17324}
     - Class: 114
-      Script: {instanceID: 17782}
+      Script: {instanceID: 17508}
     - Class: 114
-      Script: {instanceID: 18056}
+      Script: {instanceID: 17752}
     - Class: 114
-      Script: {instanceID: 18086}
+      Script: {instanceID: 17786}
     - Class: 114
-      Script: {instanceID: 18174}
+      Script: {instanceID: 18062}
     - Class: 114
-      Script: {instanceID: 18208}
+      Script: {instanceID: 18092}
     - Class: 114
-      Script: {instanceID: 18360}
+      Script: {instanceID: 18180}
     - Class: 114
-      Script: {instanceID: 18530}
+      Script: {instanceID: 18214}
+    - Class: 114
+      Script: {instanceID: 18366}
+    - Class: 114
+      Script: {instanceID: 18482}
     - Class: 114
       Script: {instanceID: 18536}
     - Class: 114
-      Script: {instanceID: 18598}
+      Script: {instanceID: 18542}
     - Class: 114
-      Script: {instanceID: 18634}
+      Script: {instanceID: 18604}
     - Class: 114
-      Script: {instanceID: 18676}
+      Script: {instanceID: 18620}
     - Class: 114
-      Script: {instanceID: 18848}
+      Script: {instanceID: 18642}
     - Class: 114
-      Script: {instanceID: 18854}
+      Script: {instanceID: 18684}
     - Class: 114
-      Script: {instanceID: 36578}
+      Script: {instanceID: 18856}
+    - Class: 114
+      Script: {instanceID: 18862}
+    - Class: 114
+      Script: {instanceID: 45488}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -1657,7 +1673,7 @@ ScriptsOnlyBuild:
     className: CurrentRoomEmptyRoomTtlProperty
   - hash:
       serializedVersion: 2
-      Hash: 731d241f0170e9f33968f42731a27062
+      Hash: 94586d5fd4bf896fd47cf1178ed35870
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MainMenu
@@ -1919,6 +1935,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: IsometricCharacterRenderer
+  - hash:
+      serializedVersion: 2
+      Hash: e4316571779021b969790af4a77452dd
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: RoomListEntry
   - hash:
       serializedVersion: 2
       Hash: 824e8d4cb47ffd88ddf959dbd4526585
@@ -2197,6 +2219,12 @@ ScriptsOnlyBuild:
     className: TouchPad
   - hash:
       serializedVersion: 2
+      Hash: f0c4eb24258257daca58a9939f0894d2
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TopMenu
+  - hash:
+      serializedVersion: 2
       Hash: 19209916e2ccd9325109364cfb90fb0d
     assemblyName: Unity.VisualEffectGraph.Runtime.dll
     namespaceName: UnityEngine.VFX.Utility
@@ -2297,6 +2325,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.RenderPipelines.Core.Runtime.dll
     namespaceName: UnityEngine.Rendering.UI
     className: DebugUIHandlerUIntField
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ArenaGameManager
   - hash:
       serializedVersion: 2
       Hash: d791aa6007fa3640be1164ea75bb087d
@@ -2599,6 +2633,12 @@ ScriptsOnlyBuild:
     className: StandaloneInputModule
   - hash:
       serializedVersion: 2
+      Hash: 55c5d4231b5b81f8762aca1b7e16819e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayerListEntry
+  - hash:
+      serializedVersion: 2
       Hash: 1f0602e7bad1e0a9cba31ce292eee8bb
     assemblyName: Unity.RenderPipelines.Core.Runtime.dll
     namespaceName: UnityEngine.Rendering.UI
@@ -2723,8 +2763,14 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualEffectGraph.Runtime.dll
     namespaceName: UnityEngine.VFX.Utility
     className: VFXUISliderBinder
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MagickaGame
   platform: 13
   scenePathNames:
   - Assets/Resources/Scenes/MenuScene.unity
   - Assets/Resources/Scenes/MainScene.unity
-  playerPath: D:/GameCreator/MagickaGame/555.apk
+  playerPath: D:/GameCreator/MagickaGame/433.apk

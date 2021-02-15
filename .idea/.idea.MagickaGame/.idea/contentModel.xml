@@ -416,9 +416,13 @@
             <e p="FPSCounter.cs" t="Include" />
             <e p="gamemanager" t="Include">
               <e p="ArenaGameManager.cs" t="Include" />
+              <e p="MagickaGame.cs" t="Include" />
+              <e p="MainMenu.cs" t="Include" />
+              <e p="PlayerListEntry.cs" t="Include" />
+              <e p="RoomListEntry.cs" t="Include" />
+              <e p="TopMenu.cs" t="Include" />
             </e>
             <e p="HpBar.cs" t="Include" />
-            <e p="MainMenu.cs" t="Include" />
             <e p="offline" t="Include">
               <e p="ShootingOffline.cs" t="Include" />
             </e>
