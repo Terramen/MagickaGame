@@ -34,11 +34,11 @@ public class JoystickScr : MonoBehaviour, IDragHandler, IPointerUpHandler, IPoin
         set => castType = value;
     }*/
 
-    public Image Joystik
+    /*public Image Joystik
     {
         get => imageSpell;
         set => imageSpell = value;
-    }
+    }*/
 
     public Image JoystickCooldown
     {
@@ -86,6 +86,7 @@ public class JoystickScr : MonoBehaviour, IDragHandler, IPointerUpHandler, IPoin
     public virtual void OnPointerDown(PointerEventData ped)
     {
         _playerSpawner.Player3.ClearElements();
+        _playerSpawner.HpBar.IsInvulnerable = false;
         if (_currentSpellCooldown != null && _currentSpellCooldown.currentSpellCooldown != 0)
         {
             ChangeSpell(null);
@@ -153,6 +154,7 @@ public class JoystickScr : MonoBehaviour, IDragHandler, IPointerUpHandler, IPoin
         ChangeSpell(null);
         // joystikBG.enabled = false;
         cancelSpell.SetActive(false);
+        joystikBG.enabled = false;
     }
     public virtual void OnDrag(PointerEventData ped)
     {

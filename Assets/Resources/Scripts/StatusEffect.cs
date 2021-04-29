@@ -14,6 +14,8 @@ public class StatusEffect : MonoBehaviourPun, IPunObservable
 
     private bool _isFreezed;
 
+    private Player_transform _playerTransform;
+
     public bool IsFreezed
     {
         get => _isFreezed;
@@ -32,6 +34,7 @@ public class StatusEffect : MonoBehaviourPun, IPunObservable
     // Start is called before the first frame update
     void Start()
     {
+        _playerTransform = GetComponent<Player_transform>();
         _hpBar = GetComponent<HpBar>();
     }
     
@@ -78,13 +81,16 @@ public class StatusEffect : MonoBehaviourPun, IPunObservable
         {
             _isFreezed = false;
             _hpBar.TakeDamageRPC(damage);
+            _playerTransform.enabled = true;
             Destroy(iceblock);
+            //PhotonNetwork.Instantiate("Prefabs/IceBlockCrush", transform.position, transform.rotation);
         }
         else
         {
             _isFreezed = true;
             iceblock = Instantiate(effects[1], transform.position, Quaternion.identity);
             iceblock.transform.parent = gameObject.transform;
+            _playerTransform.enabled = false;
             StartCoroutine(Freeze());
         }
     }
@@ -112,6 +118,7 @@ public class StatusEffect : MonoBehaviourPun, IPunObservable
     {
         yield return new WaitForSeconds(2f);
         Destroy(iceblock);
+        _playerTransform.enabled = true;
         _isFreezed = false;
     }
 

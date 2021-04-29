@@ -8,6 +8,8 @@ public class HpBar : MonoBehaviourPun, IPunObservable
 {
     [SerializeField] private PhotonView photonView;
     [SerializeField] private float hp;
+    [SerializeField] private float invulnerabilityTime;
+    
     public Transform hpbar;
     public PlayerSpawner playerSpawner;
     [SerializeField] private SpriteRenderer playerSprite;
@@ -16,11 +18,18 @@ public class HpBar : MonoBehaviourPun, IPunObservable
 
     private ScoreAddManager _scoreAddManager;
     private Color c = new Color(255f, 255f,255f, 1f);
+    private bool _isInvulnerable; // неуязвимость
 
     public float Hp
     {
         get => hp;
         set => hp = value;
+    }
+
+    public bool IsInvulnerable
+    {
+        get => _isInvulnerable;
+        set => _isInvulnerable = value;
     }
     // Start is called before the first frame update
     void Start()
@@ -36,7 +45,10 @@ public class HpBar : MonoBehaviourPun, IPunObservable
         if (hp <= 0)
         {
             StartCoroutine(Respawn());
-            StartCoroutine(GetInvulnerability(3f));
+            if (photonView.IsMine)
+            {
+                photonView.RPC("GetInvulnerability", RpcTarget.All, invulnerabilityTime, 9, 12);
+            }
         }
     }
     
@@ -86,15 +98,25 @@ public class HpBar : MonoBehaviourPun, IPunObservable
     }
 
     [PunRPC]
-    IEnumerator GetInvulnerability(float time)
+    IEnumerator GetInvulnerability(float time, int layer1, int layer2)
     {
-        Physics2D.IgnoreLayerCollision(10, 11, true);
+        _isInvulnerable = true;
+        Physics2D.IgnoreLayerCollision(layer1, layer2, true);
         c.a = 0.5f;
         playerSprite.color = c;
-        yield return new WaitForSeconds(time);
-        Physics2D.IgnoreLayerCollision(10, 11, false);
+        while (time > 0 && _isInvulnerable)
+        {
+            for (int i = 0; i < time; i++)
+            {
+               // Debug.Log("time" + time);
+                time -= Time.deltaTime;
+                yield return new WaitForFixedUpdate();
+            }
+        }
+        Physics2D.IgnoreLayerCollision(layer1, layer2, false);
         c.a = 1f;
         playerSprite.color = c;
+        _isInvulnerable = false;
     }
     
 
@@ -105,6 +127,9 @@ public class HpBar : MonoBehaviourPun, IPunObservable
         {
             stream.SendNext(hp);
             stream.SendNext(hpbar.localScale);
+            stream.SendNext(_isInvulnerable);
+            //
+           // stream.SendNext(c.a);
         }
         else
         {
@@ -117,8 +142,11 @@ public class HpBar : MonoBehaviourPun, IPunObservable
             {
                 hp = f;
             }
-            /*hpbar.localScale = (Vector3) stream.ReceiveNext();*/
-            /*hp = (float) stream.ReceiveNext();*/
+            
+            if (stream.ReceiveNext() is bool b)
+            {
+                _isInvulnerable = b;
+            }
         }
     }
 }

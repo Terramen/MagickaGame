@@ -10,16 +10,21 @@ public class AttackParticle : MonoBehaviourPun
     [SerializeField] private float damage;
     [SerializeField] private float statusDamage;
     public PlayerSpawner playerSpawner;
-    public Player3 player3;
-    private HpBar _hpBar;
+  //  public Player3 player3;
+   // private HpBar _hpBar;
     [SerializeField] private LayerMask layerEnemy;
     [SerializeField] private EffectType effectType;
 
     private bool isBurning;
-    
-    void Start()
+
+    void Awake()
     {
         playerSpawner = FindObjectOfType<PlayerSpawner>();
+    }
+
+    void Start()
+    {
+        
         if (!photonView.IsMine) // даем скиллу 11
         {
             var collision = gameObject.GetComponent<ParticleSystem>().collision;
@@ -27,10 +32,12 @@ public class AttackParticle : MonoBehaviourPun
             gameObject.layer = 11;
         }
 
+        
     }
 
     void OnEnable()
     {
+        Debug.Log($"playerSpawner.Shooting.ParticleDamage:{playerSpawner.Shooting.ParticleDamage}");
         damage = playerSpawner.Shooting.ParticleDamage;
     }
 

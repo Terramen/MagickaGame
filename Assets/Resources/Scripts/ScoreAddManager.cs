@@ -14,6 +14,8 @@ using Hashtable = ExitGames.Client.Photon.Hashtable;
 
 public class ScoreAddManager : MonoBehaviourPunCallbacks
 {
+    
+    
     #region PUBLIC VARIABLES
     public Text playerA_NameText;
     public Text playerB_NameText;
@@ -24,6 +26,8 @@ public class ScoreAddManager : MonoBehaviourPunCallbacks
     public Text winText;
 
     public const int ScoreForWin = 4; // If smone reach this number - this player win game
+
+    public GameObject mainCamera;
     #endregion
 
     private PlayerDetails playerA = new PlayerDetails();
@@ -38,27 +42,31 @@ public class ScoreAddManager : MonoBehaviourPunCallbacks
     }
     void Update()
     {
-        playerA_Score = ScoreExtensions.GetScore(PhotonNetwork.PlayerList[0]);
-        playerB_Score = ScoreExtensions.GetScore(PhotonNetwork.PlayerList[1]);
-
-        playerA_score.text = playerA_Score.ToString();
-        playerB_score.text = playerB_Score.ToString();
-        
-        if(playerA_Score > ScoreForWin || playerB_Score > ScoreForWin)
+        if (PhotonNetwork.PlayerList.Length > 1)
         {
-            winPanel.SetActive(true);
-            if (playerA_Score > playerB_Score)
-            {
-                winText.text = $"Winner: {PhotonNetwork.PlayerList[1].NickName}";
-            }
-            else
-            {
-                winText.text = $"Winner: {PhotonNetwork.PlayerList[0].NickName}";
-            }
+            playerA_Score = ScoreExtensions.GetScore(PhotonNetwork.PlayerList[0]);
+            playerB_Score = ScoreExtensions.GetScore(PhotonNetwork.PlayerList[1]);
 
-            ScoreExtensions.SetScore(PhotonNetwork.PlayerList[0], 0);
-            ScoreExtensions.SetScore(PhotonNetwork.PlayerList[1], 0);
+            playerA_score.text = playerA_Score.ToString();
+            playerB_score.text = playerB_Score.ToString();
+        
+            if(playerA_Score > ScoreForWin || playerB_Score > ScoreForWin)
+            {
+                winPanel.SetActive(true);
+                if (playerA_Score > playerB_Score)
+                {
+                    winText.text = $"Winner: {PhotonNetwork.PlayerList[1].NickName}";
+                }
+                else
+                {
+                    winText.text = $"Winner: {PhotonNetwork.PlayerList[0].NickName}";
+                }
+
+                ScoreExtensions.SetScore(PhotonNetwork.PlayerList[0], 0);
+                ScoreExtensions.SetScore(PhotonNetwork.PlayerList[1], 0);
+            }
         }
+
     }
 
     public void SetPlayerNames()
@@ -90,6 +98,7 @@ public class ScoreAddManager : MonoBehaviourPunCallbacks
     
     public void MenuScene()
     {
+        mainCamera.SetActive(true);
         PhotonNetwork.LeaveRoom();
     }
     

@@ -51,9 +51,15 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Joystick Pack\Scripts\Base\Joystick.cs" />
+     <Compile Include="Assets\Resources\Scripts\AuthManager.cs" />
+     <Compile Include="Assets\Resources\Scripts\toEdit\ShopItemBase.cs" />
      <Compile Include="Assets\Maps\Photon\PhotonChat\Demos\Common\TextToggleIsOnTransition.cs" />
+     <Compile Include="Assets\UnityRecyclingListView-master\Source\RecyclingListViewItem.cs" />
+     <Compile Include="Assets\UnityRecyclingListView-master\Source\RecyclingListView.cs" />
      <Compile Include="Assets\Resources\Scripts\AttackParticle.cs" />
      <Compile Include="Assets\Maps\Photon\PhotonRealtime\Demos\DemoLoadBalancing\ConnectAndJoinRandomLb.cs" />
+     <Compile Include="Assets\UnityRecyclingListView-master\Examples\Scripts\TestPanel.cs" />
+     <Compile Include="Assets\Resources\Scripts\offline\JoystickOffline.cs" />
      <Compile Include="Assets\Resources\Scripts\toEdit\ElementController.cs" />
      <Compile Include="Assets\Joystick Pack\Examples\JoystickSetterExample.cs" />
      <Compile Include="Assets\Projectile.cs" />
@@ -67,10 +73,10 @@
      <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\CustomJoystick.cs" />
      <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\FloatingJoystick.cs" />
      <Compile Include="Assets\Resources\Scripts\TargetAttack.cs" />
+     <Compile Include="Assets\Resources\Scripts\offline\OfflineMovement.cs" />
      <Compile Include="Assets\Maps\Photon\PhotonChat\Demos\Common\EventSystemSpawner.cs" />
      <Compile Include="Assets\Resources\Scripts\PlayerNameInput.cs" />
      <Compile Include="Assets\Resources\Scripts\ScoreAddManager.cs" />
-     <Compile Include="Assets\Resources\Scripts\Attacking.cs" />
      <Compile Include="Assets\Resources\Scripts\Explosion.cs" />
      <Compile Include="Assets\Resources\Scripts\PlayerSpawner.cs" />
      <Compile Include="Assets\Resources\Scripts\toEdit\CooldownManager.cs" />
@@ -79,33 +85,39 @@
      <Compile Include="Assets\Resources\Scripts\gamemanager\MainMenu.cs" />
      <Compile Include="Assets\Resources\Scripts\HpBar.cs" />
      <Compile Include="Assets\Maps\Photon\PhotonChat\Demos\Common\TextButtonTransition.cs" />
+     <Compile Include="Assets\Resources\Scripts\offline\AttackOffline.cs" />
      <Compile Include="Assets\Maps\Scripts\IsometricCharacterRenderer.cs" />
      <Compile Include="Assets\Resources\Scripts\gamemanager\RoomListEntry.cs" />
      <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\DynamicJoystick.cs" />
      <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\FixedJoystick.cs" />
+     <Compile Include="Assets\UnityRecyclingListView-master\Examples\Scripts\TestChildItem.cs" />
      <Compile Include="Assets\Resources\Scripts\toEdit\SpellBase.cs" />
      <Compile Include="Assets\Resources\Scripts\ResourceManager.cs" />
      <Compile Include="Assets\Joystick Pack\Examples\JoystickPlayerExample.cs" />
      <Compile Include="Assets\Resources\Scripts\toEdit\Gamemanager.cs" />
      <Compile Include="Assets\Resources\Scripts\gamemanager\TopMenu.cs" />
-     <Compile Include="Assets\Resources\Scripts\Skills.cs" />
      <Compile Include="Assets\Maps\Photon\PhotonChat\Demos\Common\OnStartDelete.cs" />
      <Compile Include="Assets\Resources\Scripts\FPSCounter.cs" />
      <Compile Include="Assets\Resources\Scripts\StatusEffect.cs" />
      <Compile Include="Assets\Resources\Scripts\gamemanager\ArenaGameManager.cs" />
      <Compile Include="Assets\Resources\Scripts\Client.cs" />
      <Compile Include="Assets\Maps\Scripts\HideTilemapColliderOnPlay.cs" />
+     <Compile Include="Assets\Resources\Scripts\offline\PlayerOfflineInputs.cs" />
      <Compile Include="Assets\Resources\Scripts\Elements2.cs" />
      <Compile Include="Assets\Maps\Scripts\IsometricPlayerMovementController.cs" />
      <Compile Include="Assets\Joystick Pack\Scripts\Base\JoystickScr.cs" />
+     <Compile Include="Assets\Resources\Scripts\offline\FPSTarget.cs" />
      <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\VariableJoystick.cs" />
      <Compile Include="Assets\Resources\Scripts\gamemanager\PlayerListEntry.cs" />
      <Compile Include="Assets\Maps\Scripts\BasicCameraFollow.cs" />
      <Compile Include="Assets\Resources\Scripts\gamemanager\MagickaGame.cs" />
+     <Compile Include="Assets\Resources\Scripts\RewardableAd.cs" />
      <None Include="Assets\Maps\Photon\PhotonLibs\netstandard2.0\Photon3Unity3D.xml" />
      <None Include="Assets\Maps\Photon\PhotonUnityNetworking\changelog.txt" />
+     <None Include="Assets\Firebase\m2repository\com\google\firebase\firebase-app-unity\maven-metadata.xml" />
      <None Include="Assets\Maps\Photon\PhotonLibs\changes-library.txt" />
      <None Include="Assets\UnityAds\link.xml" />
+     <None Include="Assets\Firebase\m2repository\com\google\firebase\firebase-auth-unity\maven-metadata.xml" />
      <None Include="Assets\Maps\Photon\PhotonUnityNetworking\readme.txt" />
      <None Include="Assets\LICENSE.txt" />
      <None Include="Assets\Maps\Photon\PhotonLibs\Photon3Unity3D.xml" />
@@ -410,17 +422,41 @@
  <Reference Include="UnityEditor">
  <HintPath>D:/Unity/2020.1.6f1/Editor/Data/Managed/UnityEditor.dll</HintPath>
  </Reference>
+ <Reference Include="Firebase.App">
+ <HintPath>D:/GameCreator/MagickaGame/Assets/Firebase/Plugins/Firebase.App.dll</HintPath>
+ </Reference>
+ <Reference Include="Firebase.Auth">
+ <HintPath>D:/GameCreator/MagickaGame/Assets/Firebase/Plugins/Firebase.Auth.dll</HintPath>
+ </Reference>
+ <Reference Include="Firebase.Platform">
+ <HintPath>D:/GameCreator/MagickaGame/Assets/Firebase/Plugins/Firebase.Platform.dll</HintPath>
+ </Reference>
+ <Reference Include="Firebase.TaskExtension">
+ <HintPath>D:/GameCreator/MagickaGame/Assets/Firebase/Plugins/Firebase.TaskExtension.dll</HintPath>
+ </Reference>
+ <Reference Include="Google.MiniJson">
+ <HintPath>D:/GameCreator/MagickaGame/Assets/Firebase/Plugins/Google.MiniJson.dll</HintPath>
+ </Reference>
  <Reference Include="Photon3Unity3D">
  <HintPath>D:/GameCreator/MagickaGame/Assets/Maps/Photon/PhotonLibs/Photon3Unity3D.dll</HintPath>
  </Reference>
  <Reference Include="websocket-sharp">
  <HintPath>D:/GameCreator/MagickaGame/Assets/Maps/Photon/PhotonLibs/WebSocket/websocket-sharp.dll</HintPath>
  </Reference>
+ <Reference Include="Unity.Compat">
+ <HintPath>D:/GameCreator/MagickaGame/Assets/Parse/Plugins/dotNet45/Unity.Compat.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Tasks">
+ <HintPath>D:/GameCreator/MagickaGame/Assets/Parse/Plugins/dotNet45/Unity.Tasks.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEngine.Advertisements.Editor">
  <HintPath>D:/GameCreator/MagickaGame/Assets/UnityAds/UnityEngine.Advertisements.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Monetization.Editor">
  <HintPath>D:/GameCreator/MagickaGame/Assets/UnityAds/UnityEngine.Monetization.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Firebase.Database">
+ <HintPath>D:/GameCreator/MagickaGame/Library/PackageCache/com.google.firebase.database@7.1.0/Firebase/Plugins/Firebase.Database.dll</HintPath>
  </Reference>
  <Reference Include="mscorlib">
  <HintPath>D:/Unity/2020.1.6f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>

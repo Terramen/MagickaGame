@@ -8,138 +8,218 @@ using UnityStandardAssets.CrossPlatformInput;
 public class ShootingOffline : MonoBehaviour
 {
     public Rigidbody2D rb;
-
-    [SerializeField] private GameObject skill;
-    // [SerializeField] private UnityEngine.Object skill;
     public Transform firePoint;
     public Transform circle;
-    //[SerializeField] private float speed = 5f;
-    private Elements2 _elements;
+    [SerializeField] private Elements2 elements;
     private GameObject[] _prefabPool;
+    [SerializeField] private int raycastCount;
+    private float raycastArc = 0;
+    private float particleDamage = 0.05f;
 
-    public GameObject Skill
+    public float ParticleDamage
     {
-        get => skill;
-        set => skill = value;
+        get => particleDamage;
+        set => particleDamage = value;
+    }
+    
+
+    private String skillName;
+
+    public string SkillName
+    {
+        get => skillName;
+        set => skillName = value;
     }
 
     public GameObject[] PrefabPool => _prefabPool;
     
-    
-    public Transform endPoint;
-    public LineRenderer lineRenderer;
-    private GameObject waterflow;
+    [SerializeField] private GameObject waterflow;
+    [SerializeField] private GameObject lava;
 
-    public LayerMask wallLayer;
-    // private HpBar _hpBar;
+    private bool _waterflowIsActive;
+    private bool _lavaIsActive;
 
-
-    void Awake()
+    public bool WaterflowIsActive
     {
-  //      player = GameObject.Find("/Player");
+        get => _waterflowIsActive;
+        set => _waterflowIsActive = value;
     }
 
-    // Start is called before the first frame update
-    void Start()
+    public bool LavaIsActive
     {
-        PrefabCreation();
-        // skill = Resources.Load("Assets/Magicka/Prefab/Boulder");
-        _elements = FindObjectOfType<Elements2>();
+        get => _lavaIsActive;
+        set => _lavaIsActive = value;
     }
 
-    // Update is called once per frame
-    void Update()
+    // [SerializeField] private PhotonView _photonView;
+   // private HpBar _hpBar;
+   [SerializeField] private ParticleSystem waterflow2;
+
+   private Player3 _player3;
+
+   private JoystickScr _joystickScr;
+   
+   private int currentSpellID;
+
+   private Coroutine _coroutine;
+
+   private int id = 0;
+
+   public int ID
+   {
+       get => id;
+       set => id = value;
+   }
+
+   public Coroutine Coroutine
+   {
+       get => _coroutine;
+       set => _coroutine = value;
+   }
+   
+   public IEnumerator ShootWaterflow(float time)
+   {
+       _waterflowIsActive = true;
+       while (time > 0)
+       {
+           time -= Time.deltaTime;
+           yield return new WaitForFixedUpdate();
+       }
+       _waterflowIsActive = false;
+   }
+   
+   
+   public IEnumerator ShootLava(float time)
+   {
+       _lavaIsActive = true;
+       while (time > 0)
+       {
+           time -= Time.deltaTime;
+           yield return new WaitForFixedUpdate();
+       }
+       _lavaIsActive = false;
+   }
+
+   public void Update()
+   {
+       if (_lavaIsActive)
+       {
+           lava.SetActive(true);
+       }
+       else
+       {
+           lava.SetActive(false);
+       }
+       if (_waterflowIsActive)
+       {
+           waterflow.SetActive(true);
+       }
+       else
+       {
+           waterflow.SetActive(false);
+       }
+   }
+
+
+   public void StartAttack(Spell spell)
+   {
+       switch (spell.ID)
+                        {
+                            case 1:
+                                spell.PutOnCooldown();
+                                id = spell.ID;
+                                Instantiate(spell.spellPrefab, firePoint.position, circle.rotation); //Fireball
+                                break;
+                            case 2:
+                                spell.PutOnCooldown();
+                                id = spell.ID;
+                                Instantiate(spell.spellPrefab, firePoint.position, circle.rotation);
+                                break;
+                            case 3:
+                                spell.PutOnCooldown();
+                                id = spell.ID;
+                                Instantiate(spell.spellPrefab, firePoint.position, circle.rotation);
+                                break;
+                            
+                            case 7:
+                                spell.PutOnCooldown();
+                                id = spell.ID;
+                                Instantiate(spell.spellPrefab, firePoint.position, circle.rotation);   //Boulder
+                                break;
+                            case 8:
+                                spell.PutOnCooldown();
+                                id = spell.ID;
+                                Instantiate(spell.spellPrefab, firePoint.position, circle.rotation);
+                                break;
+                            case 9:
+                                spell.PutOnCooldown();
+                                id = spell.ID;
+                                Instantiate(spell.spellPrefab, firePoint.position, circle.rotation);
+                                break;
+                            
+                            case 4:
+                                spell.PutOnCooldown();
+                                id = spell.ID;
+                                Instantiate(spell.spellPrefab, firePoint.position, circle.rotation);   //IceLance
+                                break;
+                            case 5:
+                                spell.PutOnCooldown();
+                                id = spell.ID;
+                                Instantiate(spell.spellPrefab, firePoint.position, circle.rotation);
+                                break;
+                            case 6:
+                                spell.PutOnCooldown();
+                                id = spell.ID;
+                                Instantiate(spell.spellPrefab, firePoint.position, circle.rotation);
+                                break;
+                            
+                            case 10:
+                                particleDamage = 0.05f;
+                                _coroutine = StartCoroutine(ShootWaterflow(4f));    //Waterflow
+                                break;
+                            case 11:
+                                particleDamage = 0.07f;
+                                _coroutine = StartCoroutine(ShootWaterflow(4f)); 
+                                break;
+                            case 12: 
+                                particleDamage = 0.09f;
+                                _coroutine = StartCoroutine(ShootWaterflow(4f)); 
+                                break;
+                            
+                            case 16:
+                                particleDamage = 0.07f;
+                                _coroutine = StartCoroutine(ShootLava(4f));    //Lava
+                                break;
+                            case 17:
+                                particleDamage = 0.09f;
+                                _coroutine = StartCoroutine(ShootLava(4f)); 
+                                break;
+                            case 18: 
+                                particleDamage = 0.11f;
+                                _coroutine = StartCoroutine(ShootLava(4f)); 
+                                break;
+                        }
+    }
+
+    public void StartTargetAttack(Spell spell, Vector3 point)
     {
-         /*ShootWaterflow();*/
-        if (CrossPlatformInputManager.GetButtonDown("ButtonAttack"))
+        switch (spell.ID)
         {
             
-            
-            /*Debug.Log("Counter" + _elements.Counter + "Sprite" + _elements.SpriteRenderers[_elements.Counter - 1].sprite + "Sprite1" + _elements.SpriteArray[1]);
-            Debug.Log("Check" + (_elements.SpriteRenderers[_elements.Counter - 1].sprite == _elements.SpriteArray[1]));*/
-            if (_elements.SpriteRenderers[0].sprite == _elements.SpriteArray[1])
-            {
-                skill = _prefabPool[1];
-                Shoot();
-            }
-            if (_elements.SpriteRenderers[0].sprite == _elements.SpriteArray[2])
-            {
-                skill = _prefabPool[0];
-                Shoot();
-            }
-
-            if (_elements.SpriteRenderers[0].sprite == _elements.SpriteArray[0])
-            {
-                skill = _prefabPool[3];
-                if (waterflow == null)
-                {
-                    waterflow = Instantiate(skill, firePoint.position, firePoint.rotation);
-                    lineRenderer = waterflow.GetComponent<LineRenderer>();
-                    StartCoroutine(ShootLong(4f));
-                }
-                else
-                {
-                    waterflow.SetActive(true);
-                    StartCoroutine(ShootLong(4f));
-                }
-                    
-                  /*GameObject waterflow = Instantiate(skill, firePoint.position, firePoint.rotation);
-                lineRenderer = waterflow.GetComponent<LineRenderer>();
-                StartCoroutine(ShootLong(4f));
-                Destroy(waterflow, 4f);*/
-
-            }
-            if (_elements.SpriteRenderers[0].sprite == _elements.SpriteArray[6])
-            {
-                skill = _prefabPool[2];
-                Shoot();
-            }
-            foreach (var r in _elements.SpriteRenderers)
-            {
-                r.enabled = false;
-                r.sprite = _elements.SpriteArray[3];
-            }
-            _elements.Counter = 0;
-            // Debug.Log("Кнопка нажата");
+            case 13: 
+                spell.PutOnCooldown();
+                Instantiate(spell.spellPrefab, point, Quaternion.identity);
+                break;
+            case 14:
+                spell.PutOnCooldown();
+                Instantiate(spell.spellPrefab, point, Quaternion.identity);
+                break;
+            case 15: 
+                spell.PutOnCooldown();
+                Instantiate(spell.spellPrefab, point, Quaternion.identity);
+                break;
         }
     }
-
-    void Shoot()
-    {
-        //skill = Resources.Load<GameObject>("Assets/Magicka/Prefab/Boulder");
-        Instantiate(skill, firePoint.position, firePoint.rotation);
-    }
     
-    // WATERFLOW
-    
-
-
-    /*private void OnDrawGizmos()
-    {
-        Gizmos.color = Color.red;
-        Gizmos.DrawLine(firePoint.position, endPoint.position);
-    }*/
-
-    void Draw2DRay(Vector2 startPos,Vector2 endPos)
-    {
-        lineRenderer.SetPosition(0,startPos);
-        lineRenderer.SetPosition(1,endPos);
-    }
-
-    private IEnumerator ShootLong(float time)
-    {
-        while (time > 0)
-        {
-            time -= Time.deltaTime;
-            yield return null;
-        }
-        waterflow.SetActive(false);
-    }
-
-    void PrefabCreation()
-    {
-        _prefabPool = Resources.LoadAll<GameObject>("Skills");
-       // Debug.Log(_prefabPool.Length);
-    }
 }
 

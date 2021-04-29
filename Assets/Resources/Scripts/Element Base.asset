@@ -14,8 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Spells:
   - spellName: Fireball
-    SpellIcon: {fileID: 21300000, guid: 4f8172135f9841840add56b9925725ff, type: 3}
-    spellPrefab: {fileID: 0}
+    SpellIcon: {fileID: 21300000, guid: 04a3cc92886ca7d418137a4efb58f50a, type: 3}
+    spellPrefab: {fileID: 6731681730896774058, guid: 05c8dc333589fae4a80bcc7f03ff4dee,
+      type: 3}
     ID: 1
     castType: 0
     spellCooldown: 10
@@ -23,8 +24,9 @@ MonoBehaviour:
     fillAmount: 0
     spellElements: 00000000
   - spellName: Fireball2x
-    SpellIcon: {fileID: 21300000, guid: 2f174205ec62eb7448e6cbf613218629, type: 3}
-    spellPrefab: {fileID: 0}
+    SpellIcon: {fileID: 21300000, guid: e574af228ae76a041ba19b327b0a4cca, type: 3}
+    spellPrefab: {fileID: 3917538029100295432, guid: 18e1640706bd546409cd650f5073f77f,
+      type: 3}
     ID: 2
     castType: 0
     spellCooldown: 15
@@ -32,8 +34,9 @@ MonoBehaviour:
     fillAmount: 0
     spellElements: 0000000000000000
   - spellName: Fireball3x
-    SpellIcon: {fileID: 21300000, guid: 03a6f2ef50ecb90459a809b9454d262a, type: 3}
-    spellPrefab: {fileID: 0}
+    SpellIcon: {fileID: 21300000, guid: e056eb9918395ba428f18737838690ea, type: 3}
+    spellPrefab: {fileID: 2370055452491818802, guid: f34c9bdfdd800484f994c24b4d1e00ea,
+      type: 3}
     ID: 3
     castType: 0
     spellCooldown: 6
@@ -41,8 +44,9 @@ MonoBehaviour:
     fillAmount: 0
     spellElements: 000000000000000000000000
   - spellName: IceLance
-    SpellIcon: {fileID: 21300000, guid: c72d6df4b65b215498fdb1b8b0ac7870, type: 3}
-    spellPrefab: {fileID: 0}
+    SpellIcon: {fileID: 21300000, guid: c89a24b20e1c93a41bede4a4c008918b, type: 3}
+    spellPrefab: {fileID: 4449124163419117283, guid: 1c6dfab99bf259b41924ed097c876089,
+      type: 3}
     ID: 4
     castType: 0
     spellCooldown: 0
@@ -50,8 +54,9 @@ MonoBehaviour:
     fillAmount: 0
     spellElements: 05000000
   - spellName: IceLance2x
-    SpellIcon: {fileID: 21300000, guid: ee4f6e8a758fe5442b5abc4eb027ec61, type: 3}
-    spellPrefab: {fileID: 0}
+    SpellIcon: {fileID: 21300000, guid: ff13309df803f7445882f14d8d41b664, type: 3}
+    spellPrefab: {fileID: 6530616434751844392, guid: 7877c9b8c59800e4e917c652b712b935,
+      type: 3}
     ID: 5
     castType: 0
     spellCooldown: 0
@@ -59,8 +64,9 @@ MonoBehaviour:
     fillAmount: 0
     spellElements: 0500000005000000
   - spellName: IceLance3x
-    SpellIcon: {fileID: 21300000, guid: b40f22bc5f6ccb041a1516d19d96d081, type: 3}
-    spellPrefab: {fileID: 0}
+    SpellIcon: {fileID: 21300000, guid: d8c151a9e8f52ca42bcde13c5b89f316, type: 3}
+    spellPrefab: {fileID: 8446566016137999354, guid: cecc05220e7112b4897fd59c924852b9,
+      type: 3}
     ID: 6
     castType: 0
     spellCooldown: 0
@@ -68,8 +74,9 @@ MonoBehaviour:
     fillAmount: 0
     spellElements: 050000000500000005000000
   - spellName: Boulder
-    SpellIcon: {fileID: 21300000, guid: f1e1c0d22e6bbca4c9a0f5f69541d261, type: 3}
-    spellPrefab: {fileID: 0}
+    SpellIcon: {fileID: 21300000, guid: c5c0b94eaf4ddcf44a1ec3d5bd39b9a3, type: 3}
+    spellPrefab: {fileID: 3497749295797706149, guid: ef7e46dbece4cd849b37133eaaef2791,
+      type: 3}
     ID: 7
     castType: 0
     spellCooldown: 7
@@ -77,8 +84,9 @@ MonoBehaviour:
     fillAmount: 0
     spellElements: 01000000
   - spellName: Boulder2x
-    SpellIcon: {fileID: 21300000, guid: 3019656d6e1ad00439d891bc66f5ba8d, type: 3}
-    spellPrefab: {fileID: 0}
+    SpellIcon: {fileID: 21300000, guid: 16d420aa5f9c72247a2c9f95efabccaf, type: 3}
+    spellPrefab: {fileID: 276667102280340805, guid: 8b35fd43b333b514d9ea8a5a29507959,
+      type: 3}
     ID: 8
     castType: 0
     spellCooldown: 14
@@ -86,8 +94,9 @@ MonoBehaviour:
     fillAmount: 0
     spellElements: 0100000001000000
   - spellName: Boulder3x
-    SpellIcon: {fileID: 21300000, guid: b7f793ff7e0993c4ebd531465c2a1f1d, type: 3}
-    spellPrefab: {fileID: 0}
+    SpellIcon: {fileID: 21300000, guid: f7fdf66a721c5d847bebfd2d6f95532d, type: 3}
+    spellPrefab: {fileID: 9216848804378057130, guid: 49731b2dca6ef2b46b1a8e97b3e0c5d9,
+      type: 3}
     ID: 9
     castType: 0
     spellCooldown: 21
@@ -95,7 +104,7 @@ MonoBehaviour:
     fillAmount: 0
     spellElements: 010000000100000001000000
   - spellName: Waterflow2
-    SpellIcon: {fileID: 21300000, guid: 90bc304492c55b44783e38aab6cc600d, type: 3}
+    SpellIcon: {fileID: 21300000, guid: 4115608df35853b489efc8c9481cd4bd, type: 3}
     spellPrefab: {fileID: 0}
     ID: 10
     castType: 1
@@ -104,7 +113,7 @@ MonoBehaviour:
     fillAmount: 0
     spellElements: 02000000
   - spellName: Waterflow2
-    SpellIcon: {fileID: 21300000, guid: d6fad9e694236d9439fd99fcb422b5d3, type: 3}
+    SpellIcon: {fileID: 21300000, guid: 5248f0ae81debae49a333cf2a28b7ff1, type: 3}
     spellPrefab: {fileID: 0}
     ID: 11
     castType: 1
@@ -113,7 +122,7 @@ MonoBehaviour:
     fillAmount: 0
     spellElements: 0200000002000000
   - spellName: Waterflow2
-    SpellIcon: {fileID: 21300000, guid: 8972169da34b1324ca50407b536f5d86, type: 3}
+    SpellIcon: {fileID: 21300000, guid: ab82276ad78b46e4e9afa2be93efbd21, type: 3}
     spellPrefab: {fileID: 0}
     ID: 12
     castType: 1
@@ -122,8 +131,9 @@ MonoBehaviour:
     fillAmount: 0
     spellElements: 020000000200000002000000
   - spellName: LightningStrike
-    SpellIcon: {fileID: 21300000, guid: 3bfb5b0786e32b944bfe3f8f3a8a0562, type: 3}
-    spellPrefab: {fileID: 0}
+    SpellIcon: {fileID: 21300000, guid: 770765b08ef801e4daa9af5c4132d69b, type: 3}
+    spellPrefab: {fileID: 4664617978992767313, guid: e2da6e0529a243d448e82f63654b190b,
+      type: 3}
     ID: 13
     castType: 2
     spellCooldown: 5
@@ -131,8 +141,9 @@ MonoBehaviour:
     fillAmount: 0
     spellElements: 03000000
   - spellName: LightningStrike
-    SpellIcon: {fileID: 21300000, guid: 2aea84e84bff5154e89aa72f2ea3c4cb, type: 3}
-    spellPrefab: {fileID: 0}
+    SpellIcon: {fileID: 21300000, guid: 2a3d1ea8b897aad44bfb793739cd9ba7, type: 3}
+    spellPrefab: {fileID: 1300699593378508877, guid: 63e45c757300d964e936488e170fe78e,
+      type: 3}
     ID: 14
     castType: 2
     spellCooldown: 7
@@ -140,8 +151,9 @@ MonoBehaviour:
     fillAmount: 0
     spellElements: 0300000003000000
   - spellName: LightningStrike
-    SpellIcon: {fileID: 21300000, guid: b7daa6b75bb1e074ca313b61039b6b03, type: 3}
-    spellPrefab: {fileID: 0}
+    SpellIcon: {fileID: 21300000, guid: 59cb35bfb846075478828ee7f8649862, type: 3}
+    spellPrefab: {fileID: 4279882843959735495, guid: 6f5757a60cef55b48aeb1246138b4dd7,
+      type: 3}
     ID: 15
     castType: 2
     spellCooldown: 9
@@ -149,7 +161,7 @@ MonoBehaviour:
     fillAmount: 0
     spellElements: 030000000300000003000000
   - spellName: Lava
-    SpellIcon: {fileID: 21300000, guid: c8c47b62fdfd514488d825067c963bb7, type: 3}
+    SpellIcon: {fileID: 21300000, guid: 260ce2f63b755e147a86d2630d5e954b, type: 3}
     spellPrefab: {fileID: 0}
     ID: 16
     castType: 1
@@ -158,7 +170,7 @@ MonoBehaviour:
     fillAmount: 0
     spellElements: 04000000
   - spellName: Lava
-    SpellIcon: {fileID: 21300000, guid: c8c47b62fdfd514488d825067c963bb7, type: 3}
+    SpellIcon: {fileID: 21300000, guid: 260ce2f63b755e147a86d2630d5e954b, type: 3}
     spellPrefab: {fileID: 0}
     ID: 17
     castType: 1
@@ -167,7 +179,7 @@ MonoBehaviour:
     fillAmount: 0
     spellElements: 0400000004000000
   - spellName: Lava
-    SpellIcon: {fileID: 21300000, guid: c8c47b62fdfd514488d825067c963bb7, type: 3}
+    SpellIcon: {fileID: 21300000, guid: 260ce2f63b755e147a86d2630d5e954b, type: 3}
     spellPrefab: {fileID: 0}
     ID: 18
     castType: 1
@@ -176,12 +188,12 @@ MonoBehaviour:
     fillAmount: 0
     spellElements: 040000000400000004000000
   currentSpell:
-    spellName: LightningStrike
-    SpellIcon: {fileID: 21300000, guid: b7daa6b75bb1e074ca313b61039b6b03, type: 3}
+    spellName: Lava
+    SpellIcon: {fileID: 21300000, guid: 260ce2f63b755e147a86d2630d5e954b, type: 3}
     spellPrefab: {fileID: 0}
-    ID: 15
-    castType: 2
-    spellCooldown: 9
+    ID: 18
+    castType: 1
+    spellCooldown: 0
     currentSpellCooldown: 0
     fillAmount: 0
-    spellElements: 030000000300000003000000
+    spellElements: 040000000400000004000000

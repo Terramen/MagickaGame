@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &8446566016137999354
+--- !u!1 &4222400213262862837
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,41 +8,36 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3897933657351989186}
-  - component: {fileID: 3418709627094501284}
-  - component: {fileID: 4690159076730195098}
-  - component: {fileID: 5329673542677067261}
-  - component: {fileID: 735722193294576327}
-  - component: {fileID: 6339708925393732045}
-  - component: {fileID: 7420422410940078058}
+  - component: {fileID: 7961237107811153727}
+  - component: {fileID: 7677717440808175952}
   m_Layer: 12
-  m_Name: IceLance3x
+  m_Name: IceLanceSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &3897933657351989186
+--- !u!4 &7961237107811153727
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8446566016137999354}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.178, y: 0.822, z: 0}
-  m_LocalScale: {x: 0.16971987, y: 0.18181968, z: 0}
+  m_GameObject: {fileID: 4222400213262862837}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 0}
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 3897933657351989186}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &3418709627094501284
+--- !u!212 &7677717440808175952
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8446566016137999354}
+  m_GameObject: {fileID: 4222400213262862837}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -81,12 +76,49 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 3.7, y: 2.9}
+  m_Size: {x: 1.9, y: 3.4}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &8446566016137999354
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3897933657351989186}
+  - component: {fileID: 4690159076730195098}
+  - component: {fileID: 5329673542677067261}
+  - component: {fileID: 735722193294576327}
+  - component: {fileID: 6339708925393732045}
+  - component: {fileID: 7420422410940078058}
+  - component: {fileID: 5820974272627377572}
+  m_Layer: 12
+  m_Name: IceLance3x
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3897933657351989186
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8446566016137999354}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.178, y: 0.822, z: 0}
+  m_LocalScale: {x: 0.16971987, y: 0.18181968, z: 0}
+  m_Children:
+  - {fileID: 7961237107811153727}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &4690159076730195098
 Rigidbody2D:
   serializedVersion: 4
@@ -140,7 +172,7 @@ MonoBehaviour:
   damage: 0
   statusDamage: 20
   rb: {fileID: 4690159076730195098}
-  shooting: {fileID: 0}
+  childSprite: {fileID: 4222400213262862837}
   effectType: 0
 --- !u!114 &6339708925393732045
 MonoBehaviour:
@@ -181,3 +213,29 @@ MonoBehaviour:
   m_SynchronizePosition: 1
   m_SynchronizeRotation: 1
   m_SynchronizeScale: 0
+--- !u!61 &5820974272627377572
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8446566016137999354}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.016118169}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.4184186}
+  m_EdgeRadius: 0

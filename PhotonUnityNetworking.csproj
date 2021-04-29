@@ -269,17 +269,59 @@
  <Reference Include="UnityEditor.LinuxStandalone.Extensions">
  <HintPath>D:/Unity/2020.1.6f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll</HintPath>
  </Reference>
+ <Reference Include="Google.IOSResolver_v1.2.164">
+ <HintPath>D:/GameCreator/MagickaGame/Assets/ExternalDependencyManager/Editor/Google.IOSResolver_v1.2.164.dll</HintPath>
+ </Reference>
+ <Reference Include="Google.JarResolver_v1.2.164">
+ <HintPath>D:/GameCreator/MagickaGame/Assets/ExternalDependencyManager/Editor/Google.JarResolver_v1.2.164.dll</HintPath>
+ </Reference>
+ <Reference Include="Google.PackageManagerResolver_v1.2.164">
+ <HintPath>D:/GameCreator/MagickaGame/Assets/ExternalDependencyManager/Editor/Google.PackageManagerResolver_v1.2.164.dll</HintPath>
+ </Reference>
+ <Reference Include="Google.VersionHandler">
+ <HintPath>D:/GameCreator/MagickaGame/Assets/ExternalDependencyManager/Editor/Google.VersionHandler.dll</HintPath>
+ </Reference>
+ <Reference Include="Google.VersionHandlerImpl_v1.2.164">
+ <HintPath>D:/GameCreator/MagickaGame/Assets/ExternalDependencyManager/Editor/Google.VersionHandlerImpl_v1.2.164.dll</HintPath>
+ </Reference>
+ <Reference Include="Firebase.Editor">
+ <HintPath>D:/GameCreator/MagickaGame/Assets/Firebase/Editor/Firebase.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Firebase.App">
+ <HintPath>D:/GameCreator/MagickaGame/Assets/Firebase/Plugins/Firebase.App.dll</HintPath>
+ </Reference>
+ <Reference Include="Firebase.Auth">
+ <HintPath>D:/GameCreator/MagickaGame/Assets/Firebase/Plugins/Firebase.Auth.dll</HintPath>
+ </Reference>
+ <Reference Include="Firebase.Platform">
+ <HintPath>D:/GameCreator/MagickaGame/Assets/Firebase/Plugins/Firebase.Platform.dll</HintPath>
+ </Reference>
+ <Reference Include="Firebase.TaskExtension">
+ <HintPath>D:/GameCreator/MagickaGame/Assets/Firebase/Plugins/Firebase.TaskExtension.dll</HintPath>
+ </Reference>
+ <Reference Include="Google.MiniJson">
+ <HintPath>D:/GameCreator/MagickaGame/Assets/Firebase/Plugins/Google.MiniJson.dll</HintPath>
+ </Reference>
  <Reference Include="Photon3Unity3D">
  <HintPath>D:/GameCreator/MagickaGame/Assets/Maps/Photon/PhotonLibs/Photon3Unity3D.dll</HintPath>
  </Reference>
  <Reference Include="websocket-sharp">
  <HintPath>D:/GameCreator/MagickaGame/Assets/Maps/Photon/PhotonLibs/WebSocket/websocket-sharp.dll</HintPath>
  </Reference>
+ <Reference Include="Unity.Compat">
+ <HintPath>D:/GameCreator/MagickaGame/Assets/Parse/Plugins/dotNet45/Unity.Compat.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Tasks">
+ <HintPath>D:/GameCreator/MagickaGame/Assets/Parse/Plugins/dotNet45/Unity.Tasks.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEngine.Advertisements.Editor">
  <HintPath>D:/GameCreator/MagickaGame/Assets/UnityAds/UnityEngine.Advertisements.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Monetization.Editor">
  <HintPath>D:/GameCreator/MagickaGame/Assets/UnityAds/UnityEngine.Monetization.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Firebase.Database">
+ <HintPath>D:/GameCreator/MagickaGame/Library/PackageCache/com.google.firebase.database@7.1.0/Firebase/Plugins/Firebase.Database.dll</HintPath>
  </Reference>
  <Reference Include="ICSharpCode.NRefactory">
  <HintPath>D:/GameCreator/MagickaGame/Library/PackageCache/com.unity.render-pipelines.core@8.2.0/Editor/ShaderGenerator/ICSharpCode.NRefactory.dll</HintPath>

@@ -16,7 +16,11 @@ public class Attack : MonoBehaviourPun, IPunObservable
     private PlayerSpawner playerSpawner;
     private HpBar _hpBar;
 
+    [Header("SkillSprite")] [SerializeField]
+    private GameObject childSprite;
+
     [SerializeField] private EffectType effectType;
+    
 
 
     // Start is called before the first frame update
@@ -26,6 +30,8 @@ public class Attack : MonoBehaviourPun, IPunObservable
         if (!photonView.IsMine) // даем скиллу 11
         {
             gameObject.layer = 11;
+            childSprite.layer = 11;
+
         }
         // hpBar = g
         // Destroy(gameObject, 4f);
@@ -94,14 +100,26 @@ public class Attack : MonoBehaviourPun, IPunObservable
 
     private void OnDestroy()
     {
-        if (playerSpawner.Shooting.ID == 1 || playerSpawner.Shooting.ID == 2 || playerSpawner.Shooting.ID == 3)
+        if (photonView.IsMine)
         {
-            PhotonNetwork.Instantiate("Prefabs/Explosion", transform.position, transform.rotation);
+            if (playerSpawner.Shooting.ID == 1 || playerSpawner.Shooting.ID == 2 || playerSpawner.Shooting.ID == 3)
+            {
+                PhotonNetwork.Instantiate("Prefabs/Explosion", transform.position, transform.rotation);
+               // Debug.Log("Сработал взрыв");
+            }
+            if (playerSpawner.Shooting.ID == 7 || playerSpawner.Shooting.ID == 8 || playerSpawner.Shooting.ID == 9)
+            {
+                PhotonNetwork.Instantiate("Prefabs/BoulderCrush", transform.position, transform.rotation);
+               // Debug.Log("Сработали камни булыги");
+            }
+            if (playerSpawner.Shooting.ID == 4 || playerSpawner.Shooting.ID == 5 || playerSpawner.Shooting.ID == 6)
+            {
+                PhotonNetwork.Instantiate("Prefabs/IceLanceCrush", transform.position, transform.rotation);
+                //Debug.Log("Сработ");
+            }
         }
-        if (playerSpawner.Shooting.ID == 7 || playerSpawner.Shooting.ID == 8 || playerSpawner.Shooting.ID == 9)
-        {
-            PhotonNetwork.Instantiate("Prefabs/BoulderCrush", transform.position, transform.rotation);
-        }
+        //Debug.Log($"playerSpawner.Shooting.ID{playerSpawner.Shooting.ID}");
+
     }
 
 
@@ -110,7 +128,9 @@ public class Attack : MonoBehaviourPun, IPunObservable
         if (stream.IsWriting)
         {
           //  stream.SendNext(gameObject.GetComponent<HpBar>());
+          
             stream.SendNext(rb.velocity);
+           // stream.SendNext(playerSpawner.Shooting.ID);
         }
         else
         {
@@ -118,6 +138,10 @@ public class Attack : MonoBehaviourPun, IPunObservable
             {
                 gameObject.GetComponent<HpBar>() = obj;
             }*/
+            /* if (stream.ReceiveNext() is int i)
+            {
+                playerSpawner.Shooting.ID = i;
+            } */
             if (stream.ReceiveNext() is Vector2 v)
             {
                 rb.velocity = v;

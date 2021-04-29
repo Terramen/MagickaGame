@@ -7,15 +7,15 @@ using UnityEngine;
 using UnityEngine.UI;
 using Random = UnityEngine.Random;
 using ExitGames.Client.Photon.Encryption;
+using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviourPunCallbacks
 {
-    [SerializeField] private GameObject findOpponentPanel;
-    [SerializeField] private GameObject waitingStatusPanel;
-    [SerializeField] private Text waitingStatusText;
-
-    [Header("Input Name")]
+    [Header("Login")]
     public GameObject inputNamePanel;
+
+    [Header("Register")]
+    public GameObject registerPanel;
     
     //public GameObject findOpponentPanel;
     //public GameObject waitingStatusPanel;
@@ -40,9 +40,13 @@ public class MainMenu : MonoBehaviourPunCallbacks
     public GameObject insideRoomPanel;
     public Button startGameButton;
     public GameObject playerListEntryPrefab;
+    public GameObject listPanel;
 
     [Header("Join Random Room")]
     public GameObject joinRandomRoomPanel;
+
+    [Header("Tutorial Panel")] 
+    public GameObject tutorialPanel;
     
 
     private bool isConnecting = false;
@@ -64,37 +68,29 @@ public class MainMenu : MonoBehaviourPunCallbacks
         //PlayerNameInput.text = "Player " + Random.Range(1000, 10000);
     }
 
-    /*public void FindOpponent()
+    public void PlayTutorial()
     {
-        isConnecting = true;
-        
-        findOpponentPanel.SetActive(false);
-        waitingStatusPanel.SetActive(true);
-
-        waitingStatusText.text = "Searching...";
-
-        if (PhotonNetwork.IsConnected)
-        {
-            PhotonNetwork.JoinRandomRoom();
-        }
-        else
-        {
-            PhotonNetwork.GameVersion = GameVersion;
-            PhotonNetwork.ConnectUsingSettings();
-        }
-
-        
-    }*/
+        PhotonNetwork.OfflineMode = true;
+    }
 
     public override void OnConnectedToMaster()
     {
-        this.SetActivePanel(mainMenuPanel.name);
+        if (PhotonNetwork.OfflineMode)
+        {
+            this.SetActivePanel(tutorialPanel.name);
+        }
+        else
+        {
+            this.SetActivePanel(roomPanel.name);
+        }
     }
 
     public override void OnDisconnected(DisconnectCause cause)
     {
-        waitingStatusPanel.SetActive(false);
-        findOpponentPanel.SetActive(true);
+        /*waitingStatusPanel.SetActive(false);
+        findOpponentPanel.SetActive(true);*/
+        
+        SetActivePanel(mainMenuPanel.name);
         
         Debug.Log($"Disconected due to: {cause}");
     }
@@ -110,52 +106,43 @@ public class MainMenu : MonoBehaviourPunCallbacks
 
     public override void OnJoinedRoom()
     {
-        SetActivePanel(insideRoomPanel.name);
-
-        if (_playerListEntries == null)
+        if (!PhotonNetwork.OfflineMode)
         {
-            _playerListEntries = new Dictionary<int, GameObject>();
-        }
+            SetActivePanel(insideRoomPanel.name);
 
-        foreach (Player p in PhotonNetwork.PlayerList)
-        {
-            GameObject entry = Instantiate(playerListEntryPrefab);
-            entry.transform.SetParent(insideRoomPanel.transform);
-            entry.transform.localScale = Vector3.one;
-            entry.GetComponent<PlayerListEntry>().Initialize(p.ActorNumber, p.NickName);
-
-            object isPlayerReady;
-            if (p.CustomProperties.TryGetValue(MagickaGame.PLAYER_READY, out isPlayerReady))
+            if (_playerListEntries == null)
             {
-                entry.GetComponent<PlayerListEntry>().SetPlayerReady((bool) isPlayerReady);
+                _playerListEntries = new Dictionary<int, GameObject>();
             }
 
-            _playerListEntries.Add(p.ActorNumber, entry);
-        }
+            foreach (Player p in PhotonNetwork.PlayerList)
+            {
+                GameObject entry = Instantiate(playerListEntryPrefab);
+                entry.transform.SetParent(insideRoomPanel.transform);
+                entry.transform.localScale = Vector3.one;
+                entry.GetComponent<PlayerListEntry>().Initialize(p.ActorNumber, p.NickName);
 
-        startGameButton.gameObject.SetActive(CheckPlayersReady());
+                object isPlayerReady;
+                if (p.CustomProperties.TryGetValue(MagickaGame.PLAYER_READY, out isPlayerReady))
+                {
+                    entry.GetComponent<PlayerListEntry>().SetPlayerReady((bool) isPlayerReady);
+                }
 
-        ExitGames.Client.Photon.Hashtable props = new ExitGames.Client.Photon.Hashtable
+                _playerListEntries.Add(p.ActorNumber, entry);
+            }
+
+            startGameButton.gameObject.SetActive(CheckPlayersReady());
+
+            ExitGames.Client.Photon.Hashtable props = new ExitGames.Client.Photon.Hashtable
             
-        {
-            {MagickaGame.PLAYER_LOADED_LEVEL, false}
-        };
-        PhotonNetwork.LocalPlayer.SetCustomProperties(props);
+            {
+                {MagickaGame.PLAYER_LOADED_LEVEL, false}
+            };
+            PhotonNetwork.LocalPlayer.SetCustomProperties(props);
+        }
+        
     }
 
-    /*public override void OnPlayerEnteredRoom(Photon.Realtime.Player newPlayer)
-    {
-        if (PhotonNetwork.CurrentRoom.PlayerCount == MaxPlayersPerRoom)
-        {
-            PhotonNetwork.CurrentRoom.IsOpen = false;
-
-            waitingStatusText.text = "Opponent found";
-            Debug.Log("Match is ready to begin");
-            
-            PhotonNetwork.LoadLevel("MainScene");
-        }
-    }*/
-    
     public override void OnPlayerEnteredRoom(Player newPlayer)
     {
         GameObject entry = Instantiate(playerListEntryPrefab);
@@ -183,6 +170,7 @@ public class MainMenu : MonoBehaviourPunCallbacks
     
     public void SetActivePanel(string activePanel)
     {
+        registerPanel.SetActive(activePanel.Equals(registerPanel.name));
         roomPanel.SetActive(activePanel.Equals(roomPanel.name));
         createRoomPanel.SetActive(activePanel.Equals(createRoomPanel.name));
         inputNamePanel.SetActive(activePanel.Equals(inputNamePanel.name));
@@ -190,6 +178,7 @@ public class MainMenu : MonoBehaviourPunCallbacks
         mainMenuPanel.SetActive(activePanel.Equals(mainMenuPanel.name));
         roomListPanel.SetActive(activePanel.Equals(roomListPanel.name));
         joinRandomRoomPanel.SetActive(activePanel.Equals(joinRandomRoomPanel.name));
+        tutorialPanel.SetActive(activePanel.Equals(tutorialPanel.name));
     }
     
     public void OnStartGameButtonClicked()
@@ -198,6 +187,20 @@ public class MainMenu : MonoBehaviourPunCallbacks
         PhotonNetwork.CurrentRoom.IsVisible = false;
 
         PhotonNetwork.LoadLevel("MainScene");
+    }
+
+    public void OnStartTutorialButtonClicked()
+    {
+        RoomOptions options = new RoomOptions {MaxPlayers = 1, PlayerTtl = 0};
+
+        PhotonNetwork.CreateRoom("Arena " + Random.Range(1, 100), options, null);
+        PhotonNetwork.LoadLevel("LevelDesign");
+       // Application.LoadLevel("LevelDesign");
+    }
+
+    public void OnLogOutButtonClicked()
+    {
+        PhotonNetwork.Disconnect();
     }
     
     public void OnBackButtonClicked() // on click "Back" in Rooms
@@ -244,6 +247,27 @@ public class MainMenu : MonoBehaviourPunCallbacks
     {
         PhotonNetwork.LeaveRoom();
     }
+
+    
+    //----- Register/Login
+    public void OnRegisterButtonClicked()
+    {
+        SetActivePanel(inputNamePanel.name);
+        SetActivePanel(registerPanel.name);
+    }
+
+    public void OnLoginButtonClicked()
+    {
+        
+    }
+
+    public void OnRegisterBackButtonClicked()
+    {
+        SetActivePanel(registerPanel.name);
+        SetActivePanel(inputNamePanel.name);
+    }
+    
+    //----- Register/Login
 
     private bool CheckPlayersReady()
     {

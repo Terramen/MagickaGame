@@ -8,6 +8,7 @@ public class BannerAd : MonoBehaviour, IUnityAdsListener {
     string gameId = "3916283";
     public string placementId = "bannerPlacement";
     public string placementVideoId = "video";
+    public string placementRewardId = "rewardedVideo";
     public bool testMode = true;
 
     void Start () {
@@ -53,7 +54,7 @@ public class BannerAd : MonoBehaviour, IUnityAdsListener {
     public void OnUnityAdsDidFinish(string placementId, ShowResult showResult)
     {
         if (showResult == ShowResult.Finished) {
-            // Reward the user for watching the ad to completion.
+            
         } else if (showResult == ShowResult.Skipped) {
             // Do not reward the user for skipping the ad.
         } else if (showResult == ShowResult.Failed) {

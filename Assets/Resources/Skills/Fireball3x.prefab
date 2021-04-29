@@ -141,6 +141,7 @@ MonoBehaviour:
   damage: 25
   statusDamage: 4
   rb: {fileID: 2870627065162697673}
+  childSprite: {fileID: 3206194226095287729}
   effectType: 1
 --- !u!114 &2949481648042366968
 MonoBehaviour:

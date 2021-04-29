@@ -7,12 +7,12 @@ using UnityStandardAssets.CrossPlatformInput;
 
 public class Player3 : MonoBehaviourPun
 {
-    private Gamemanager _gamemanager;
+    [SerializeField] private Gamemanager _gamemanager;
     [SerializeField] private List<Elements> spellElements = new List<Elements>();
 
     //private Spell spell;
    // [SerializeField] SpellUIController spellUIController;
-    ElementController elementController;
+    public ElementController elementController;
 
     [SerializeField] private JoystickScr joystickScr;
     

@@ -28,15 +28,15 @@ public class PlayerNameInput : MonoBehaviour
 
         nameInputField.text = defaultName;
 
-        SetPlayerName(defaultName);
+        //SetPlayerName(defaultName);
 
 
     }
     
-    public void SetPlayerName(string name)
+    /*public void SetPlayerName(string name)
     {
         continueButton.interactable = !string.IsNullOrEmpty(name);
-    }
+    }*/
 
     public void SavePlayerName()
     {

@@ -19,153 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c0d5d44b-ae10-4bad-8641-85b2c17785cf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../Intervals/Intervals.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../dubanevich/src/main/java/com/java/dubanevich/config/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../dubanevich/src/main/java/com/java/dubanevich/controller/AutopartController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../dubanevich/src/main/java/com/java/dubanevich/controller/MainController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../dubanevich/src/main/java/com/java/dubanevich/controller/OrderController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../dubanevich/src/main/java/com/java/dubanevich/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../dubanevich/src/main/java/com/java/dubanevich/controller/WarehouseController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../dubanevich/src/main/java/com/java/dubanevich/model/AutopartType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../dubanevich/src/main/java/com/java/dubanevich/model/MyUserDetails.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../dubanevich/src/main/java/com/java/dubanevich/repository/AutopartTypeRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../dubanevich/src/main/java/com/java/dubanevich/service/AutopartTypeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../dubanevich/src/main/java/com/java/dubanevich/service/ReviewService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../dubanevich/src/main/java/com/java/dubanevich/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../dubanevich/src/main/java/com/java/dubanevich/service/WarehouseService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../dubanevich/src/main/java/com/java/dubanevich/service/impl/AutopartServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../dubanevich/src/main/java/com/java/dubanevich/service/impl/AutopartTypeServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../dubanevich/src/main/java/com/java/dubanevich/service/impl/OrderServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../dubanevich/src/main/java/com/java/dubanevich/service/impl/ReviewServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../dubanevich/src/main/java/com/java/dubanevich/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../dubanevich/src/main/java/com/java/dubanevich/service/impl/WarehouseServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../dubanevich/src/main/resources/templates/add_autopart.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../dubanevich/src/main/resources/templates/add_warehouse.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../dubanevich/src/main/resources/templates/admin.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../dubanevich/src/main/resources/templates/admin_warehouse.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../dubanevich/src/main/resources/templates/autopart.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../dubanevich/src/main/resources/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../dubanevich/src/main/resources/templates/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../dubanevich/src/main/resources/templates/new_order.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../dubanevich/src/main/resources/templates/order.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../dubanevich/src/main/resources/templates/personal_account.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../dubanevich/src/main/resources/templates/register.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../dubanevich/src/main/resources/templates/update_autopart.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../dubanevich/src/main/resources/templates/update_user.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../dubanevich/src/main/resources/templates/update_warehouse.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../dubanevich/src/main/resources/templates/user.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../dubanevich/src/main/resources/templates/warehouse.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../goroh/src/main/java/com/java/thymeleaf/goroh/config/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../goroh/src/main/java/com/java/thymeleaf/goroh/controller/BusController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../goroh/src/main/java/com/java/thymeleaf/goroh/controller/DriverController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../goroh/src/main/java/com/java/thymeleaf/goroh/controller/MainController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../goroh/src/main/java/com/java/thymeleaf/goroh/controller/RouteController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../goroh/src/main/java/com/java/thymeleaf/goroh/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../goroh/src/main/java/com/java/thymeleaf/goroh/model/Bus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../goroh/src/main/java/com/java/thymeleaf/goroh/model/Driver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../goroh/src/main/java/com/java/thymeleaf/goroh/model/MyUserDetails.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../goroh/src/main/java/com/java/thymeleaf/goroh/model/News.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../goroh/src/main/java/com/java/thymeleaf/goroh/model/Point.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../goroh/src/main/java/com/java/thymeleaf/goroh/model/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../goroh/src/main/java/com/java/thymeleaf/goroh/model/Route.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../goroh/src/main/java/com/java/thymeleaf/goroh/model/StopPoint.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../goroh/src/main/java/com/java/thymeleaf/goroh/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../goroh/src/main/java/com/java/thymeleaf/goroh/repository/BusRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../goroh/src/main/java/com/java/thymeleaf/goroh/repository/DriverRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../goroh/src/main/java/com/java/thymeleaf/goroh/repository/NewsRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../goroh/src/main/java/com/java/thymeleaf/goroh/repository/RouteRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../goroh/src/main/java/com/java/thymeleaf/goroh/repository/StopPointRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../goroh/src/main/java/com/java/thymeleaf/goroh/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../goroh/src/main/java/com/java/thymeleaf/goroh/service/BusService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../goroh/src/main/java/com/java/thymeleaf/goroh/service/DriverService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../goroh/src/main/java/com/java/thymeleaf/goroh/service/NewsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../goroh/src/main/java/com/java/thymeleaf/goroh/service/RouteService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../goroh/src/main/java/com/java/thymeleaf/goroh/service/StopPointService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../goroh/src/main/java/com/java/thymeleaf/goroh/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../goroh/src/main/java/com/java/thymeleaf/goroh/service/impl/BusServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../goroh/src/main/java/com/java/thymeleaf/goroh/service/impl/DriverServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../goroh/src/main/java/com/java/thymeleaf/goroh/service/impl/NewsServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../goroh/src/main/java/com/java/thymeleaf/goroh/service/impl/RouteServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../goroh/src/main/java/com/java/thymeleaf/goroh/service/impl/StopPointServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../goroh/src/main/java/com/java/thymeleaf/goroh/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../goroh/src/main/resources/static/css/E-xRSN5htNU.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../goroh/src/main/resources/static/css/fotografiya_dlya_sayta_8_avtobusov.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../goroh/src/main/resources/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../goroh/src/main/resources/templates/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../goroh/src/main/resources/templates/route.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../java/src/main/java/com/butko/java/config/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../java/src/main/java/com/butko/java/controller/AddressController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../java/src/main/java/com/butko/java/controller/MailController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../java/src/main/java/com/butko/java/controller/MainController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../java/src/main/java/com/butko/java/controller/OrganisationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../java/src/main/java/com/butko/java/controller/PersonController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../java/src/main/java/com/butko/java/controller/PhoneController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../java/src/main/java/com/butko/java/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../java/src/main/java/com/butko/java/model/MyUserDetails.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../java/src/main/java/com/butko/java/model/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../java/src/main/java/com/butko/java/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../java/src/main/java/com/butko/java/repository/UserRepos.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../java/src/main/java/com/butko/java/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../java/src/main/java/com/butko/java/service/impl/MailServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../java/src/main/java/com/butko/java/service/impl/OrganisationServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../java/src/main/java/com/butko/java/service/impl/PersonServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../java/src/main/java/com/butko/java/service/impl/PhoneServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../java/src/main/java/com/butko/java/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../java/src/main/resources/templates/add_person.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../java/src/main/resources/templates/admin.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../java/src/main/resources/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../java/src/main/resources/templates/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../java/src/main/resources/templates/person.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../java/src/main/resources/templates/person_update.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../project/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.MagickaGame/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MagickaGame/.idea/contentModel.xml" afterDir="false" />
+    <list default="true" id="c0d5d44b-ae10-4bad-8641-85b2c17785cf" name="Default Changelist" comment="Added game shop with firebase connection">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MagickaGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MagickaGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Maps/Photon/PhotonUnityNetworking/Demos/DemoAsteroids/Scripts/Lobby/PlayerListEntry.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Maps/Photon/PhotonUnityNetworking/Demos/DemoAsteroids/Scripts/Lobby/PlayerListEntry.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Scenes/MenuScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Scenes/MenuScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Scripts/MainMenu.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Scripts/MainMenu.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Scripts/PlayerNameInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Scripts/PlayerNameInput.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ArtifactDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ArtifactDB" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/52/524936f546b142f057ede49e6d342106" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/a2/a20d4750c1745bebe2e92a5b90a3971d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/cb/cbaaf33d1f274b8bc0837a10fec07d27" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/EditorUserBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/EditorUserBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/LastBuild.buildreport" beforeDir="false" afterPath="$PROJECT_DIR$/Library/LastBuild.buildreport" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/LastSceneManagerSetup.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/LastSceneManagerSetup.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/Managed/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/Managed/Assembly-CSharp.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/Managed/Assembly-CSharp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/Managed/Assembly-CSharp.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/Managed/PhotonUnityNetworking.Demos.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/Managed/PhotonUnityNetworking.Demos.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/Managed/PhotonUnityNetworking.Demos.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/Managed/PhotonUnityNetworking.Demos.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/boot.config" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/boot.config" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/data.unity3d" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/data.unity3d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/Android/ScriptsOnlyCache.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/Android/ScriptsOnlyCache.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/PhotonUnityNetworking.Demos.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/PhotonUnityNetworking.Demos.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/PhotonUnityNetworking.Demos.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/PhotonUnityNetworking.Demos.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ShaderCache/EditorEncounteredVariants" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ShaderCache/EditorEncounteredVariants" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/SourceAssetDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SourceAssetDB" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/SpriteAtlasDatabase.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SpriteAtlasDatabase.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/StateCache/MainStageHierarchy/06/06df6a2a5790d1b2e117517c03c4d264.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/MainStageHierarchy/06/06df6a2a5790d1b2e117517c03c4d264.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/StateCache/SceneView/b6/b6034827e1c45144a88af2ca7a563612.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/SceneView/b6/b6034827e1c45144a88af2ca7a563612.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/expandedItems" beforeDir="false" afterPath="$PROJECT_DIR$/Library/expandedItems" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe1.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe1.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe10.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe10.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe11.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe11.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe2.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe2.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe3.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe3.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe4.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe4.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe5.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe5.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe6.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe6.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe7.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe7.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe8.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe8.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe9.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe9.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csproj.CoreCompileInputs.cache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,79 +39,97 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Resources/Scripts/ScoreAddManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F398F875-487C-430B-96BE-E4BC9D181A40/73/679b3cfc/IDragHandler.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E81851A0-DC73-4A79-AFA9-F5B7273162BE/9e/79b2e448/List`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Resources/Scripts/offline/PlayerOfflineInputs.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Resources/Scripts/gamemanager/MagickaGame.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Resources/Scripts/toEdit/Gamemanager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Resources/Scripts/AuthManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../Unity/2020.1.6f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/ScrollRect.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Resources/Scripts/gamemanager/RoomListEntry.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Resources/Scripts/Explosion.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Maps/Photon/PhotonUnityNetworking/Demos/DemoAsteroids/Scripts/AsteroidsGame.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/265179CD-3D32-4BA1-BE0C-68F88DEA310A/38/dd809cc4/InternalDatabaseReference.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Resources/Scripts/RewardableAd.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Resources/Scripts/gamemanager/TopMenu.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Resources/Scripts/toEdit/CooldownManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Resources/Scripts/offline/JoystickOffline.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Joystick Pack/Scripts/Editor/SpellJoystickEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Projectile.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Resources/Scripts/Attacking.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Resources/Scripts/gamemanager/ArenaGameManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Resources/Scripts/HpBar.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/265179CD-3D32-4BA1-BE0C-68F88DEA310A/68/65a2ef94/DatabaseReference.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Editor/SpellEditor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/81986B7D-E77F-470C-8157-A969000B3A00/b3/0e247b21/Physics2D.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Resources/Scripts/offline/OfflineMovement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Resources/Scripts/AttackParticle.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/62FFEEB7-EC02-4BEA-B61E-5FBF8D44AC5B/76/ec0bc006/Dictionary`2.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FB001E01-371B-4ADC-A200-13E0AC763896/74/b128d6d4/List`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Resources/Scripts/gamemanager/PlayerListEntry.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Resources/Scripts/ScoreAddManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ADF64A36-CC6D-4C37-AE5F-C2F7D816FA99/2a/97fc82d5/AuthUtilPINVOKE.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Resources/Scripts/toEdit/Gamemanager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/67055F1B-E365-4E2A-9872-54D5437EE5B8/b5/f7e6791b/Editor.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A9810827-DCE3-444A-8E5C-4E9F3F5E0828/24/45c6bfc9/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Resources/Scripts/Explosion.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Maps/Photon/PhotonUnityNetworking/Demos/DemoAsteroids/Scripts/AsteroidsGame.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Resources/Scripts/offline/FPSTarget.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Resources/Scripts/toEdit/ShopItemBase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Resources/Scripts/toEdit/CooldownManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Resources/Scripts/offline/AttackOffline.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Resources/Scripts/gamemanager/ArenaGameManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Resources/Scripts/HpBar.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E81851A0-DC73-4A79-AFA9-F5B7273162BE/97/47afe221/Int32.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ADF64A36-CC6D-4C37-AE5F-C2F7D816FA99/2f/751397b5/FirebaseAuth.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FB001E01-371B-4ADC-A200-13E0AC763896/74/b128d6d4/List`1.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/jopp.cs" />
-        <option value="$PROJECT_DIR$/Assets/Resources/Scripts/Fireball.cs" />
-        <option value="$PROJECT_DIR$/Assets/Resources/Scripts/FPSCounter.cs" />
-        <option value="$PROJECT_DIR$/Assets/Resources/Scripts/Attacking.cs" />
-        <option value="$PROJECT_DIR$/Assets/Resources/Scripts/Client.cs" />
-        <option value="$PROJECT_DIR$/Assets/Resources/Scripts/UIManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Resources/Scripts/Skills.cs" />
-        <option value="$PROJECT_DIR$/Assets/Resources/Scripts/Elements.cs" />
-        <option value="$PROJECT_DIR$/Assets/Resources/Scripts/Explosion.cs" />
-        <option value="$PROJECT_DIR$/Assets/Resources/Scripts/SpellBase.cs" />
-        <option value="$PROJECT_DIR$/Assets/Resources/Scripts/toEdit/Player.cs" />
-        <option value="$PROJECT_DIR$/Assets/Resources/Scripts/Elements2.cs" />
-        <option value="$PROJECT_DIR$/Assets/Resources/Scripts/offline/ShootingOffline.cs" />
-        <option value="$PROJECT_DIR$/Assets/Resources/Scripts/toEdit/ElementController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Resources/Scripts/toEdit/Gamemanager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Joystick Pack/Scripts/Joysticks/VariableJoystick.cs" />
-        <option value="$PROJECT_DIR$/Assets/Joystick Pack/Scripts/Editor/CustomJoystickEditor.cs" />
         <option value="$PROJECT_DIR$/Assets/Joystick Pack/Scripts/Editor/SpellJoystickEditor.cs" />
         <option value="$PROJECT_DIR$/Assets/Joystick Pack/Scripts/Joysticks/SpellJoystick.cs" />
         <option value="$PROJECT_DIR$/Assets/Joystick Pack/Scripts/Base/Joystick.cs" />
         <option value="$PROJECT_DIR$/Assets/Joystick Pack/Scripts/Joysticks/CustomJoystick.cs" />
         <option value="$PROJECT_DIR$/Assets/Standard Assets/CrossPlatformInput/Scripts/ButtonHandler.cs" />
-        <option value="$PROJECT_DIR$/Assets/Resources/Scripts/Player_transform.cs" />
-        <option value="$PROJECT_DIR$/Assets/Resources/Scripts/toEdit/Player3.cs" />
         <option value="$PROJECT_DIR$/Assets/Maps/Scripts/BasicCameraFollow.cs" />
         <option value="$PROJECT_DIR$/Assets/Maps/Photon/PhotonUnityNetworking/UtilityScripts/PhotonPlayer/PunPlayerScores.cs" />
-        <option value="$PROJECT_DIR$/Assets/Joystick Pack/Scripts/Base/JoystickScr.cs" />
         <option value="$PROJECT_DIR$/Assets/Resources/Scripts/toEdit/SpellBase.cs" />
         <option value="$PROJECT_DIR$/Assets/Resources/Scripts/toEdit/CooldownManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Resources/Scripts/TargetAttack.cs" />
-        <option value="$PROJECT_DIR$/Assets/Resources/Scripts/Attack.cs" />
-        <option value="$PROJECT_DIR$/Assets/Resources/Scripts/HpBar.cs" />
         <option value="$PROJECT_DIR$/Assets/Resources/Scripts/Class.puml" />
-        <option value="$PROJECT_DIR$/Assets/Resources/Scripts/BannerAd.cs" />
         <option value="$PROJECT_DIR$/Assets/Resources/Scripts/toEdit/sfsdf.html" />
         <option value="$PROJECT_DIR$/Assets/Resources/Scripts/ClassDiagram.puml" />
         <option value="$PROJECT_DIR$/Assets/Resources/Scripts/Shooting.cs" />
-        <option value="$PROJECT_DIR$/Assets/Resources/Scripts/StatusEffect.cs" />
-        <option value="$PROJECT_DIR$/Assets/Resources/Scripts/PlayerSpawner.cs" />
-        <option value="$PROJECT_DIR$/Assets/Resources/Scripts/AttackParticle.cs" />
         <option value="$PROJECT_DIR$/Assets/Maps/Photon/PhotonUnityNetworking/Demos/DemoAsteroids/Scripts/Game/AsteroidsGameManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Resources/Scripts/ScoreAddManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Resources/Scripts/MainMenu.cs" />
-        <option value="$PROJECT_DIR$/Assets/Resources/Scripts/gamemanager/TopMenu.cs" />
-        <option value="$PROJECT_DIR$/Assets/Resources/Scripts/PlayerNameInput.cs" />
         <option value="$PROJECT_DIR$/Assets/Maps/Photon/PhotonUnityNetworking/Demos/DemoAsteroids/Scripts/Lobby/LobbyMainPanel.cs" />
         <option value="$PROJECT_DIR$/Assets/Resources/Scripts/gamemanager/RoomListEntry.cs" />
         <option value="$PROJECT_DIR$/Assets/Maps/Photon/PhotonUnityNetworking/Demos/DemoAsteroids/Scripts/Lobby/PlayerListEntry.cs" />
         <option value="$PROJECT_DIR$/Assets/Resources/Scripts/gamemanager/MagickaGame.cs" />
         <option value="$PROJECT_DIR$/Assets/Resources/Scripts/gamemanager/PlayerListEntry.cs" />
+        <option value="$PROJECT_DIR$/Assets/Resources/Scripts/Player_transform.cs" />
+        <option value="$PROJECT_DIR$/Assets/Resources/Scripts/offline/FPSTarget.cs" />
+        <option value="$PROJECT_DIR$/Assets/Resources/Scripts/ScoreAddManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Resources/Scripts/AttackParticle.cs" />
+        <option value="$PROJECT_DIR$/Assets/Resources/Scripts/HpBar.cs" />
+        <option value="$PROJECT_DIR$/Assets/Joystick Pack/Scripts/Base/JoystickScr.cs" />
+        <option value="$PROJECT_DIR$/Assets/Resources/Scripts/StatusEffect.cs" />
+        <option value="$PROJECT_DIR$/Assets/Resources/Scripts/Attack.cs" />
+        <option value="$PROJECT_DIR$/Assets/Resources/Scripts/offline/OfflineMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Resources/Scripts/offline/PlayerOfflineInputs.cs" />
+        <option value="$PROJECT_DIR$/Assets/Resources/Scripts/offline/JoystickOffline.cs" />
+        <option value="$PROJECT_DIR$/Assets/Resources/Scripts/offline/ShootingOffline.cs" />
+        <option value="$PROJECT_DIR$/Assets/Resources/Scripts/offline/AttackOffline.cs" />
+        <option value="$PROJECT_DIR$/Assets/Resources/Scripts/PlayerSpawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Resources/Scripts/gamemanager/TopMenu.cs" />
+        <option value="$PROJECT_DIR$/Assets/Resources/Scripts/toEdit/Player3.cs" />
+        <option value="$PROJECT_DIR$/Assets/Maps/Photon/PhotonUnityNetworking/Code/PhotonHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Resources/Scripts/PlayerNameInput.cs" />
         <option value="$PROJECT_DIR$/Assets/Resources/Scripts/gamemanager/MainMenu.cs" />
+        <option value="$PROJECT_DIR$/Assets/google-services.json" />
+        <option value="$PROJECT_DIR$/Assets/Resources/Scripts/toEdit/ShopItemBase.cs" />
+        <option value="$PROJECT_DIR$/Assets/Resources/Scripts/toEdit/Gamemanager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Resources/Scripts/UIManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/UnityRecyclingListView-master/Source/RecyclingListView.cs" />
+        <option value="$PROJECT_DIR$/Assets/UnityRecyclingListView-master/Examples/Scripts/TestChildItem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Resources/Scripts/toEdit/ShopItemEditor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Resources/Scripts/BannerAd.cs" />
+        <option value="$PROJECT_DIR$/Assets/Resources/Scripts/AuthManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Resources/Scripts/RewardableAd.cs" />
+        <option value="$PROJECT_DIR$/Assets/UnityRecyclingListView-master/Examples/Scripts/TestPanel.cs" />
       </list>
     </option>
   </component>
@@ -420,8 +293,62 @@
       <workItem from="1613202625035" duration="7967000" />
       <workItem from="1613291457435" duration="17559000" />
       <workItem from="1613376603066" duration="595000" />
-      <workItem from="1613388457236" duration="3720000" />
+      <workItem from="1613388457236" duration="4395000" />
+      <workItem from="1613637881978" duration="595000" />
+      <workItem from="1614032460568" duration="1047000" />
+      <workItem from="1614112825170" duration="608000" />
+      <workItem from="1614159550868" duration="671000" />
+      <workItem from="1614603156988" duration="4747000" />
+      <workItem from="1616234915353" duration="6766000" />
+      <workItem from="1616317330385" duration="10078000" />
+      <workItem from="1616350283247" duration="891000" />
+      <workItem from="1616443384992" duration="507000" />
+      <workItem from="1616446911911" duration="596000" />
+      <workItem from="1616498823594" duration="12432000" />
+      <workItem from="1616571620167" duration="9190000" />
+      <workItem from="1616661819140" duration="6603000" />
+      <workItem from="1616752213239" duration="1877000" />
+      <workItem from="1617117987581" duration="1528000" />
+      <workItem from="1617213187239" duration="1434000" />
+      <workItem from="1617260490494" duration="5256000" />
+      <workItem from="1617435908445" duration="6696000" />
+      <workItem from="1617531585546" duration="2944000" />
+      <workItem from="1617658879907" duration="596000" />
+      <workItem from="1617695563606" duration="11763000" />
+      <workItem from="1617784651918" duration="9392000" />
+      <workItem from="1617871969326" duration="2047000" />
+      <workItem from="1618079926300" duration="619000" />
+      <workItem from="1618133716929" duration="3559000" />
+      <workItem from="1618248644644" duration="805000" />
+      <workItem from="1618428760744" duration="739000" />
+      <workItem from="1618667471290" duration="10007000" />
+      <workItem from="1618733678914" duration="15877000" />
+      <workItem from="1618831371640" duration="15671000" />
+      <workItem from="1619119278092" duration="4062000" />
+      <workItem from="1619207982546" duration="5168000" />
+      <workItem from="1619249080955" duration="20606000" />
+      <workItem from="1619349153859" duration="16032000" />
+      <workItem from="1619384558686" duration="3647000" />
+      <workItem from="1619424435396" duration="11759000" />
+      <workItem from="1619512414542" duration="8556000" />
+      <workItem from="1619605709567" duration="3776000" />
+      <workItem from="1619689256956" duration="10785000" />
     </task>
+    <task id="LOCAL-00001" summary="Photon UI changes">
+      <created>1613401448109</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1613401448109</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Added game shop with firebase connection">
+      <created>1619719110931</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1619719110931</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -443,92 +370,27 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="Photon UI changes" />
+    <MESSAGE value="Added game shop with firebase connection" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added game shop with firebase connection" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1877" height="375" key="GridCell.Tab.0.bottom" timestamp="1607462238031">
+    <state x="92" y="92" width="1736" height="856" key="VCS.FileHistoryDialog" timestamp="1619254924651">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="375" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1607462238031" />
-    <state width="1877" height="375" key="GridCell.Tab.0.center" timestamp="1607462238031">
+    <state x="92" y="92" width="1736" height="856" key="VCS.FileHistoryDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1619254924651" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1619719503542">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="375" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1607462238031" />
-    <state width="1877" height="375" key="GridCell.Tab.0.left" timestamp="1607462238031">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1619719503542" />
+    <state x="2472" y="119" width="815" height="801" key="find.popup" timestamp="1617269578998">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="375" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1607462238031" />
-    <state width="1877" height="375" key="GridCell.Tab.0.right" timestamp="1607462238031">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="375" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607462238031" />
-    <state width="1877" height="375" key="GridCell.Tab.1.bottom" timestamp="1607462238032">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="375" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1607462238032" />
-    <state width="1877" height="375" key="GridCell.Tab.1.center" timestamp="1607462238032">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="375" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1607462238032" />
-    <state width="1877" height="375" key="GridCell.Tab.1.left" timestamp="1607462238031">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="375" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1607462238031" />
-    <state width="1877" height="375" key="GridCell.Tab.1.right" timestamp="1607462238032">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="375" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607462238032" />
-    <state width="1877" height="375" key="GridCell.Tab.2.bottom" timestamp="1607462238032">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="375" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1607462238032" />
-    <state width="1877" height="375" key="GridCell.Tab.2.center" timestamp="1607462238032">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="375" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1607462238032" />
-    <state width="1877" height="375" key="GridCell.Tab.2.left" timestamp="1607462238032">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="375" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1607462238032" />
-    <state width="1877" height="375" key="GridCell.Tab.2.right" timestamp="1607462238032">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="375" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607462238032" />
-    <state width="1877" height="375" key="GridCell.Tab.3.bottom" timestamp="1607462238032">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="375" key="GridCell.Tab.3.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1607462238032" />
-    <state width="1877" height="375" key="GridCell.Tab.3.center" timestamp="1607462238032">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="375" key="GridCell.Tab.3.center/0.0.1920.1040@0.0.1920.1040" timestamp="1607462238032" />
-    <state width="1877" height="375" key="GridCell.Tab.3.left" timestamp="1607462238032">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="375" key="GridCell.Tab.3.left/0.0.1920.1040@0.0.1920.1040" timestamp="1607462238032" />
-    <state width="1877" height="375" key="GridCell.Tab.3.right" timestamp="1607462238032">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="375" key="GridCell.Tab.3.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607462238032" />
-    <state x="552" y="252" key="Rider.ProjectTemplateDialog.Size" timestamp="1608140028207">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="552" y="252" key="Rider.ProjectTemplateDialog.Size/0.0.1920.1040@0.0.1920.1040" timestamp="1608140028207" />
-    <state x="764" y="194" key="RiderGenerateDialog" timestamp="1607878848367">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="764" y="194" key="RiderGenerateDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1607878848367" />
-    <state x="461" y="165" key="SettingsEditor" timestamp="1608141007082">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1608141007082" />
-    <state x="92" y="92" width="1736" height="856" key="VCS.FileHistoryDialog" timestamp="1606495059886">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="92" y="92" width="1736" height="856" key="VCS.FileHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606495059886" />
+    <state x="552" y="119" width="815" height="801" key="find.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1616239916311" />
+    <state x="2472" y="119" width="815" height="801" key="find.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1617269578998" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1613341140530">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1613341140530" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1608145991878" />
   </component>
 </project>
