@@ -21,6 +21,17 @@
   <component name="ChangeListManager">
     <list default="true" id="c0d5d44b-ae10-4bad-8641-85b2c17785cf" name="Default Changelist" comment="Added game shop with firebase connection">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MagickaGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MagickaGame/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Scenes/MenuScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Scenes/MenuScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ArtifactDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ArtifactDB" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/SourceAssetDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SourceAssetDB" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/expandedItems" beforeDir="false" afterPath="$PROJECT_DIR$/Library/expandedItems" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csproj.CoreCompileInputs.cache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,13 +134,13 @@
         <option value="$PROJECT_DIR$/Assets/Resources/Scripts/toEdit/ShopItemBase.cs" />
         <option value="$PROJECT_DIR$/Assets/Resources/Scripts/toEdit/Gamemanager.cs" />
         <option value="$PROJECT_DIR$/Assets/Resources/Scripts/UIManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/UnityRecyclingListView-master/Source/RecyclingListView.cs" />
-        <option value="$PROJECT_DIR$/Assets/UnityRecyclingListView-master/Examples/Scripts/TestChildItem.cs" />
         <option value="$PROJECT_DIR$/Assets/Resources/Scripts/toEdit/ShopItemEditor.cs" />
         <option value="$PROJECT_DIR$/Assets/Resources/Scripts/BannerAd.cs" />
-        <option value="$PROJECT_DIR$/Assets/Resources/Scripts/AuthManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Resources/Scripts/RewardableAd.cs" />
+        <option value="$PROJECT_DIR$/Assets/UnityRecyclingListView-master/Source/RecyclingListView.cs" />
+        <option value="$PROJECT_DIR$/Assets/UnityRecyclingListView-master/Examples/Scripts/TestChildItem.cs" />
         <option value="$PROJECT_DIR$/Assets/UnityRecyclingListView-master/Examples/Scripts/TestPanel.cs" />
+        <option value="$PROJECT_DIR$/Assets/Resources/Scripts/AuthManager.cs" />
       </list>
     </option>
   </component>
@@ -332,7 +343,10 @@
       <workItem from="1619424435396" duration="11759000" />
       <workItem from="1619512414542" duration="8556000" />
       <workItem from="1619605709567" duration="3776000" />
-      <workItem from="1619689256956" duration="10785000" />
+      <workItem from="1619689256956" duration="17230000" />
+      <workItem from="1619763059869" duration="26423000" />
+      <workItem from="1619813566961" duration="944000" />
+      <workItem from="1619856182478" duration="299000" />
     </task>
     <task id="LOCAL-00001" summary="Photon UI changes">
       <created>1613401448109</created>
@@ -348,7 +362,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619719110931</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added game shop with firebase connection">
+      <created>1619719560711</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1619719560711</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -379,10 +400,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="VCS.FileHistoryDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1619254924651" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1619719503542">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1619719628757">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1619719503542" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1619719628757" />
     <state x="2472" y="119" width="815" height="801" key="find.popup" timestamp="1617269578998">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>

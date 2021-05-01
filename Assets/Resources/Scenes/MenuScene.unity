@@ -156,7 +156,7 @@ RectTransform:
   - {fileID: 1109924723}
   - {fileID: 698894593}
   m_Father: {fileID: 1518868958}
-  m_RootOrder: 14
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -1003,7 +1003,7 @@ RectTransform:
   - {fileID: 1335060629}
   - {fileID: 565465089}
   m_Father: {fileID: 1518868958}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -1912,7 +1912,7 @@ RectTransform:
   - {fileID: 1244614527}
   - {fileID: 1916632982}
   m_Father: {fileID: 1518868958}
-  m_RootOrder: 13
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -2910,7 +2910,7 @@ RectTransform:
   - {fileID: 1116025535}
   - {fileID: 613597425}
   m_Father: {fileID: 1518868958}
-  m_RootOrder: 5
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -5103,7 +5103,7 @@ RectTransform:
   m_Children:
   - {fileID: 1719908878}
   m_Father: {fileID: 1518868958}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -5660,18 +5660,6 @@ MonoBehaviour:
       - m_Target: {fileID: 1864700568}
         m_TargetAssemblyTypeName: AuthManager, Assembly-CSharp
         m_MethodName: LogOutButton
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 8656077198354119675}
-        m_TargetAssemblyTypeName: RecyclingListView, Assembly-CSharp
-        m_MethodName: DeleteAllChildItems
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7622,18 +7610,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1864700568}
-        m_TargetAssemblyTypeName: AuthManager, Assembly-CSharp
-        m_MethodName: ShopEnterButton
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!224 &1150628577
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7933,7 +7909,7 @@ RectTransform:
   - {fileID: 716758075}
   - {fileID: 1989819437}
   m_Father: {fileID: 1518868958}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -9163,7 +9139,7 @@ RectTransform:
   - {fileID: 373937894}
   - {fileID: 1380902517}
   m_Father: {fileID: 1518868958}
-  m_RootOrder: 12
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -9610,7 +9586,7 @@ RectTransform:
   - {fileID: 256693668}
   - {fileID: 1440426723}
   m_Father: {fileID: 1518868958}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -9944,16 +9920,16 @@ RectTransform:
   - {fileID: 950292811}
   - {fileID: 654564771}
   - {fileID: 724493185}
-  - {fileID: 443613992}
   - {fileID: 112842645}
   - {fileID: 1202917599}
   - {fileID: 1496836277}
   - {fileID: 834196163}
   - {fileID: 8656077199172977943}
   - {fileID: 1845680281}
-  - {fileID: 1393955106}
   - {fileID: 175844122}
   - {fileID: 5503921}
+  - {fileID: 443613992}
+  - {fileID: 1393955106}
   m_Father: {fileID: 1500249209}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -11821,7 +11797,7 @@ RectTransform:
   - {fileID: 1812256332}
   - {fileID: 1120411448}
   m_Father: {fileID: 1518868958}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -14081,7 +14057,7 @@ RectTransform:
   - {fileID: 523389504}
   - {fileID: 1794732823}
   m_Father: {fileID: 1518868958}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}

@@ -90,6 +90,7 @@
      <Compile Include="Assets\Resources\Scripts\gamemanager\RoomListEntry.cs" />
      <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\DynamicJoystick.cs" />
      <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\FixedJoystick.cs" />
+     <Compile Include="Assets\Resources\Scripts\RewardableAd.cs" />
      <Compile Include="Assets\UnityRecyclingListView-master\Examples\Scripts\TestChildItem.cs" />
      <Compile Include="Assets\Resources\Scripts\toEdit\SpellBase.cs" />
      <Compile Include="Assets\Resources\Scripts\ResourceManager.cs" />
@@ -111,7 +112,6 @@
      <Compile Include="Assets\Resources\Scripts\gamemanager\PlayerListEntry.cs" />
      <Compile Include="Assets\Maps\Scripts\BasicCameraFollow.cs" />
      <Compile Include="Assets\Resources\Scripts\gamemanager\MagickaGame.cs" />
-     <Compile Include="Assets\Resources\Scripts\RewardableAd.cs" />
      <None Include="Assets\Maps\Photon\PhotonLibs\netstandard2.0\Photon3Unity3D.xml" />
      <None Include="Assets\Maps\Photon\PhotonUnityNetworking\changelog.txt" />
      <None Include="Assets\Firebase\m2repository\com\google\firebase\firebase-app-unity\maven-metadata.xml" />
