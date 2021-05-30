@@ -1,4 +1,5 @@
 ﻿
+using Photon.Pun;
 using UnityEngine;
 using UnityEngine.UI;
  
@@ -11,11 +12,12 @@ public class FPSCounter : MonoBehaviour
  
     private void Update()
     {
-        if (Time.unscaledTime > _timer)
+        /*if (Time.unscaledTime > _timer)
         {
             int fps = (int)(1f / Time.unscaledDeltaTime);
             _fpsText.text = "FPS: " + fps;
             _timer = Time.unscaledTime + _hudRefreshRate;
-        }
+        }*/
+        _fpsText.text = PhotonNetwork.GetPing().ToString();
     }
 }

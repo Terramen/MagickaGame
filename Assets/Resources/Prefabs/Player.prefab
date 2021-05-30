@@ -837,6 +837,7 @@ MonoBehaviour:
   circleSprite: {fileID: 6809444387550121999}
   circle: {fileID: 6809444388626889511}
   spriteRenderer: {fileID: 6809444388013059695}
+  shopItemBase: {fileID: 11400000, guid: 875f901b122a4b54994f4aa9d499464f, type: 2}
 --- !u!50 &6809444387982695303
 Rigidbody2D:
   serializedVersion: 4
@@ -937,6 +938,7 @@ MonoBehaviour:
   effects:
   - {fileID: 4697933542468473078, guid: d1e4d10b25c2882459e271abd80c4815, type: 3}
   - {fileID: 4205030902599102318, guid: b3da1d7d6446ab347821b22c3347c7ca, type: 3}
+  - {fileID: 1777586391205182355, guid: aadd99674127f3846947a91983e3450f, type: 3}
   burnTimeTicks: 
   _isBurning: 0
   photonView: {fileID: 1432758928}
@@ -1029,7 +1031,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 14
-  m_Sprite: {fileID: 21300000, guid: c8580aa6acbfc4448aed912924d41b2c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2ac2dfbf8e654e644819c7ab31335b29, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
   m_FlipY: 0
@@ -1440,6 +1442,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 85
+      objectReference: {fileID: 0}
+    - target: {fileID: 8031287118458169091, guid: 134ff353ae7fef14a9acc08a211f153c,
+        type: 3}
+      propertyPath: statusTime
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8222115219535163407, guid: 134ff353ae7fef14a9acc08a211f153c,
         type: 3}

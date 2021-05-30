@@ -7,7 +7,10 @@ public class TargetAttack : MonoBehaviourPun
 {
     private Animator _animator;
     [SerializeField] private float damage;
+    //private float multiplier = 1f;
     private bool isHitByLightning;
+
+    private PlayerSpawner _playerSpawner;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,6 +18,8 @@ public class TargetAttack : MonoBehaviourPun
         {
             gameObject.layer = 11;
         }
+
+        _playerSpawner = FindObjectOfType<PlayerSpawner>();
         _animator = GetComponent<Animator>();
         StartCoroutine(Delay());
     }
@@ -40,7 +45,7 @@ public class TargetAttack : MonoBehaviourPun
             {
                 if (!isHitByLightning)
                 {
-                    hpBar.photonView.RPC("TakeDamageRPC", RpcTarget.All, damage);
+                    hpBar.photonView.RPC("TakeDamageRPC", RpcTarget.All, damage*_playerSpawner.Shooting.Multiplier);
                     isHitByLightning = true;
                 }
             }

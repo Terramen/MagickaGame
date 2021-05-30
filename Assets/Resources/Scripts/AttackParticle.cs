@@ -9,6 +9,7 @@ public class AttackParticle : MonoBehaviourPun
     
     [SerializeField] private float damage;
     [SerializeField] private float statusDamage;
+    [SerializeField] private float statusTime;
     public PlayerSpawner playerSpawner;
   //  public Player3 player3;
    // private HpBar _hpBar;
@@ -16,6 +17,7 @@ public class AttackParticle : MonoBehaviourPun
     [SerializeField] private EffectType effectType;
 
     private bool isBurning;
+    private bool isDoused;
 
     void Awake()
     {
@@ -39,11 +41,20 @@ public class AttackParticle : MonoBehaviourPun
     {
         Debug.Log($"playerSpawner.Shooting.ParticleDamage:{playerSpawner.Shooting.ParticleDamage}");
         damage = playerSpawner.Shooting.ParticleDamage;
+        statusTime = playerSpawner.Shooting.EffectTime;
     }
 
     private void OnDisable()
     {
-        isBurning = false;
+        if (isBurning)
+        {
+            isBurning = false;
+        }
+
+        if (isDoused)
+        {
+            isDoused = false;
+        }
     }
 
 
@@ -56,8 +67,14 @@ public class AttackParticle : MonoBehaviourPun
                 hpBar.photonView.RPC("TakeDamageRPC", RpcTarget.All, damage);
                 if (!isBurning)
                 {
-                    hpBar.photonView.RPC("TakeStatusDamageRPC", RpcTarget.All, statusDamage, effectType);
+                    hpBar.photonView.RPC("TakeStatusDamageRPC", RpcTarget.All, statusDamage, effectType, statusTime);
                     isBurning = true;
+                }
+
+                if (!isDoused)
+                {
+                    hpBar.photonView.RPC("TakeStatusDamageRPC", RpcTarget.All, statusDamage, effectType, statusTime);
+                    isDoused = true;
                 }
                 Debug.Log("Hit by particle");
             }

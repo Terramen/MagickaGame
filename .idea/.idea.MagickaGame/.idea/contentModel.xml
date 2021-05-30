@@ -449,9 +449,11 @@
             <e p="AttackParticle.cs" t="Include" />
             <e p="AuthManager.cs" t="Include" />
             <e p="BannerAd.cs" t="Include" />
+            <e p="Burner.cs" t="Include" />
             <e p="Client.cs" t="Include" />
             <e p="Elements2.cs" t="Include" />
             <e p="Explosion.cs" t="Include" />
+            <e p="Fountain.cs" t="Include" />
             <e p="FPSCounter.cs" t="Include" />
             <e p="gamemanager" t="Include">
               <e p="ArenaGameManager.cs" t="Include" />
@@ -463,12 +465,7 @@
             </e>
             <e p="HpBar.cs" t="Include" />
             <e p="offline" t="Include">
-              <e p="AttackOffline.cs" t="Include" />
               <e p="FPSTarget.cs" t="Include" />
-              <e p="JoystickOffline.cs" t="Include" />
-              <e p="OfflineMovement.cs" t="Include" />
-              <e p="PlayerOfflineInputs.cs" t="Include" />
-              <e p="ShootingOffline.cs" t="Include" />
             </e>
             <e p="Player_transform.cs" t="Include" />
             <e p="PlayerNameInput.cs" t="Include" />
@@ -477,9 +474,11 @@
             <e p="RewardableAd.cs" t="Include" />
             <e p="ScoreAddManager.cs" t="Include" />
             <e p="Shooting.cs" t="Include" />
+            <e p="ShopItemManager.cs" t="Include" />
             <e p="StatusEffect.cs" t="Include" />
             <e p="TargetAttack.cs" t="Include" />
             <e p="toEdit" t="Include">
+              <e p="ClassDiagram1.cd" t="Include" />
               <e p="CooldownManager.cs" t="Include" />
               <e p="ElementController.cs" t="Include" />
               <e p="Gamemanager.cs" t="Include" />
@@ -488,6 +487,7 @@
               <e p="SpellBase.cs" t="Include" />
               <e p="SpellUIController.cs" t="Include" />
             </e>
+            <e p="TutorialPlayerSpawner.cs" t="Include" />
             <e p="UIManager.cs" t="Include" />
           </e>
         </e>

@@ -24,27 +24,20 @@ public class PlayerSpawner : MonoBehaviour
     [SerializeField] private GameObject playerPrefab;
     [SerializeField] private Transform[] spawnPoints;
     private Shooting _shooting;
-    private ShootingOffline _shootingOffline;
     private Player3 _player3;
-    private PlayerOfflineInputs _playerOfflineInputs;
     private HpBar _hpBar;
+    private Animator _animController;
     [SerializeField] private Camera _camera;
 
-    /*public List<PlayerInfo> playerinfo = new List<PlayerInfo>();
-    public int myInd;
+    public ShopItemBase shopItemBase;
+    
+    
 
-    public Text uiKills;
-    public Text uiDeaths;*/
-
-    /*[Header("Online mode?")]
-    public bool isOnlineMode;*/
-
-    public ShootingOffline ShootingOffline
+    public Animator AnimController
     {
-        get => _shootingOffline;
-        set => _shootingOffline = value;
+        get => _animController;
+        set => _animController = value;
     }
-
     /*public bool IsOnlineMode
     {
         get => isOnlineMode;
@@ -68,12 +61,7 @@ public class PlayerSpawner : MonoBehaviour
         get => _player3;
         set => _player3 = value;
     }
-
-    public PlayerOfflineInputs PlayerOfflineInputs
-    {
-        get => _playerOfflineInputs;
-        set => _playerOfflineInputs = value;
-    }
+    
 
     public Transform[] SpawnPoints
     {
@@ -110,11 +98,15 @@ public class PlayerSpawner : MonoBehaviour
     {
         Transform tSpawn = spawnPoints[Random.Range(0, spawnPoints.Length)];
         GameObject player = PhotonNetwork.Instantiate("Prefabs/Player", tSpawn.position, tSpawn.rotation); // playerPrefab.name
+        _animController = player.GetComponentInChildren<Animator>();
         _shooting = player.GetComponentInChildren<Shooting>();
         _camera = player.GetComponentInChildren<Camera>();
         _player3 = player.GetComponent<Player3>();
         _hpBar = player.GetComponent<HpBar>();
+       // _animController.runtimeAnimatorController = shopItemBase.shopItems[ShopItemManager.instance.CurrentItemID].controller;
     }
+    
+    
 
     /*public void SpawnOffline()
     {

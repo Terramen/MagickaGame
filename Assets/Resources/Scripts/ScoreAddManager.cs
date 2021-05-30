@@ -55,11 +55,11 @@ public class ScoreAddManager : MonoBehaviourPunCallbacks
                 winPanel.SetActive(true);
                 if (playerA_Score > playerB_Score)
                 {
-                    winText.text = $"Winner: {PhotonNetwork.PlayerList[1].NickName}";
+                    winText.text = $"Победитель: {PhotonNetwork.PlayerList[1].NickName}";
                 }
                 else
                 {
-                    winText.text = $"Winner: {PhotonNetwork.PlayerList[0].NickName}";
+                    winText.text = $"Победитель: {PhotonNetwork.PlayerList[0].NickName}";
                 }
 
                 ScoreExtensions.SetScore(PhotonNetwork.PlayerList[0], 0);

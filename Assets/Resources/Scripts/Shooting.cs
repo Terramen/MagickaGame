@@ -17,11 +17,25 @@ public class Shooting : MonoBehaviourPun, IPunObservable
     [SerializeField] private int raycastCount;
     private float raycastArc = 0;
     private float particleDamage = 0.05f;
+    private float effectTime;
+    private float multiplier = 1f;
+
+    public float Multiplier
+    {
+        get => multiplier;
+        set => multiplier = value;
+    }
 
     public float ParticleDamage
     {
         get => particleDamage;
         set => particleDamage = value;
+    }
+
+    public float EffectTime
+    {
+        get => effectTime;
+        set => effectTime = value;
     }
     
 
@@ -131,16 +145,19 @@ public class Shooting : MonoBehaviourPun, IPunObservable
                             case 1:
                                 spell.PutOnCooldown();
                                 id = spell.ID;
+                                effectTime = 0.75f;
                                 PhotonNetwork.Instantiate(spell.spellName, firePoint.position, circle.rotation); //Fireball
                                 break;
                             case 2:
                                 spell.PutOnCooldown();
                                 id = spell.ID;
+                                effectTime = 0.75f;
                                 PhotonNetwork.Instantiate(spell.spellName, firePoint.position, circle.rotation);
                                 break;
                             case 3:
                                 spell.PutOnCooldown();
                                 id = spell.ID;
+                                effectTime = 0.75f;
                                 PhotonNetwork.Instantiate(spell.spellName, firePoint.position, circle.rotation);
                                 break;
                             
@@ -163,42 +180,51 @@ public class Shooting : MonoBehaviourPun, IPunObservable
                             case 4:
                                 spell.PutOnCooldown();
                                 id = spell.ID;
+                                effectTime = 2f;
                                 PhotonNetwork.Instantiate(spell.spellName, firePoint.position, circle.rotation);   //IceLance
                                 break;
                             case 5:
                                 spell.PutOnCooldown();
                                 id = spell.ID;
+                                effectTime = 2f;
                                 PhotonNetwork.Instantiate(spell.spellName, firePoint.position, circle.rotation);
                                 break;
                             case 6:
                                 spell.PutOnCooldown();
                                 id = spell.ID;
+                                effectTime = 2f;
                                 PhotonNetwork.Instantiate(spell.spellName, firePoint.position, circle.rotation);
                                 break;
                             
                             case 10:
                                 particleDamage = 0.05f;
+                                effectTime = 3f;
                                 _coroutine = StartCoroutine(ShootWaterflow(4f));    //Waterflow
                                 break;
                             case 11:
                                 particleDamage = 0.07f;
+                                effectTime = 5f;
                                 _coroutine = StartCoroutine(ShootWaterflow(4f)); 
                                 break;
                             case 12: 
                                 particleDamage = 0.09f;
+                                effectTime = 7f;
                                 _coroutine = StartCoroutine(ShootWaterflow(4f)); 
                                 break;
                             
                             case 16:
                                 particleDamage = 0.07f;
+                                effectTime = 0.75f;
                                 _coroutine = StartCoroutine(ShootLava(4f));    //Lava
                                 break;
                             case 17:
                                 particleDamage = 0.09f;
+                                effectTime = 0.75f;
                                 _coroutine = StartCoroutine(ShootLava(4f)); 
                                 break;
                             case 18: 
                                 particleDamage = 0.11f;
+                                effectTime = 0.75f;
                                 _coroutine = StartCoroutine(ShootLava(4f)); 
                                 break;
                         }

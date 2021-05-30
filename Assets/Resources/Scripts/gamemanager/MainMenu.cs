@@ -6,6 +6,7 @@ using Photon.Realtime;
 using UnityEngine;
 using UnityEngine.UI;
 using Random = UnityEngine.Random;
+using Hashtable = ExitGames.Client.Photon.Hashtable;
 using ExitGames.Client.Photon.Encryption;
 using UnityEngine.SceneManagement;
 
@@ -87,9 +88,7 @@ public class MainMenu : MonoBehaviourPunCallbacks
 
     public override void OnDisconnected(DisconnectCause cause)
     {
-        /*waitingStatusPanel.SetActive(false);
-        findOpponentPanel.SetActive(true);*/
-        
+
         SetActivePanel(mainMenuPanel.name);
         
         Debug.Log($"Disconected due to: {cause}");
@@ -133,7 +132,7 @@ public class MainMenu : MonoBehaviourPunCallbacks
 
             startGameButton.gameObject.SetActive(CheckPlayersReady());
 
-            ExitGames.Client.Photon.Hashtable props = new ExitGames.Client.Photon.Hashtable
+            Hashtable props = new Hashtable
             
             {
                 {MagickaGame.PLAYER_LOADED_LEVEL, false}
@@ -159,6 +158,33 @@ public class MainMenu : MonoBehaviourPunCallbacks
     {
         Destroy(_playerListEntries[otherPlayer.ActorNumber].gameObject);
         _playerListEntries.Remove(otherPlayer.ActorNumber);
+
+        startGameButton.gameObject.SetActive(CheckPlayersReady());
+    }
+    
+    public override void OnMasterClientSwitched(Player newMasterClient)
+    {
+        if (PhotonNetwork.LocalPlayer.ActorNumber == newMasterClient.ActorNumber)
+        {
+            startGameButton.gameObject.SetActive(CheckPlayersReady());
+        }
+    }
+    public override void OnPlayerPropertiesUpdate(Player targetPlayer, Hashtable changedProps)
+    {
+        if (_playerListEntries == null)
+        {
+            _playerListEntries = new Dictionary<int, GameObject>();
+        }
+
+        GameObject entry;
+        if (_playerListEntries.TryGetValue(targetPlayer.ActorNumber, out entry))
+        {
+            object isPlayerReady;
+            if (changedProps.TryGetValue(MagickaGame.PLAYER_READY, out isPlayerReady))
+            {
+                entry.GetComponent<PlayerListEntry>().SetPlayerReady((bool) isPlayerReady);
+            }
+        }
 
         startGameButton.gameObject.SetActive(CheckPlayersReady());
     }

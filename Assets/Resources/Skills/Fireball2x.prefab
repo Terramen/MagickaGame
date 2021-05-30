@@ -138,8 +138,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 15
-  damage: 20
-  statusDamage: 3
+  damage: 15
+  statusDamage: 4
+  statusTime: 1
   rb: {fileID: 3562137229289507315}
   childSprite: {fileID: 4235481921406807947}
   effectType: 1

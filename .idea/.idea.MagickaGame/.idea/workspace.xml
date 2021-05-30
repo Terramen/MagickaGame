@@ -19,19 +19,127 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c0d5d44b-ae10-4bad-8641-85b2c17785cf" name="Default Changelist" comment="Added game shop with firebase connection">
+    <list default="true" id="c0d5d44b-ae10-4bad-8641-85b2c17785cf" name="Default Changelist" comment="Game fountain added, RU lang">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MagickaGame/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MagickaGame/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MagickaGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MagickaGame/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/MagickaGame/v15/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/MagickaGame/v15/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/MagickaGame/v15/Server/sqlite3/storage.ide" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/MagickaGame/v15/Server/sqlite3/storage.ide" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/MagickaGame/v15/Server/sqlite3/storage.ide-shm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/MagickaGame/v15/Server/sqlite3/storage.ide-wal" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Maps/Photon/PhotonUnityNetworking/Demos/DemoAsteroids/Prefabs/PlayerListEntry.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Maps/Photon/PhotonUnityNetworking/Demos/DemoAsteroids/Prefabs/PlayerListEntry.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Maps/Photon/PhotonUnityNetworking/Resources/PhotonServerSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Maps/Photon/PhotonUnityNetworking/Resources/PhotonServerSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Maps/Tilemaps/Isometric/Palettes/Palette_Biome_Temple.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Maps/Tilemaps/Isometric/Palettes/Palette_Biome_Temple.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Maps/Tilemaps/Isometric/Palettes/Palette_Colliders.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Maps/Tilemaps/Isometric/Palettes/Palette_Colliders.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Maps/Tilemaps/TilemapMaterials/TilemapColliderMaterial.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Maps/Tilemaps/TilemapMaterials/TilemapColliderMaterial.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Player_move_front.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Player_move_front.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Animation/New Animation.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Animation/New Animation.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Animation/PlayerSprite.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Animation/PlayerSprite.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Animation/Player_idle.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Animation/Player_idle.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Animation/Player_up.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Animation/Player_up.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/PlayerListEntry.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/PlayerListEntry.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Scenes/Grid - Level.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Scenes/Grid - Level.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Scenes/Grid - Test - Level.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Scenes/Grid - Test - Level.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Scenes/LevelDesign.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Scenes/LevelDesign.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Scenes/MainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Scenes/MainScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/Scenes/MenuScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Scenes/MenuScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Scripts/Attack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Scripts/Attack.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Scripts/AttackParticle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Scripts/AttackParticle.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Scripts/Element Base.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Scripts/Element Base.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Scripts/FPSCounter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Scripts/FPSCounter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Scripts/HpBar.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Scripts/HpBar.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Scripts/PlayerSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Scripts/PlayerSpawner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Scripts/Player_transform.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Scripts/Player_transform.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Scripts/ScoreAddManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Scripts/ScoreAddManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Scripts/Shooting.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Scripts/Shooting.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Scripts/StatusEffect.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Scripts/StatusEffect.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Scripts/TargetAttack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Scripts/TargetAttack.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Scripts/gamemanager/MagickaGame.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Scripts/gamemanager/MagickaGame.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Scripts/gamemanager/MainMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Scripts/gamemanager/MainMenu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Scripts/gamemanager/PlayerListEntry.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Scripts/gamemanager/PlayerListEntry.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Scripts/gamemanager/TopMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Scripts/gamemanager/TopMenu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Scripts/offline/ShootingOffline.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Scripts/offline/ShootingOffline.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Skills/Boulder.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Skills/Boulder.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Skills/Boulder3x.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Skills/Boulder3x.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Skills/Fireball.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Skills/Fireball.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Skills/Fireball2x.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Skills/Fireball2x.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Skills/Fireball3x.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Skills/Fireball3x.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Skills/IceLance.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Skills/IceLance.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Skills/IceLance2x.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Skills/IceLance2x.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Skills/IceLance3x.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Skills/IceLance3x.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Skills/Lava.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Skills/Lava.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Skills/Waterflow2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Skills/Waterflow2.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Skills/Waterflow23.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Skills/Waterflow23.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Sprites/Sprite-Gold.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Sprites/Sprite-Gold.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thaleah_PixelFont/Materials/Thaleah_DemoBackground.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Thaleah_PixelFont/Materials/Thaleah_DemoBackground.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ArtifactDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ArtifactDB" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/05/050244ebbc2cd61e19ab7a0358438b10" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/06/0652b6e7f5aab5749c702856e6a6087b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/15/1588c569bcb03837bd61ce5528214ec3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/1a/1a0bd683eb8ded05915474aac996ffb1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/1a/1a56f6be23d820845cea4f9622c52e8f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/1f/1f5f9416156ecddf48ffa493928c312c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/3b/3bdf3ce92c904c80890d8fbb5bb34b22" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/46/4612ad3ae2df375485fe8a88e4c0e915" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/49/49c3a794599ec3ff9a645b34db487c3e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/50/50bba82f3c7b32a85a533319d662d692" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/53/5371b123fb6e68c8cd1e34a3c3483f32" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/5d/5de89346efd663c9e92cbdf822b61f85" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/65/651fab7b3101713d4d7bfc37793488b5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/76/7668dd19dff0be516688c55af0f27c39" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/82/82df476b332a67a8f3bcabe3e14574dd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/83/83aef0290e84179650c6b819652ce5cb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/87/874cc6624a8a5111b2562f17668ccba8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/90/9011570c6209fbb20d1088eee47ed7e8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/9a/9aa7e697028392771f7b2063ef88e8cb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/a8/a84bf7ff7f10f2d5a97f71ed4da6c306" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/a9/a94074b65684e2c1243829100b66dfef" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/b5/b5e9de2a0e880382a275a228b59bb3a3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/c7/c714bd4099e6a2e5562d4fbb372b4a7b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/c9/c9592b76038b175e7107a29edca25da1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/cb/cb0f4bffdf0c5774ecd3dfda1e6e5e59" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/cf/cf01dc8e1b14988445c01e2255725cd6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/d2/d2d0425e45258fe45c88be17becad932" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/dc/dc57ac20d68fb333137505fa5c67e998" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/e1/e1e04aeed512b955a9fdc6e65818b861" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/e9/e98a398b5c784b76844ffd3b9371dc6f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/ec/ec5c31e42f0004186a28de80ad0b26b2" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/EditorSnapSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/EditorSnapSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/GridBrush/UnityEditor.Tilemaps.GridBrush.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/GridBrush/UnityEditor.Tilemaps.GridBrush.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/LastBuild.buildreport" beforeDir="false" afterPath="$PROJECT_DIR$/Library/LastBuild.buildreport" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/Managed/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/Managed/Assembly-CSharp.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/Managed/Assembly-CSharp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/Managed/Assembly-CSharp.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/boot.config" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/boot.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/data.unity3d" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/data.unity3d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/Android/ScriptsOnlyCache.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/Android/ScriptsOnlyCache.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/SourceAssetDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SourceAssetDB" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/expandedItems" beforeDir="false" afterPath="$PROJECT_DIR$/Library/expandedItems" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp-Editor.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp-Editor.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp-firstpass.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp-firstpass.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/PhotonChat.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/PhotonChat.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/PhotonUnityNetworking.Editor.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/PhotonUnityNetworking.Editor.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/PhotonUnityNetworking.Utilities.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/PhotonUnityNetworking.Utilities.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/PhotonUnityNetworking.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/PhotonUnityNetworking.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/PhotonWebSocket.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/PhotonWebSocket.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/PunDemos.DemoHubEditor.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/PunDemos.DemoHubEditor.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/PunDemos.DemoSlotcarEditor.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/PunDemos.DemoSlotcarEditor.csprojAssemblyReference.cache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,97 +158,99 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F398F875-487C-430B-96BE-E4BC9D181A40/73/679b3cfc/IDragHandler.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E81851A0-DC73-4A79-AFA9-F5B7273162BE/9e/79b2e448/List`1.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Resources/Scripts/offline/PlayerOfflineInputs.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Resources/Scripts/gamemanager/MagickaGame.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Resources/Scripts/AuthManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../Unity/2020.1.6f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/ScrollRect.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Resources/Scripts/toEdit/ShopItemBase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7DFC8D61-57EF-4D37-9354-C19104DE3140/2c/db7d48b3/PeerBase.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Resources/Scripts/gamemanager/RoomListEntry.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/265179CD-3D32-4BA1-BE0C-68F88DEA310A/38/dd809cc4/InternalDatabaseReference.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Resources/Scripts/RewardableAd.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Resources/Scripts/gamemanager/TopMenu.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Resources/Scripts/offline/JoystickOffline.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Joystick Pack/Scripts/Editor/SpellJoystickEditor.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Projectile.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/265179CD-3D32-4BA1-BE0C-68F88DEA310A/68/65a2ef94/DatabaseReference.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Editor/SpellEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/81986B7D-E77F-470C-8157-A969000B3A00/b3/0e247b21/Physics2D.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Resources/Scripts/offline/OfflineMovement.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Resources/Scripts/AttackParticle.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/62FFEEB7-EC02-4BEA-B61E-5FBF8D44AC5B/76/ec0bc006/Dictionary`2.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Resources/Scripts/gamemanager/PlayerListEntry.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Resources/Scripts/ScoreAddManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ADF64A36-CC6D-4C37-AE5F-C2F7D816FA99/2a/97fc82d5/AuthUtilPINVOKE.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Resources/Scripts/toEdit/Gamemanager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Resources/Scripts/gamemanager/ArenaGameManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ADF64A36-CC6D-4C37-AE5F-C2F7D816FA99/2f/751397b5/FirebaseAuth.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Resources/Scripts/gamemanager/MagickaGame.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/62FFEEB7-EC02-4BEA-B61E-5FBF8D44AC5B/76/ec0bc006/Dictionary`2.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7DFC8D61-57EF-4D37-9354-C19104DE3140/67/69176faf/PhotonPeer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Projectile.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FB001E01-371B-4ADC-A200-13E0AC763896/74/b128d6d4/List`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E81851A0-DC73-4A79-AFA9-F5B7273162BE/8d/0b98c374/Hashtable.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A9810827-DCE3-444A-8E5C-4E9F3F5E0828/d6/4f50d484/Object.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Resources/Scripts/HpBar.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/67055F1B-E365-4E2A-9872-54D5437EE5B8/b5/f7e6791b/Editor.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Resources/Scripts/toEdit/Gamemanager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Editor/SpellEditor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7DFC8D61-57EF-4D37-9354-C19104DE3140/23/5d84acde/EnetPeer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Resources/Scripts/AuthManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A9810827-DCE3-444A-8E5C-4E9F3F5E0828/24/45c6bfc9/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Resources/Scripts/Explosion.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Maps/Photon/PhotonUnityNetworking/Demos/DemoAsteroids/Scripts/AsteroidsGame.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Resources/Scripts/offline/FPSTarget.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Resources/Scripts/toEdit/ShopItemBase.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Resources/Scripts/toEdit/CooldownManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Resources/Scripts/offline/AttackOffline.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Resources/Scripts/gamemanager/ArenaGameManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Resources/Scripts/HpBar.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Joystick Pack/Scripts/Editor/SpellJoystickEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E81851A0-DC73-4A79-AFA9-F5B7273162BE/97/47afe221/Int32.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ADF64A36-CC6D-4C37-AE5F-C2F7D816FA99/2f/751397b5/FirebaseAuth.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FB001E01-371B-4ADC-A200-13E0AC763896/74/b128d6d4/List`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Resources/Scripts/Burner.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/265179CD-3D32-4BA1-BE0C-68F88DEA310A/68/65a2ef94/DatabaseReference.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Resources/Scripts/gamemanager/TopMenu.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Resources/Scripts/gamemanager/PlayerListEntry.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E81851A0-DC73-4A79-AFA9-F5B7273162BE/9e/79b2e448/List`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Resources/Scripts/toEdit/CooldownManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/265179CD-3D32-4BA1-BE0C-68F88DEA310A/38/dd809cc4/InternalDatabaseReference.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Maps/Photon/PhotonUnityNetworking/Demos/DemoAsteroids/Scripts/AsteroidsGame.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Resources/Scripts/RewardableAd.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Resources/Scripts/AttackParticle.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Resources/Scripts/offline/FPSTarget.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F398F875-487C-430B-96BE-E4BC9D181A40/73/679b3cfc/IDragHandler.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Resources/Scripts/ScoreAddManager.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Joystick Pack/Scripts/Editor/SpellJoystickEditor.cs" />
-        <option value="$PROJECT_DIR$/Assets/Joystick Pack/Scripts/Joysticks/SpellJoystick.cs" />
-        <option value="$PROJECT_DIR$/Assets/Joystick Pack/Scripts/Base/Joystick.cs" />
-        <option value="$PROJECT_DIR$/Assets/Joystick Pack/Scripts/Joysticks/CustomJoystick.cs" />
-        <option value="$PROJECT_DIR$/Assets/Standard Assets/CrossPlatformInput/Scripts/ButtonHandler.cs" />
-        <option value="$PROJECT_DIR$/Assets/Maps/Scripts/BasicCameraFollow.cs" />
-        <option value="$PROJECT_DIR$/Assets/Maps/Photon/PhotonUnityNetworking/UtilityScripts/PhotonPlayer/PunPlayerScores.cs" />
         <option value="$PROJECT_DIR$/Assets/Resources/Scripts/toEdit/SpellBase.cs" />
         <option value="$PROJECT_DIR$/Assets/Resources/Scripts/toEdit/CooldownManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Resources/Scripts/TargetAttack.cs" />
         <option value="$PROJECT_DIR$/Assets/Resources/Scripts/Class.puml" />
         <option value="$PROJECT_DIR$/Assets/Resources/Scripts/toEdit/sfsdf.html" />
         <option value="$PROJECT_DIR$/Assets/Resources/Scripts/ClassDiagram.puml" />
-        <option value="$PROJECT_DIR$/Assets/Resources/Scripts/Shooting.cs" />
         <option value="$PROJECT_DIR$/Assets/Maps/Photon/PhotonUnityNetworking/Demos/DemoAsteroids/Scripts/Game/AsteroidsGameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Resources/Scripts/MainMenu.cs" />
         <option value="$PROJECT_DIR$/Assets/Maps/Photon/PhotonUnityNetworking/Demos/DemoAsteroids/Scripts/Lobby/LobbyMainPanel.cs" />
         <option value="$PROJECT_DIR$/Assets/Resources/Scripts/gamemanager/RoomListEntry.cs" />
         <option value="$PROJECT_DIR$/Assets/Maps/Photon/PhotonUnityNetworking/Demos/DemoAsteroids/Scripts/Lobby/PlayerListEntry.cs" />
-        <option value="$PROJECT_DIR$/Assets/Resources/Scripts/gamemanager/MagickaGame.cs" />
-        <option value="$PROJECT_DIR$/Assets/Resources/Scripts/gamemanager/PlayerListEntry.cs" />
-        <option value="$PROJECT_DIR$/Assets/Resources/Scripts/Player_transform.cs" />
         <option value="$PROJECT_DIR$/Assets/Resources/Scripts/offline/FPSTarget.cs" />
-        <option value="$PROJECT_DIR$/Assets/Resources/Scripts/ScoreAddManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Resources/Scripts/AttackParticle.cs" />
-        <option value="$PROJECT_DIR$/Assets/Resources/Scripts/HpBar.cs" />
         <option value="$PROJECT_DIR$/Assets/Joystick Pack/Scripts/Base/JoystickScr.cs" />
-        <option value="$PROJECT_DIR$/Assets/Resources/Scripts/StatusEffect.cs" />
-        <option value="$PROJECT_DIR$/Assets/Resources/Scripts/Attack.cs" />
         <option value="$PROJECT_DIR$/Assets/Resources/Scripts/offline/OfflineMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Resources/Scripts/offline/PlayerOfflineInputs.cs" />
         <option value="$PROJECT_DIR$/Assets/Resources/Scripts/offline/JoystickOffline.cs" />
         <option value="$PROJECT_DIR$/Assets/Resources/Scripts/offline/ShootingOffline.cs" />
         <option value="$PROJECT_DIR$/Assets/Resources/Scripts/offline/AttackOffline.cs" />
-        <option value="$PROJECT_DIR$/Assets/Resources/Scripts/PlayerSpawner.cs" />
-        <option value="$PROJECT_DIR$/Assets/Resources/Scripts/gamemanager/TopMenu.cs" />
-        <option value="$PROJECT_DIR$/Assets/Resources/Scripts/toEdit/Player3.cs" />
         <option value="$PROJECT_DIR$/Assets/Maps/Photon/PhotonUnityNetworking/Code/PhotonHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Resources/Scripts/PlayerNameInput.cs" />
-        <option value="$PROJECT_DIR$/Assets/Resources/Scripts/gamemanager/MainMenu.cs" />
         <option value="$PROJECT_DIR$/Assets/google-services.json" />
-        <option value="$PROJECT_DIR$/Assets/Resources/Scripts/toEdit/ShopItemBase.cs" />
         <option value="$PROJECT_DIR$/Assets/Resources/Scripts/toEdit/Gamemanager.cs" />
         <option value="$PROJECT_DIR$/Assets/Resources/Scripts/UIManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Resources/Scripts/toEdit/ShopItemEditor.cs" />
         <option value="$PROJECT_DIR$/Assets/Resources/Scripts/BannerAd.cs" />
         <option value="$PROJECT_DIR$/Assets/Resources/Scripts/RewardableAd.cs" />
         <option value="$PROJECT_DIR$/Assets/UnityRecyclingListView-master/Source/RecyclingListView.cs" />
-        <option value="$PROJECT_DIR$/Assets/UnityRecyclingListView-master/Examples/Scripts/TestChildItem.cs" />
         <option value="$PROJECT_DIR$/Assets/UnityRecyclingListView-master/Examples/Scripts/TestPanel.cs" />
+        <option value="$PROJECT_DIR$/Assets/Resources/Scripts/SceneManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Resources/Scripts/AuthManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/UnityRecyclingListView-master/Examples/Scripts/TestChildItem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Resources/Scripts/ShopItemManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Resources/Scripts/toEdit/ShopItemBase.cs" />
+        <option value="$PROJECT_DIR$/Assets/Resources/Scripts/toEdit/Player3.cs" />
+        <option value="$PROJECT_DIR$/Assets/Resources/Scripts/AttackParticle.cs" />
+        <option value="$PROJECT_DIR$/Assets/Resources/Scripts/Shooting.cs" />
+        <option value="$PROJECT_DIR$/Assets/Resources/Scripts/Fountain.cs" />
+        <option value="$PROJECT_DIR$/Assets/Resources/Scripts/HpBar.cs" />
+        <option value="$PROJECT_DIR$/Assets/Resources/Scripts/TargetAttack.cs" />
+        <option value="$PROJECT_DIR$/Assets/Resources/Scripts/gamemanager/MagickaGame.cs" />
+        <option value="$PROJECT_DIR$/Assets/Resources/Scripts/gamemanager/MainMenu.cs" />
+        <option value="$PROJECT_DIR$/Assets/Resources/Scripts/StatusEffect.cs" />
+        <option value="$PROJECT_DIR$/Assets/Resources/Scripts/Attack.cs" />
+        <option value="$PROJECT_DIR$/Assets/Resources/Scripts/Burner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Resources/Scripts/TutorialPlayerSpawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Resources/Scripts/ScoreAddManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Resources/Scripts/gamemanager/PlayerListEntry.cs" />
+        <option value="$PROJECT_DIR$/Assets/Resources/Scripts/PlayerSpawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Resources/Scripts/Player_transform.cs" />
+        <option value="$PROJECT_DIR$/Assets/Resources/Scripts/gamemanager/TopMenu.cs" />
+        <option value="$PROJECT_DIR$/Assets/Resources/Scripts/FPSCounter.cs" />
+        <option value="$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7DFC8D61-57EF-4D37-9354-C19104DE3140/2c/db7d48b3/PeerBase.cs" />
       </list>
     </option>
   </component>
@@ -158,6 +268,7 @@
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -346,7 +457,25 @@
       <workItem from="1619689256956" duration="17230000" />
       <workItem from="1619763059869" duration="26423000" />
       <workItem from="1619813566961" duration="944000" />
-      <workItem from="1619856182478" duration="299000" />
+      <workItem from="1619856182478" duration="2972000" />
+      <workItem from="1619958958865" duration="1513000" />
+      <workItem from="1620291137787" duration="7977000" />
+      <workItem from="1620313402597" duration="1229000" />
+      <workItem from="1620466955759" duration="13727000" />
+      <workItem from="1620543474558" duration="5162000" />
+      <workItem from="1620632639809" duration="593000" />
+      <workItem from="1620721827061" duration="9721000" />
+      <workItem from="1620806275618" duration="15971000" />
+      <workItem from="1620937066553" duration="5915000" />
+      <workItem from="1620976960885" duration="8165000" />
+      <workItem from="1621075420819" duration="9294000" />
+      <workItem from="1621282593899" duration="1114000" />
+      <workItem from="1621516376657" duration="597000" />
+      <workItem from="1621714694034" duration="617000" />
+      <workItem from="1621793560239" duration="836000" />
+      <workItem from="1621923903371" duration="1479000" />
+      <workItem from="1622053032680" duration="6961000" />
+      <workItem from="1622361868858" duration="877000" />
     </task>
     <task id="LOCAL-00001" summary="Photon UI changes">
       <created>1613401448109</created>
@@ -369,7 +498,21 @@
       <option name="project" value="LOCAL" />
       <updated>1619719560711</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Game shop fixes">
+      <created>1619858172219</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1619858172220</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Game fountain added, RU lang">
+      <created>1622362479359</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1622362479359</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -393,25 +536,27 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Photon UI changes" />
     <MESSAGE value="Added game shop with firebase connection" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added game shop with firebase connection" />
+    <MESSAGE value="Game shop fixes" />
+    <MESSAGE value="Game fountain added, RU lang" />
+    <option name="LAST_COMMIT_MESSAGE" value="Game fountain added, RU lang" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="92" y="92" width="1736" height="856" key="VCS.FileHistoryDialog" timestamp="1619254924651">
+    <state x="92" y="92" width="1736" height="856" key="VCS.FileHistoryDialog" timestamp="1620490648313">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="92" y="92" width="1736" height="856" key="VCS.FileHistoryDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1619254924651" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1619719628757">
+    <state x="92" y="92" width="1736" height="856" key="VCS.FileHistoryDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1620490648313" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1619858186965">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1619719628757" />
-    <state x="2472" y="119" width="815" height="801" key="find.popup" timestamp="1617269578998">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1619858186965" />
+    <state x="552" y="119" width="815" height="801" key="find.popup" timestamp="1622053554615">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="119" width="815" height="801" key="find.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1616239916311" />
+    <state x="552" y="119" width="815" height="801" key="find.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1622053554615" />
     <state x="2472" y="119" width="815" height="801" key="find.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1617269578998" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1613341140530">
+    <state x="616" y="240" key="run.anything.popup" timestamp="1620813549497">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1613341140530" />
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1620813549497" />
   </component>
 </project>

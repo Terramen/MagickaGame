@@ -140,7 +140,7 @@ MonoBehaviour:
     currentSpellCooldown: 0
     fillAmount: 0
     spellElements: 03000000
-  - spellName: LightningStrike
+  - spellName: LightningStrike2x
     SpellIcon: {fileID: 21300000, guid: 2a3d1ea8b897aad44bfb793739cd9ba7, type: 3}
     spellPrefab: {fileID: 1300699593378508877, guid: 63e45c757300d964e936488e170fe78e,
       type: 3}
@@ -150,7 +150,7 @@ MonoBehaviour:
     currentSpellCooldown: 0
     fillAmount: 0
     spellElements: 0300000003000000
-  - spellName: LightningStrike
+  - spellName: LightningStrike3x
     SpellIcon: {fileID: 21300000, guid: 59cb35bfb846075478828ee7f8649862, type: 3}
     spellPrefab: {fileID: 4279882843959735495, guid: 6f5757a60cef55b48aeb1246138b4dd7,
       type: 3}
@@ -191,9 +191,9 @@ MonoBehaviour:
     spellName: Lava
     SpellIcon: {fileID: 21300000, guid: 260ce2f63b755e147a86d2630d5e954b, type: 3}
     spellPrefab: {fileID: 0}
-    ID: 18
+    ID: 16
     castType: 1
     spellCooldown: 0
     currentSpellCooldown: 0
     fillAmount: 0
-    spellElements: 040000000400000004000000
+    spellElements: 04000000

@@ -34,7 +34,7 @@ public class PlayerListEntry : MonoBehaviour
             }
             else
             {
-                Hashtable initialProps = new Hashtable() {{MagickaGame.PLAYER_READY, isPlayerReady}, {AsteroidsGame.PLAYER_LIVES, AsteroidsGame.PLAYER_MAX_LIVES}};
+                Hashtable initialProps = new Hashtable() {{MagickaGame.PLAYER_READY, isPlayerReady}};
                 PhotonNetwork.LocalPlayer.SetCustomProperties(initialProps);
                 PhotonNetwork.LocalPlayer.SetScore(0);
 
@@ -80,7 +80,7 @@ public class PlayerListEntry : MonoBehaviour
 
         public void SetPlayerReady(bool playerReady)
         {
-            PlayerReadyButton.GetComponentInChildren<Text>().text = playerReady ? "Ready!" : "Ready?";
+            PlayerReadyButton.GetComponentInChildren<Text>().text = playerReady ? "Готов!" : "Готов?";
             PlayerReadyImage.enabled = playerReady;
         }
 }

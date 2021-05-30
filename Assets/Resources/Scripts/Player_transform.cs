@@ -21,26 +21,36 @@ public Animator animator;
     public GameObject circle;
    // public GameObject hpbar;
     private float _аngle;
+    
 
     private float _currentSpeed;
 
-    private PhotonView photonView;
+    //private PhotonView photonView;
 
     [SerializeField] private SpriteRenderer spriteRenderer;
+    
+    public ShopItemBase shopItemBase;
+    private int _skinID = 0;
 
     public float CurrentSpeed => _currentSpeed;
 
     // Start is called before the first frame update
     void Start()
     {
-        photonView = GetComponent<PhotonView>();
+        //photonView = GetComponent<PhotonView>();
         joystick = FindObjectOfType<FloatingJoystick>();
         customJoystick = FindObjectOfType<JoystickScr>();
+        //_animController = GetComponentInChildren<Animator>();
+        if (photonView.IsMine)
+        {
+            photonView.RPC("ChangeSkin", RpcTarget.All);
+        }
         if (!photonView.IsMine)
         {
             gameObject.layer = 9;
             circleSprite.SetActive(false);
-            Destroy(GetComponentInChildren<Camera>().gameObject); 
+            Destroy(GetComponentInChildren<Camera>().gameObject);
+            
         }
     }
 
@@ -86,6 +96,13 @@ public Animator animator;
       // circle.transform.position = Vector2.MoveTowards(transform.position, transform.position, Time.deltaTime);
     }
 
+    [PunRPC]
+    public void ChangeSkin()
+    {
+        _skinID = shopItemBase.shopItems[ShopItemManager.instance.CurrentItemID].ID;
+        animator.runtimeAnimatorController = shopItemBase.shopItems[_skinID].controller;
+    }
+
     public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
     {
         if (stream.IsWriting)
@@ -97,6 +114,7 @@ public Animator animator;
             if (stream.ReceiveNext() is bool b) {
                 spriteRenderer.flipX = b;
             }
+            
         }
     }
 }

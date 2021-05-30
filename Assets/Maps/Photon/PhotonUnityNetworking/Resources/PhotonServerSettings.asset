@@ -53,6 +53,11 @@ MonoBehaviour:
   - Fire
   - RespawnSpaceship
   - GetInvulnerability
+  - ChangeSkin
+  - ApplyDousedRPC
+  - Doused
+  - Cooldown
+  - StopBurningEffect
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1

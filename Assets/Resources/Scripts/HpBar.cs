@@ -54,15 +54,15 @@ public class HpBar : MonoBehaviourPun, IPunObservable
     
     // TakeStatusDamage
     [PunRPC]
-    public void TakeStatusDamageRPC(float damage, EffectType effectType)
+    public void TakeStatusDamageRPC(float damage, EffectType effectType, float effectTime)
     {
         if (photonView.IsMine)
         {
-            statusEffect.ChangeEffectStatus(effectType, 4, damage);
+            statusEffect.ChangeEffectStatus(effectType, 6, damage, effectTime);
         }
     }
-    
-    
+
+
     [PunRPC] 
     public void TakeDamageRPC(float damage)
     {

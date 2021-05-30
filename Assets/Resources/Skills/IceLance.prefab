@@ -154,6 +154,7 @@ MonoBehaviour:
   speed: 15
   damage: 0
   statusDamage: 10
+  statusTime: 2
   rb: {fileID: 689199195133667715}
   childSprite: {fileID: 438786834700254337}
   effectType: 0
